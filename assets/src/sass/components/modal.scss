@@ -1,0 +1,22 @@
+.c-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+
+    &__form {
+        position: relative;
+        z-index: 1;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(#000, 0.8);
+        z-index: -1;
+    }
+}

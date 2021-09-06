@@ -1,0 +1,27 @@
+.c-project {
+
+position: relative;
+transition: all 1s ease;
+font-weight: bold;
+-webkit-box-shadow: 2px 2px 17px -6px rgba(0,0,0,0.63); 
+box-shadow: 2px 2px 17px -6px rgba(0,0,0,0.63);
+
+    &__count {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: white;
+        font-weight: bold;
+        border-radius: 50%;
+        min-width: 20px;
+        height: 20px;
+        border: 1px solid white;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
