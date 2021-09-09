@@ -14,7 +14,7 @@ export default class ResourceModal extends Component {
     componentDidMount()
     {
         this.props.setResourceType(this.state.options[0])
-        this.props.setRelatedProject(this.props.projects[0].title);
+        this.props.setRelatedProject(this.props.projects[0].id);
     }
 
     render() {
@@ -27,7 +27,7 @@ export default class ResourceModal extends Component {
                             <select onChange={(e) => this.props.setRelatedProject(e.target.value)} name="related-project">
                                 {
                                     this.props.projects.map( (project, i) => (
-                                        <option key={i} value={project.title}>{project.title}</option>
+                                        <option key={i} value={project.id}>{project.title}</option>
                                     ))
                                 }
                             </select> 

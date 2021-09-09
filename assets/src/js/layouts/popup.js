@@ -1,10 +1,15 @@
 import {Component} from 'react';
 import $ from 'jquery';
+
+import { createClient } from '@supabase/supabase-js';
+const supabase = createClient(['https://ccbjkpotfypzpqnzktba.supabase.co'], ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzMTEzMzQ2MywiZXhwIjoxOTQ2NzA5NDYzfQ.MMTsdqk7TcUqoCvXnC-OAb-Zeeg-uogVtwQtEzcrvsw']);
+
 import ResourceModal from '../components/ResourceModal';
 import ProjectsModal from '../components/ProjectsModal';
 import Header from '../components/Header';
 import ResourceList from '../components/ResourceList';
 import ProjectList from '../components/ProjectList';
+
 
 export default class Popup extends Component {
 
@@ -23,19 +28,20 @@ export default class Popup extends Component {
             resourceRating : null,
             relatedProject : null,
             view : 'projects',
+            isLoading : true,
             currentProject : null
         }
     }
 
     componentDidMount()
     {
-        chrome.storage.sync.get(['resources', 'projects'], (result) => {
+        // chrome.storage.sync.get(['resources', 'projects'], (result) => {
 
-            this.setState({
-                resources : result.resources ? JSON.parse(result.resources) : [],
-                projects : result.projects ? JSON.parse(result.projects) : [],
-            });
-        });
+        //     this.setState({
+        //         resources : result.resources ? JSON.parse(result.resources) : [],
+        //         projects : result.projects ? JSON.parse(result.projects) : [],
+        //     });
+        // });
 
         $('html').click( (e) => {   
             
@@ -50,6 +56,31 @@ export default class Popup extends Component {
             }
          }); 
 
+         (async () => {
+            let { data: Projects, error } = await supabase
+            .from('Projects')
+            .select('*')
+        
+            setTimeout(() => {
+
+                this.setState({
+                    projects : Projects,
+                    isLoading : false
+                });
+
+            }, 1000)
+
+          })();
+
+          (async () => {
+            let { data: Resources, error } = await supabase
+            .from('Resources')
+            .select('*')
+        
+            this.setState({
+                resources : Resources
+            })
+          })();
 
     }
 
@@ -57,27 +88,41 @@ export default class Popup extends Component {
     {
         e.preventDefault();
         let arr = this.state.resources.slice();
-        console.log(this.state.relatedProject);
+        this.setState({isLoading: true});
 
         chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
+
             let url = tabs[0].url;
-            arr.push({
-                id : '',
-                url : url,
-                project : this.state.relatedProject,
-                type : this.state.resourceType,
-                description : this.state.resourceDescription,
-                rating : this.state.resourceRating,
-                added : Date.now(),
-                clicks : 0
-            });
-            console.log(arr);
-            chrome.storage.sync.set({ "resources":  JSON.stringify(arr)}, () => {
+
+            (async () => {
+                const { data, error } = await supabase
+                .from('Resources')
+                .insert([
+                    {
+                        url : url,
+                        project_id : this.state.relatedProject,
+                        type : this.state.resourceType,
+                        description : this.state.resourceDescription,
+                        rating : this.state.resourceRating,
+                    },
+                ]);
+
+                console.log(data);
+
+                arr.push(data[0]);
+
+                console.log(data);
+
                 this.setState({
                     resources : arr,
-                    isResourceModalActive : false
+                    isResourceModalActive : false,
+                    isLoading: false
                 })
-            });
+            })();
+
+            // console.log(arr);
+            // chrome.storage.sync.set({ "resources":  JSON.stringify(arr)}, () => {
+            // });
         });
 
     }
@@ -85,22 +130,45 @@ export default class Popup extends Component {
     addProjectToList(e)
     {
         e.preventDefault();
+        this.setState({isLoading: true});
 
         let arr = this.state.projects.slice();
 
-        arr.push({
-            id : '',
-            title : this.state.projectName,
-            color : this.state.projectColor,
-            order : 1
-        });
+        (async () => {
+            const { data, error } = await supabase
+            .from('Projects')
+            .insert([
+                {
+                    title : this.state.projectName,
+                    colour : this.state.projectColor
+                },
+            ])
 
-        chrome.storage.sync.set({ "projects":  JSON.stringify(arr)}, () => {
+            arr.push(data[0]);
+
             this.setState({
                 projects : arr,
-                isProjectModalActive : false
-            })
-        });
+                isProjectModalActive : false,
+                isLoading : false
+            });
+
+        })();
+
+        // const { data, error } = await supabase
+        // .from('Projects')
+        // .insert([
+        //     {
+        //         title : this.state.projectName
+        //     },
+        // ])
+
+
+        // chrome.storage.sync.set({ "projects":  JSON.stringify(arr)}, () => {
+        //     this.setState({
+        //         projects : arr,
+        //         isProjectModalActive : false
+        //     })
+        // });
     }
 
     viewResourcesForProject(project){
@@ -114,7 +182,7 @@ export default class Popup extends Component {
     {
         const project = this.state.currentProject;
         const allResources = this.state.resources.slice();
-        const filteredResources = allResources.filter(resource => resource.project == project);
+        const filteredResources = allResources.filter(resource => resource.project_id == project);
         return filteredResources;
     }
 
@@ -133,28 +201,45 @@ export default class Popup extends Component {
 
     getResourceCount(project)
     {
-        return this.state.resources.filter(resource => resource.project == project).length;
+        return this.state.resources.filter(resource => resource.project_id == project).length;
     }
     addClickToResource(e, resource)
     {
         let arr = this.state.resources.slice();
+        let newClicks = null;
+        this.setState({isLoading: true});
 
         const modifiedArr = arr.map(data => {
             
-            if(data.url == resource.url){
+            if(data.id == resource.id){
                 let modifiedData = data;
                 modifiedData['clicks'] = modifiedData['clicks'] + 1;
+                newClicks = modifiedData['clicks'];
                 return modifiedData;
             }
 
             return data;
         });
 
-        chrome.storage.sync.set({ "resources":  JSON.stringify(modifiedArr)}, () => {
+
+        (async () => {
+            const { data, error } = await supabase
+            .from('Resources')
+            .update({ clicks: newClicks })
+            .eq('id', resource.id);
+
             this.setState({
-                resources : modifiedArr
+                resources : modifiedArr,
+                isLoading: false
             })
-        });
+        })();
+
+
+        // chrome.storage.sync.set({ "resources":  JSON.stringify(modifiedArr)}, () => {
+        //     this.setState({
+        //         resources : modifiedArr
+        //     })
+        // });
     }
 
     render() {
@@ -167,6 +252,7 @@ export default class Popup extends Component {
                     <div className="grid-x">
 
                         <Header
+                            addResources={this.state.projects.length > 0}
                             activateResourceModal={() => this.setState({isResourceModalActive : true})}
                             activateProjectModal={() => this.setState({isProjectModalActive : true})}
                             clearAll={() => this.clearAll()}
@@ -175,6 +261,7 @@ export default class Popup extends Component {
                         {
                             this.state.view == 'projects' &&
                             <ProjectList
+                                isLoading={this.state.isLoading}
                                 isActive={this.state.view == 'projects'}
                                 projects={this.state.projects}
                                 viewResourcesForProject={(project) => this.viewResourcesForProject(project)}
@@ -210,6 +297,11 @@ export default class Popup extends Component {
                                 setRelatedProject={(relatedProject) => this.setState({relatedProject})}
                                 addResourceToProject={(e) => this.addResourceToProject(e)}
                            />
+                        }
+
+                        {
+                            this.state.isLoading &&
+                            <div className="c-loader"><div></div><div></div></div>
                         }
                     </div>
 

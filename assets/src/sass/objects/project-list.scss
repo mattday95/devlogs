@@ -19,6 +19,14 @@
         text-align: center;
     }
 
+    &__resource {
+
+        td:first-of-type {
+            max-width: 150px;
+            word-break: break-word;
+        }
+    }
+
     &__no-projects {
         color: white;
     }

@@ -20,6 +20,8 @@
         "sass-loader": "^12.1.0"
     },
     "dependencies": {
+        "@jaames/iro": "^5.5.2",
+        "@supabase/supabase-js": "^1.22.5",
         "foundation-sites": "^6.6.3",
         "jquery": "^3.6.0",
         "react": "^17.0.2",

@@ -1,6 +1,6185 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./node_modules/@babel/runtime/regenerator/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
+  \**********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime.js");
+
+
+/***/ }),
+
+/***/ "./node_modules/@jaames/iro/dist/iro.es.js":
+/*!*************************************************!*\
+  !*** ./node_modules/@jaames/iro/dist/iro.es.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/*!
+ * iro.js v5.5.2
+ * 2016-2021 James Daniel
+ * Licensed under MPL 2.0
+ * github.com/jaames/iro.js
+ */
+
+var n,u,t,i,r,o,f={},e=[],c=/acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|^--/i;function s(n,l){for(var u in l){ n[u]=l[u]; }return n}function a(n){var l=n.parentNode;l&&l.removeChild(n);}function h(n,l,u){var t,i,r,o,f=arguments;if(l=s({},l),arguments.length>3){ for(u=[u],t=3;t<arguments.length;t++){ u.push(f[t]); } }if(null!=u&&(l.children=u),null!=n&&null!=n.defaultProps){ for(i in n.defaultProps){ void 0===l[i]&&(l[i]=n.defaultProps[i]); } }return o=l.key,null!=(r=l.ref)&&delete l.ref,null!=o&&delete l.key,v(n,l,o,r)}function v(l,u,t,i){var r={type:l,props:u,key:t,ref:i,__k:null,__p:null,__b:0,__e:null,l:null,__c:null,constructor:void 0};return n.vnode&&n.vnode(r),r}function d(n){return n.children}function y(n){if(null==n||"boolean"==typeof n){ return null; }if("string"==typeof n||"number"==typeof n){ return v(null,n,null,null); }if(null!=n.__e||null!=n.__c){var l=v(n.type,n.props,n.key,null);return l.__e=n.__e,l}return n}function m(n,l){this.props=n,this.context=l;}function w(n,l){if(null==l){ return n.__p?w(n.__p,n.__p.__k.indexOf(n)+1):null; }for(var u;l<n.__k.length;l++){ if(null!=(u=n.__k[l])&&null!=u.__e){ return u.__e; } }return "function"==typeof n.type?w(n):null}function g(n){var l,u;if(null!=(n=n.__p)&&null!=n.__c){for(n.__e=n.__c.base=null,l=0;l<n.__k.length;l++){ if(null!=(u=n.__k[l])&&null!=u.__e){n.__e=n.__c.base=u.__e;break} }return g(n)}}function k(l){(!l.__d&&(l.__d=!0)&&1===u.push(l)||i!==n.debounceRendering)&&(i=n.debounceRendering,(n.debounceRendering||t)(_));}function _(){var n,l,t,i,r,o,f,e;for(u.sort(function(n,l){return l.__v.__b-n.__v.__b});n=u.pop();){ n.__d&&(t=void 0,i=void 0,o=(r=(l=n).__v).__e,f=l.__P,e=l.u,l.u=!1,f&&(t=[],i=$(f,r,s({},r),l.__n,void 0!==f.ownerSVGElement,null,t,e,null==o?w(r):o),j(t,r),i!=o&&g(r))); }}function b(n,l,u,t,i,r,o,c,s){var h,v,p,d,y,m,g,k=u&&u.__k||e,_=k.length;if(c==f&&(c=null!=r?r[0]:_?w(u,0):null),h=0,l.__k=x(l.__k,function(u){if(null!=u){if(u.__p=l,u.__b=l.__b+1,null===(p=k[h])||p&&u.key==p.key&&u.type===p.type){ k[h]=void 0; }else { for(v=0;v<_;v++){if((p=k[v])&&u.key==p.key&&u.type===p.type){k[v]=void 0;break}p=null;} }if(d=$(n,u,p=p||f,t,i,r,o,null,c,s),(v=u.ref)&&p.ref!=v&&(g||(g=[])).push(v,u.__c||d,u),null!=d){if(null==m&&(m=d),null!=u.l){ d=u.l,u.l=null; }else if(r==p||d!=c||null==d.parentNode){n:if(null==c||c.parentNode!==n){ n.appendChild(d); }else{for(y=c,v=0;(y=y.nextSibling)&&v<_;v+=2){ if(y==d){ break n; } }n.insertBefore(d,c);}"option"==l.type&&(n.value="");}c=d.nextSibling,"function"==typeof l.type&&(l.l=d);}}return h++,u}),l.__e=m,null!=r&&"function"!=typeof l.type){ for(h=r.length;h--;){ null!=r[h]&&a(r[h]); } }for(h=_;h--;){ null!=k[h]&&D(k[h],k[h]); }if(g){ for(h=0;h<g.length;h++){ A(g[h],g[++h],g[++h]); } }}function x(n,l,u){if(null==u&&(u=[]),null==n||"boolean"==typeof n){ l&&u.push(l(null)); }else if(Array.isArray(n)){ for(var t=0;t<n.length;t++){ x(n[t],l,u); } }else { u.push(l?l(y(n)):n); }return u}function C(n,l,u,t,i){var r;for(r in u){ r in l||N(n,r,null,u[r],t); }for(r in l){ i&&"function"!=typeof l[r]||"value"===r||"checked"===r||u[r]===l[r]||N(n,r,l[r],u[r],t); }}function P(n,l,u){"-"===l[0]?n.setProperty(l,u):n[l]="number"==typeof u&&!1===c.test(l)?u+"px":null==u?"":u;}function N(n,l,u,t,i){var r,o,f,e,c;if("key"===(l=i?"className"===l?"class":l:"class"===l?"className":l)||"children"===l);else if("style"===l){ if(r=n.style,"string"==typeof u){ r.cssText=u; }else{if("string"==typeof t&&(r.cssText="",t=null),t){ for(o in t){ u&&o in u||P(r,o,""); } }if(u){ for(f in u){ t&&u[f]===t[f]||P(r,f,u[f]); } }} }else{ "o"===l[0]&&"n"===l[1]?(e=l!==(l=l.replace(/Capture$/,"")),c=l.toLowerCase(),l=(c in n?c:l).slice(2),u?(t||n.addEventListener(l,T,e),(n.t||(n.t={}))[l]=u):n.removeEventListener(l,T,e)):"list"!==l&&"tagName"!==l&&"form"!==l&&!i&&l in n?n[l]=null==u?"":u:"function"!=typeof u&&"dangerouslySetInnerHTML"!==l&&(l!==(l=l.replace(/^xlink:?/,""))?null==u||!1===u?n.removeAttributeNS("http://www.w3.org/1999/xlink",l.toLowerCase()):n.setAttributeNS("http://www.w3.org/1999/xlink",l.toLowerCase(),u):null==u||!1===u?n.removeAttribute(l):n.setAttribute(l,u)); }}function T(l){return this.t[l.type](n.event?n.event(l):l)}function $(l,u,t,i,r,o,f,e,c,a){var h,v,p,y,w,g,k,_,C,P,N=u.type;if(void 0!==u.constructor){ return null; }(h=n.__b)&&h(u);try{n:if("function"==typeof N){if(_=u.props,C=(h=N.contextType)&&i[h.__c],P=h?C?C.props.value:h.__p:i,t.__c?k=(v=u.__c=t.__c).__p=v.__E:("prototype"in N&&N.prototype.render?u.__c=v=new N(_,P):(u.__c=v=new m(_,P),v.constructor=N,v.render=H),C&&C.sub(v),v.props=_,v.state||(v.state={}),v.context=P,v.__n=i,p=v.__d=!0,v.__h=[]),null==v.__s&&(v.__s=v.state),null!=N.getDerivedStateFromProps&&s(v.__s==v.state?v.__s=s({},v.__s):v.__s,N.getDerivedStateFromProps(_,v.__s)),p){ null==N.getDerivedStateFromProps&&null!=v.componentWillMount&&v.componentWillMount(),null!=v.componentDidMount&&f.push(v); }else{if(null==N.getDerivedStateFromProps&&null==e&&null!=v.componentWillReceiveProps&&v.componentWillReceiveProps(_,P),!e&&null!=v.shouldComponentUpdate&&!1===v.shouldComponentUpdate(_,v.__s,P)){for(v.props=_,v.state=v.__s,v.__d=!1,v.__v=u,u.__e=null!=c?c!==t.__e?c:t.__e:null,u.__k=t.__k,h=0;h<u.__k.length;h++){ u.__k[h]&&(u.__k[h].__p=u); }break n}null!=v.componentWillUpdate&&v.componentWillUpdate(_,v.__s,P);}for(y=v.props,w=v.state,v.context=P,v.props=_,v.state=v.__s,(h=n.__r)&&h(u),v.__d=!1,v.__v=u,v.__P=l,h=v.render(v.props,v.state,v.context),u.__k=x(null!=h&&h.type==d&&null==h.key?h.props.children:h),null!=v.getChildContext&&(i=s(s({},i),v.getChildContext())),p||null==v.getSnapshotBeforeUpdate||(g=v.getSnapshotBeforeUpdate(y,w)),b(l,u,t,i,r,o,f,c,a),v.base=u.__e;h=v.__h.pop();){ v.__s&&(v.state=v.__s),h.call(v); }p||null==y||null==v.componentDidUpdate||v.componentDidUpdate(y,w,g),k&&(v.__E=v.__p=null);}else { u.__e=z(t.__e,u,t,i,r,o,f,a); }(h=n.diffed)&&h(u);}catch(l){n.__e(l,u,t);}return u.__e}function j(l,u){for(var t;t=l.pop();){ try{t.componentDidMount();}catch(l){n.__e(l,t.__v);} }n.__c&&n.__c(u);}function z(n,l,u,t,i,r,o,c){var s,a,h,v,p=u.props,d=l.props;if(i="svg"===l.type||i,null==n&&null!=r){ for(s=0;s<r.length;s++){ if(null!=(a=r[s])&&(null===l.type?3===a.nodeType:a.localName===l.type)){n=a,r[s]=null;break} } }if(null==n){if(null===l.type){ return document.createTextNode(d); }n=i?document.createElementNS("http://www.w3.org/2000/svg",l.type):document.createElement(l.type),r=null;}return null===l.type?p!==d&&(null!=r&&(r[r.indexOf(n)]=null),n.data=d):l!==u&&(null!=r&&(r=e.slice.call(n.childNodes)),h=(p=u.props||f).dangerouslySetInnerHTML,v=d.dangerouslySetInnerHTML,c||(v||h)&&(v&&h&&v.__html==h.__html||(n.innerHTML=v&&v.__html||"")),C(n,d,p,i,c),l.__k=l.props.children,v||b(n,l,u,t,"foreignObject"!==l.type&&i,r,o,f,c),c||("value"in d&&void 0!==d.value&&d.value!==n.value&&(n.value=null==d.value?"":d.value),"checked"in d&&void 0!==d.checked&&d.checked!==n.checked&&(n.checked=d.checked))),n}function A(l,u,t){try{"function"==typeof l?l(u):l.current=u;}catch(l){n.__e(l,t);}}function D(l,u,t){var i,r,o;if(n.unmount&&n.unmount(l),(i=l.ref)&&A(i,null,u),t||"function"==typeof l.type||(t=null!=(r=l.__e)),l.__e=l.l=null,null!=(i=l.__c)){if(i.componentWillUnmount){ try{i.componentWillUnmount();}catch(l){n.__e(l,u);} }i.base=i.__P=null;}if(i=l.__k){ for(o=0;o<i.length;o++){ i[o]&&D(i[o],u,t); } }null!=r&&a(r);}function H(n,l,u){return this.constructor(n,u)}function I(l,u,t){var i,o,c;n.__p&&n.__p(l,u),o=(i=t===r)?null:t&&t.__k||u.__k,l=h(d,null,[l]),c=[],$(u,i?u.__k=l:(t||u).__k=l,o||f,f,void 0!==u.ownerSVGElement,t&&!i?[t]:o?null:e.slice.call(u.childNodes),c,!1,t||f,i),j(c,l);}n={},m.prototype.setState=function(n,l){var u=this.__s!==this.state&&this.__s||(this.__s=s({},this.state));("function"!=typeof n||(n=n(u,this.props)))&&s(u,n),null!=n&&this.__v&&(this.u=!1,l&&this.__h.push(l),k(this));},m.prototype.forceUpdate=function(n){this.__v&&(n&&this.__h.push(n),this.u=!0,k(this));},m.prototype.render=d,u=[],t="function"==typeof Promise?Promise.prototype.then.bind(Promise.resolve()):setTimeout,i=n.debounceRendering,n.__e=function(n,l,u){for(var t;l=l.__p;){ if((t=l.__c)&&!t.__p){ try{if(t.constructor&&null!=t.constructor.getDerivedStateFromError){ t.setState(t.constructor.getDerivedStateFromError(n)); }else{if(null==t.componentDidCatch){ continue; }t.componentDidCatch(n);}return k(t.__E=t)}catch(l){n=l;} } }throw n},r=f,o=0;
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) { descriptor.writable = true; }
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) { _defineProperties(Constructor.prototype, protoProps); }
+  if (staticProps) { _defineProperties(Constructor, staticProps); }
+  return Constructor;
+}
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    var arguments$1 = arguments;
+
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments$1[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+// Some regular expressions for rgb() and hsl() Colors are borrowed from tinyColor
+// https://github.com/bgrins/TinyColor
+// Kelvin temperature math borrowed from Neil Barlett's implementation
+// from https://github.com/neilbartlett/color-temperature
+// https://www.w3.org/TR/css3-values/#integers
+var CSS_INTEGER = '[-\\+]?\\d+%?'; // http://www.w3.org/TR/css3-values/#number-value
+
+var CSS_NUMBER = '[-\\+]?\\d*\\.\\d+%?'; // Allow positive/negative integer/number. Don't capture the either/or, just the entire outcome
+
+var CSS_UNIT = '(?:' + CSS_NUMBER + ')|(?:' + CSS_INTEGER + ')'; // Parse function params
+// Parens and commas are optional, and this also allows for whitespace between numbers
+
+var PERMISSIVE_MATCH_3 = '[\\s|\\(]+(' + CSS_UNIT + ')[,|\\s]+(' + CSS_UNIT + ')[,|\\s]+(' + CSS_UNIT + ')\\s*\\)?';
+var PERMISSIVE_MATCH_4 = '[\\s|\\(]+(' + CSS_UNIT + ')[,|\\s]+(' + CSS_UNIT + ')[,|\\s]+(' + CSS_UNIT + ')[,|\\s]+(' + CSS_UNIT + ')\\s*\\)?'; // Regex patterns for functional color strings
+
+var REGEX_FUNCTIONAL_RGB = new RegExp('rgb' + PERMISSIVE_MATCH_3);
+var REGEX_FUNCTIONAL_RGBA = new RegExp('rgba' + PERMISSIVE_MATCH_4);
+var REGEX_FUNCTIONAL_HSL = new RegExp('hsl' + PERMISSIVE_MATCH_3);
+var REGEX_FUNCTIONAL_HSLA = new RegExp('hsla' + PERMISSIVE_MATCH_4); // Color string parsing regex
+
+var HEX_START = '^(?:#?|0x?)';
+var HEX_INT_SINGLE = '([0-9a-fA-F]{1})';
+var HEX_INT_DOUBLE = '([0-9a-fA-F]{2})';
+var REGEX_HEX_3 = new RegExp(HEX_START + HEX_INT_SINGLE + HEX_INT_SINGLE + HEX_INT_SINGLE + '$');
+var REGEX_HEX_4 = new RegExp(HEX_START + HEX_INT_SINGLE + HEX_INT_SINGLE + HEX_INT_SINGLE + HEX_INT_SINGLE + '$');
+var REGEX_HEX_6 = new RegExp(HEX_START + HEX_INT_DOUBLE + HEX_INT_DOUBLE + HEX_INT_DOUBLE + '$');
+var REGEX_HEX_8 = new RegExp(HEX_START + HEX_INT_DOUBLE + HEX_INT_DOUBLE + HEX_INT_DOUBLE + HEX_INT_DOUBLE + '$'); // Kelvin temperature bounds
+
+var KELVIN_MIN = 2000;
+var KELVIN_MAX = 40000; // Math shorthands
+
+var log = Math.log,
+    round = Math.round,
+    floor = Math.floor;
+/**
+ * @desc Clamp a number between a min and max value
+ * @param num - input value
+ * @param min - min allowed value
+ * @param max - max allowed value
+ */
+
+function clamp(num, min, max) {
+  return Math.min(Math.max(num, min), max);
+}
+/**
+ * @desc Parse a css unit string - either regular int or a percentage number
+ * @param str - css unit string
+ * @param max - max unit value, used for calculating percentages
+ */
+
+
+function parseUnit(str, max) {
+  var isPercentage = str.indexOf('%') > -1;
+  var num = parseFloat(str);
+  return isPercentage ? max / 100 * num : num;
+}
+/**
+ * @desc Parse hex str to an int
+ * @param str - hex string to parse
+ */
+
+
+function parseHexInt(str) {
+  return parseInt(str, 16);
+}
+/**
+ * @desc Convert nunber into to 2-digit hex
+ * @param int - number to convert
+ */
+
+
+function intToHex(_int) {
+  return _int.toString(16).padStart(2, '0');
+}
+
+var IroColor =
+/*#__PURE__*/
+function () {
+  /**
+    * @constructor Color object
+    * @param value - initial color value
+  */
+  function IroColor(value, onChange) {
+    // The default Color value
+    this.$ = {
+      h: 0,
+      s: 0,
+      v: 0,
+      a: 1
+    };
+    if (value) { this.set(value); } // The watch callback function for this Color will be stored here
+
+    this.onChange = onChange;
+    this.initialValue = _extends({}, this.$); // copy initial value
+  }
+  /**
+    * @desc Set the Color from any valid value
+    * @param value - new color value
+  */
+
+
+  var _proto = IroColor.prototype;
+
+  _proto.set = function set(value) {
+    if (typeof value === 'string') {
+      if (/^(?:#?|0x?)[0-9a-fA-F]{3,8}$/.test(value)) {
+        this.hexString = value;
+      } else if (/^rgba?/.test(value)) {
+        this.rgbString = value;
+      } else if (/^hsla?/.test(value)) {
+        this.hslString = value;
+      }
+    } else if (typeof value === 'object') {
+      if (value instanceof IroColor) {
+        this.hsva = value.hsva;
+      } else if ('r' in value && 'g' in value && 'b' in value) {
+        this.rgb = value;
+      } else if ('h' in value && 's' in value && 'v' in value) {
+        this.hsv = value;
+      } else if ('h' in value && 's' in value && 'l' in value) {
+        this.hsl = value;
+      } else if ('kelvin' in value) {
+        this.kelvin = value.kelvin;
+      }
+    } else {
+      throw new Error('Invalid color value');
+    }
+  }
+  /**
+    * @desc Shortcut to set a specific channel value
+    * @param format - hsv | hsl | rgb
+    * @param channel - individual channel to set, for example if model = hsl, chanel = h | s | l
+    * @param value - new value for the channel
+  */
+  ;
+
+  _proto.setChannel = function setChannel(format, channel, value) {
+    var _extends2;
+
+    this[format] = _extends({}, this[format], (_extends2 = {}, _extends2[channel] = value, _extends2));
+  }
+  /**
+   * @desc Reset color back to its initial value
+   */
+  ;
+
+  _proto.reset = function reset() {
+    this.hsva = this.initialValue;
+  }
+  /**
+    * @desc make new Color instance with the same value as this one
+  */
+  ;
+
+  _proto.clone = function clone() {
+    return new IroColor(this);
+  }
+  /**
+   * @desc remove color onChange
+   */
+  ;
+
+  _proto.unbind = function unbind() {
+    this.onChange = undefined;
+  }
+  /**
+    * @desc Convert hsv object to rgb
+    * @param hsv - hsv color object
+  */
+  ;
+
+  IroColor.hsvToRgb = function hsvToRgb(hsv) {
+    var h = hsv.h / 60;
+    var s = hsv.s / 100;
+    var v = hsv.v / 100;
+    var i = floor(h);
+    var f = h - i;
+    var p = v * (1 - s);
+    var q = v * (1 - f * s);
+    var t = v * (1 - (1 - f) * s);
+    var mod = i % 6;
+    var r = [v, q, p, p, t, v][mod];
+    var g = [t, v, v, q, p, p][mod];
+    var b = [p, p, t, v, v, q][mod];
+    return {
+      r: clamp(r * 255, 0, 255),
+      g: clamp(g * 255, 0, 255),
+      b: clamp(b * 255, 0, 255)
+    };
+  }
+  /**
+    * @desc Convert rgb object to hsv
+    * @param rgb - rgb object
+  */
+  ;
+
+  IroColor.rgbToHsv = function rgbToHsv(rgb) {
+    var r = rgb.r / 255;
+    var g = rgb.g / 255;
+    var b = rgb.b / 255;
+    var max = Math.max(r, g, b);
+    var min = Math.min(r, g, b);
+    var delta = max - min;
+    var hue = 0;
+    var value = max;
+    var saturation = max === 0 ? 0 : delta / max;
+
+    switch (max) {
+      case min:
+        hue = 0; // achromatic
+
+        break;
+
+      case r:
+        hue = (g - b) / delta + (g < b ? 6 : 0);
+        break;
+
+      case g:
+        hue = (b - r) / delta + 2;
+        break;
+
+      case b:
+        hue = (r - g) / delta + 4;
+        break;
+    }
+
+    return {
+      h: hue * 60 % 360,
+      s: clamp(saturation * 100, 0, 100),
+      v: clamp(value * 100, 0, 100)
+    };
+  }
+  /**
+    * @desc Convert hsv object to hsl
+    * @param hsv - hsv object
+  */
+  ;
+
+  IroColor.hsvToHsl = function hsvToHsl(hsv) {
+    var s = hsv.s / 100;
+    var v = hsv.v / 100;
+    var l = (2 - s) * v;
+    var divisor = l <= 1 ? l : 2 - l; // Avoid division by zero when lightness is close to zero
+
+    var saturation = divisor < 1e-9 ? 0 : s * v / divisor;
+    return {
+      h: hsv.h,
+      s: clamp(saturation * 100, 0, 100),
+      l: clamp(l * 50, 0, 100)
+    };
+  }
+  /**
+    * @desc Convert hsl object to hsv
+    * @param hsl - hsl object
+  */
+  ;
+
+  IroColor.hslToHsv = function hslToHsv(hsl) {
+    var l = hsl.l * 2;
+    var s = hsl.s * (l <= 100 ? l : 200 - l) / 100; // Avoid division by zero when l + s is near 0
+
+    var saturation = l + s < 1e-9 ? 0 : 2 * s / (l + s);
+    return {
+      h: hsl.h,
+      s: clamp(saturation * 100, 0, 100),
+      v: clamp((l + s) / 2, 0, 100)
+    };
+  }
+  /**
+    * @desc Convert a kelvin temperature to an approx, RGB value
+    * @param kelvin - kelvin temperature
+  */
+  ;
+
+  IroColor.kelvinToRgb = function kelvinToRgb(kelvin) {
+    var temp = kelvin / 100;
+    var r, g, b;
+
+    if (temp < 66) {
+      r = 255;
+      g = -155.25485562709179 - 0.44596950469579133 * (g = temp - 2) + 104.49216199393888 * log(g);
+      b = temp < 20 ? 0 : -254.76935184120902 + 0.8274096064007395 * (b = temp - 10) + 115.67994401066147 * log(b);
+    } else {
+      r = 351.97690566805693 + 0.114206453784165 * (r = temp - 55) - 40.25366309332127 * log(r);
+      g = 325.4494125711974 + 0.07943456536662342 * (g = temp - 50) - 28.0852963507957 * log(g);
+      b = 255;
+    }
+
+    return {
+      r: clamp(floor(r), 0, 255),
+      g: clamp(floor(g), 0, 255),
+      b: clamp(floor(b), 0, 255)
+    };
+  }
+  /**
+   * @desc Convert an RGB color to an approximate kelvin temperature
+   * @param kelvin - kelvin temperature
+  */
+  ;
+
+  IroColor.rgbToKelvin = function rgbToKelvin(rgb) {
+    var r = rgb.r,
+        b = rgb.b;
+    var eps = 0.4;
+    var minTemp = KELVIN_MIN;
+    var maxTemp = KELVIN_MAX;
+    var temp;
+
+    while (maxTemp - minTemp > eps) {
+      temp = (maxTemp + minTemp) * 0.5;
+
+      var _rgb = IroColor.kelvinToRgb(temp);
+
+      if (_rgb.b / _rgb.r >= b / r) {
+        maxTemp = temp;
+      } else {
+        minTemp = temp;
+      }
+    }
+
+    return temp;
+  };
+
+  _createClass(IroColor, [{
+    key: "hsv",
+    get: function get() {
+      // value is cloned to allow changes to be made to the values before passing them back
+      var value = this.$;
+      return {
+        h: value.h,
+        s: value.s,
+        v: value.v
+      };
+    },
+    set: function set(newValue) {
+      var oldValue = this.$;
+      newValue = _extends({}, oldValue, newValue); // If this Color is being watched for changes we need to compare the new and old values to check the difference
+      // Otherwise we can just be lazy
+
+      if (this.onChange) {
+        // Compute changed values
+        var changes = {
+          h: false,
+          v: false,
+          s: false,
+          a: false
+        };
+
+        for (var key in oldValue) {
+          changes[key] = newValue[key] != oldValue[key];
+        }
+
+        this.$ = newValue; // If the value has changed, call hook callback
+
+        if (changes.h || changes.s || changes.v || changes.a) { this.onChange(this, changes); }
+      } else {
+        this.$ = newValue;
+      }
+    }
+  }, {
+    key: "hsva",
+    get: function get() {
+      return _extends({}, this.$);
+    },
+    set: function set(value) {
+      this.hsv = value;
+    }
+  }, {
+    key: "hue",
+    get: function get() {
+      return this.$.h;
+    },
+    set: function set(value) {
+      this.hsv = {
+        h: value
+      };
+    }
+  }, {
+    key: "saturation",
+    get: function get() {
+      return this.$.s;
+    },
+    set: function set(value) {
+      this.hsv = {
+        s: value
+      };
+    }
+  }, {
+    key: "value",
+    get: function get() {
+      return this.$.v;
+    },
+    set: function set(value) {
+      this.hsv = {
+        v: value
+      };
+    }
+  }, {
+    key: "alpha",
+    get: function get() {
+      return this.$.a;
+    },
+    set: function set(value) {
+      this.hsv = _extends({}, this.hsv, {
+        a: value
+      });
+    }
+  }, {
+    key: "kelvin",
+    get: function get() {
+      return IroColor.rgbToKelvin(this.rgb);
+    },
+    set: function set(value) {
+      this.rgb = IroColor.kelvinToRgb(value);
+    }
+  }, {
+    key: "red",
+    get: function get() {
+      var rgb = this.rgb;
+      return rgb.r;
+    },
+    set: function set(value) {
+      this.rgb = _extends({}, this.rgb, {
+        r: value
+      });
+    }
+  }, {
+    key: "green",
+    get: function get() {
+      var rgb = this.rgb;
+      return rgb.g;
+    },
+    set: function set(value) {
+      this.rgb = _extends({}, this.rgb, {
+        g: value
+      });
+    }
+  }, {
+    key: "blue",
+    get: function get() {
+      var rgb = this.rgb;
+      return rgb.b;
+    },
+    set: function set(value) {
+      this.rgb = _extends({}, this.rgb, {
+        b: value
+      });
+    }
+  }, {
+    key: "rgb",
+    get: function get() {
+      var _IroColor$hsvToRgb = IroColor.hsvToRgb(this.$),
+          r = _IroColor$hsvToRgb.r,
+          g = _IroColor$hsvToRgb.g,
+          b = _IroColor$hsvToRgb.b;
+
+      return {
+        r: round(r),
+        g: round(g),
+        b: round(b)
+      };
+    },
+    set: function set(value) {
+      this.hsv = _extends({}, IroColor.rgbToHsv(value), {
+        a: value.a === undefined ? 1 : value.a
+      });
+    }
+  }, {
+    key: "rgba",
+    get: function get() {
+      return _extends({}, this.rgb, {
+        a: this.alpha
+      });
+    },
+    set: function set(value) {
+      this.rgb = value;
+    }
+  }, {
+    key: "hsl",
+    get: function get() {
+      var _IroColor$hsvToHsl = IroColor.hsvToHsl(this.$),
+          h = _IroColor$hsvToHsl.h,
+          s = _IroColor$hsvToHsl.s,
+          l = _IroColor$hsvToHsl.l;
+
+      return {
+        h: round(h),
+        s: round(s),
+        l: round(l)
+      };
+    },
+    set: function set(value) {
+      this.hsv = _extends({}, IroColor.hslToHsv(value), {
+        a: value.a === undefined ? 1 : value.a
+      });
+    }
+  }, {
+    key: "hsla",
+    get: function get() {
+      return _extends({}, this.hsl, {
+        a: this.alpha
+      });
+    },
+    set: function set(value) {
+      this.hsl = value;
+    }
+  }, {
+    key: "rgbString",
+    get: function get() {
+      var rgb = this.rgb;
+      return "rgb(" + rgb.r + ", " + rgb.g + ", " + rgb.b + ")";
+    },
+    set: function set(value) {
+      var match;
+      var r,
+          g,
+          b,
+          a = 1;
+
+      if (match = REGEX_FUNCTIONAL_RGB.exec(value)) {
+        r = parseUnit(match[1], 255);
+        g = parseUnit(match[2], 255);
+        b = parseUnit(match[3], 255);
+      } else if (match = REGEX_FUNCTIONAL_RGBA.exec(value)) {
+        r = parseUnit(match[1], 255);
+        g = parseUnit(match[2], 255);
+        b = parseUnit(match[3], 255);
+        a = parseUnit(match[4], 1);
+      }
+
+      if (match) {
+        this.rgb = {
+          r: r,
+          g: g,
+          b: b,
+          a: a
+        };
+      } else {
+        throw new Error('Invalid rgb string');
+      }
+    }
+  }, {
+    key: "rgbaString",
+    get: function get() {
+      var rgba = this.rgba;
+      return "rgba(" + rgba.r + ", " + rgba.g + ", " + rgba.b + ", " + rgba.a + ")";
+    },
+    set: function set(value) {
+      this.rgbString = value;
+    }
+  }, {
+    key: "hexString",
+    get: function get() {
+      var rgb = this.rgb;
+      return "#" + intToHex(rgb.r) + intToHex(rgb.g) + intToHex(rgb.b);
+    },
+    set: function set(value) {
+      var match;
+      var r,
+          g,
+          b,
+          a = 255;
+
+      if (match = REGEX_HEX_3.exec(value)) {
+        r = parseHexInt(match[1]) * 17;
+        g = parseHexInt(match[2]) * 17;
+        b = parseHexInt(match[3]) * 17;
+      } else if (match = REGEX_HEX_4.exec(value)) {
+        r = parseHexInt(match[1]) * 17;
+        g = parseHexInt(match[2]) * 17;
+        b = parseHexInt(match[3]) * 17;
+        a = parseHexInt(match[4]) * 17;
+      } else if (match = REGEX_HEX_6.exec(value)) {
+        r = parseHexInt(match[1]);
+        g = parseHexInt(match[2]);
+        b = parseHexInt(match[3]);
+      } else if (match = REGEX_HEX_8.exec(value)) {
+        r = parseHexInt(match[1]);
+        g = parseHexInt(match[2]);
+        b = parseHexInt(match[3]);
+        a = parseHexInt(match[4]);
+      }
+
+      if (match) {
+        this.rgb = {
+          r: r,
+          g: g,
+          b: b,
+          a: a / 255
+        };
+      } else {
+        throw new Error('Invalid hex string');
+      }
+    }
+  }, {
+    key: "hex8String",
+    get: function get() {
+      var rgba = this.rgba;
+      return "#" + intToHex(rgba.r) + intToHex(rgba.g) + intToHex(rgba.b) + intToHex(floor(rgba.a * 255));
+    },
+    set: function set(value) {
+      this.hexString = value;
+    }
+  }, {
+    key: "hslString",
+    get: function get() {
+      var hsl = this.hsl;
+      return "hsl(" + hsl.h + ", " + hsl.s + "%, " + hsl.l + "%)";
+    },
+    set: function set(value) {
+      var match;
+      var h,
+          s,
+          l,
+          a = 1;
+
+      if (match = REGEX_FUNCTIONAL_HSL.exec(value)) {
+        h = parseUnit(match[1], 360);
+        s = parseUnit(match[2], 100);
+        l = parseUnit(match[3], 100);
+      } else if (match = REGEX_FUNCTIONAL_HSLA.exec(value)) {
+        h = parseUnit(match[1], 360);
+        s = parseUnit(match[2], 100);
+        l = parseUnit(match[3], 100);
+        a = parseUnit(match[4], 1);
+      }
+
+      if (match) {
+        this.hsl = {
+          h: h,
+          s: s,
+          l: l,
+          a: a
+        };
+      } else {
+        throw new Error('Invalid hsl string');
+      }
+    }
+  }, {
+    key: "hslaString",
+    get: function get() {
+      var hsla = this.hsla;
+      return "hsla(" + hsla.h + ", " + hsla.s + "%, " + hsla.l + "%, " + hsla.a + ")";
+    },
+    set: function set(value) {
+      this.hslString = value;
+    }
+  }]);
+
+  return IroColor;
+}();
+
+var sliderDefaultOptions = {
+  sliderShape: 'bar',
+  sliderType: 'value',
+  minTemperature: 2200,
+  maxTemperature: 11000
+};
+/**
+ * @desc Get the bounding dimensions of the slider
+ * @param props - slider props
+ */
+
+function getSliderDimensions(props) {
+  var _sliderSize;
+
+  var width = props.width,
+      sliderSize = props.sliderSize,
+      borderWidth = props.borderWidth,
+      handleRadius = props.handleRadius,
+      padding = props.padding,
+      sliderShape = props.sliderShape;
+  var ishorizontal = props.layoutDirection === 'horizontal'; // automatically calculate sliderSize if its not defined
+
+  sliderSize = (_sliderSize = sliderSize) != null ? _sliderSize : padding * 2 + handleRadius * 2;
+
+  if (sliderShape === 'circle') {
+    return {
+      handleStart: props.padding + props.handleRadius,
+      handleRange: width - padding * 2 - handleRadius * 2,
+      width: width,
+      height: width,
+      cx: width / 2,
+      cy: width / 2,
+      radius: width / 2 - borderWidth / 2
+    };
+  } else {
+    return {
+      handleStart: sliderSize / 2,
+      handleRange: width - sliderSize,
+      radius: sliderSize / 2,
+      x: 0,
+      y: 0,
+      width: ishorizontal ? sliderSize : width,
+      height: ishorizontal ? width : sliderSize
+    };
+  }
+}
+/**
+ * @desc Get the current slider value for a given color, as a percentage
+ * @param props - slider props
+ * @param color
+ */
+
+function getCurrentSliderValue(props, color) {
+  var hsva = color.hsva;
+  var rgb = color.rgb;
+
+  switch (props.sliderType) {
+    case 'red':
+      return rgb.r / 2.55;
+
+    case 'green':
+      return rgb.g / 2.55;
+
+    case 'blue':
+      return rgb.b / 2.55;
+
+    case 'alpha':
+      return hsva.a * 100;
+
+    case 'kelvin':
+      var minTemperature = props.minTemperature,
+          maxTemperature = props.maxTemperature;
+      var temperatureRange = maxTemperature - minTemperature;
+      var percent = (color.kelvin - minTemperature) / temperatureRange * 100; // clmap percentage
+
+      return Math.max(0, Math.min(percent, 100));
+
+    case 'hue':
+      return hsva.h /= 3.6;
+
+    case 'saturation':
+      return hsva.s;
+
+    case 'value':
+    default:
+      return hsva.v;
+  }
+}
+/**
+ * @desc Get the current slider value from user input
+ * @param props - slider props
+ * @param x - global input x position
+ * @param y - global input y position
+ */
+
+function getSliderValueFromInput(props, x, y) {
+  var _getSliderDimensions = getSliderDimensions(props),
+      handleRange = _getSliderDimensions.handleRange,
+      handleStart = _getSliderDimensions.handleStart;
+
+  var handlePos;
+
+  if (props.layoutDirection === 'horizontal') {
+    handlePos = -1 * y + handleRange + handleStart;
+  } else {
+    handlePos = x - handleStart;
+  } // clamp handle position
+
+
+  handlePos = Math.max(Math.min(handlePos, handleRange), 0);
+  var percent = Math.round(100 / handleRange * handlePos);
+
+  switch (props.sliderType) {
+    case 'kelvin':
+      var minTemperature = props.minTemperature,
+          maxTemperature = props.maxTemperature;
+      var temperatureRange = maxTemperature - minTemperature;
+      return minTemperature + temperatureRange * (percent / 100);
+
+    case 'alpha':
+      return percent / 100;
+
+    case 'hue':
+      return percent * 3.6;
+
+    case 'red':
+    case 'blue':
+    case 'green':
+      return percent * 2.55;
+
+    default:
+      return percent;
+  }
+}
+/**
+ * @desc Get the current handle position for a given color
+ * @param props - slider props
+ * @param color
+ */
+
+function getSliderHandlePosition(props, color) {
+  var _getSliderDimensions2 = getSliderDimensions(props),
+      width = _getSliderDimensions2.width,
+      height = _getSliderDimensions2.height,
+      handleRange = _getSliderDimensions2.handleRange,
+      handleStart = _getSliderDimensions2.handleStart;
+
+  var ishorizontal = props.layoutDirection === 'horizontal';
+  var sliderValue = getCurrentSliderValue(props, color);
+  var midPoint = ishorizontal ? width / 2 : height / 2;
+  var handlePos = handleStart + sliderValue / 100 * handleRange;
+
+  if (ishorizontal) {
+    handlePos = -1 * handlePos + handleRange + handleStart * 2;
+  }
+
+  return {
+    x: ishorizontal ? midPoint : handlePos,
+    y: ishorizontal ? handlePos : midPoint
+  };
+}
+/**
+ * @desc Get the gradient stops for a slider
+ * @param props - slider props
+ * @param color
+ */
+
+function getSliderGradient(props, color) {
+  var hsv = color.hsv;
+  var rgb = color.rgb;
+
+  switch (props.sliderType) {
+    case 'red':
+      return [[0, "rgb(" + 0 + "," + rgb.g + "," + rgb.b + ")"], [100, "rgb(" + 255 + "," + rgb.g + "," + rgb.b + ")"]];
+
+    case 'green':
+      return [[0, "rgb(" + rgb.r + "," + 0 + "," + rgb.b + ")"], [100, "rgb(" + rgb.r + "," + 255 + "," + rgb.b + ")"]];
+
+    case 'blue':
+      return [[0, "rgb(" + rgb.r + "," + rgb.g + "," + 0 + ")"], [100, "rgb(" + rgb.r + "," + rgb.g + "," + 255 + ")"]];
+
+    case 'alpha':
+      return [[0, "rgba(" + rgb.r + "," + rgb.g + "," + rgb.b + ",0)"], [100, "rgb(" + rgb.r + "," + rgb.g + "," + rgb.b + ")"]];
+
+    case 'kelvin':
+      var stops = [];
+      var min = props.minTemperature;
+      var max = props.maxTemperature;
+      var numStops = 8;
+      var range = max - min;
+
+      for (var kelvin = min, stop = 0; kelvin < max; kelvin += range / numStops, stop += 1) {
+        var _IroColor$kelvinToRgb = IroColor.kelvinToRgb(kelvin),
+            r = _IroColor$kelvinToRgb.r,
+            g = _IroColor$kelvinToRgb.g,
+            b = _IroColor$kelvinToRgb.b;
+
+        stops.push([100 / numStops * stop, "rgb(" + r + "," + g + "," + b + ")"]);
+      }
+
+      return stops;
+
+    case 'hue':
+      return [[0, '#f00'], [16.666, '#ff0'], [33.333, '#0f0'], [50, '#0ff'], [66.666, '#00f'], [83.333, '#f0f'], [100, '#f00']];
+
+    case 'saturation':
+      var noSat = IroColor.hsvToHsl({
+        h: hsv.h,
+        s: 0,
+        v: hsv.v
+      });
+      var fullSat = IroColor.hsvToHsl({
+        h: hsv.h,
+        s: 100,
+        v: hsv.v
+      });
+      return [[0, "hsl(" + noSat.h + "," + noSat.s + "%," + noSat.l + "%)"], [100, "hsl(" + fullSat.h + "," + fullSat.s + "%," + fullSat.l + "%)"]];
+
+    case 'value':
+    default:
+      var hsl = IroColor.hsvToHsl({
+        h: hsv.h,
+        s: hsv.s,
+        v: 100
+      });
+      return [[0, '#000'], [100, "hsl(" + hsl.h + "," + hsl.s + "%," + hsl.l + "%)"]];
+  }
+}
+
+var TAU = Math.PI * 2; // javascript's modulo operator doesn't produce positive numbers with negative input
+// https://dev.to/maurobringolf/a-neat-trick-to-compute-modulo-of-negative-numbers-111e
+
+var mod = function mod(a, n) {
+  return (a % n + n) % n;
+}; // distance between points (x, y) and (0, 0)
+
+
+var dist = function dist(x, y) {
+  return Math.sqrt(x * x + y * y);
+};
+/**
+ * @param props - wheel props
+ * @internal
+ */
+
+
+function getHandleRange(props) {
+  return props.width / 2 - props.padding - props.handleRadius - props.borderWidth;
+}
+/**
+ * Returns true if point (x, y) lands inside the wheel
+ * @param props - wheel props
+ * @param x
+ * @param y
+ */
+
+
+function isInputInsideWheel(props, x, y) {
+  var _getWheelDimensions = getWheelDimensions(props),
+      cx = _getWheelDimensions.cx,
+      cy = _getWheelDimensions.cy;
+
+  var r = props.width / 2;
+  return dist(cx - x, cy - y) < r;
+}
+/**
+ * @desc Get the point as the center of the wheel
+ * @param props - wheel props
+ */
+
+function getWheelDimensions(props) {
+  var r = props.width / 2;
+  return {
+    width: props.width,
+    radius: r - props.borderWidth,
+    cx: r,
+    cy: r
+  };
+}
+/**
+ * @desc Translate an angle according to wheelAngle and wheelDirection
+ * @param props - wheel props
+ * @param angle - input angle
+ */
+
+function translateWheelAngle(props, angle, invert) {
+  var wheelAngle = props.wheelAngle;
+  var wheelDirection = props.wheelDirection; // inverted and clockwisee
+
+  if (invert && wheelDirection === 'clockwise') { angle = wheelAngle + angle; } // clockwise (input handling)
+  else if (wheelDirection === 'clockwise') { angle = 360 - wheelAngle + angle; } // inverted and anticlockwise
+    else if (invert && wheelDirection === 'anticlockwise') { angle = wheelAngle + 180 - angle; } // anticlockwise (input handling)
+      else if (wheelDirection === 'anticlockwise') { angle = wheelAngle - angle; }
+  return mod(angle, 360);
+}
+/**
+ * @desc Get the current handle position for a given color
+ * @param props - wheel props
+ * @param color
+ */
+
+function getWheelHandlePosition(props, color) {
+  var hsv = color.hsv;
+
+  var _getWheelDimensions2 = getWheelDimensions(props),
+      cx = _getWheelDimensions2.cx,
+      cy = _getWheelDimensions2.cy;
+
+  var handleRange = getHandleRange(props);
+  var handleAngle = (180 + translateWheelAngle(props, hsv.h, true)) * (TAU / 360);
+  var handleDist = hsv.s / 100 * handleRange;
+  var direction = props.wheelDirection === 'clockwise' ? -1 : 1;
+  return {
+    x: cx + handleDist * Math.cos(handleAngle) * direction,
+    y: cy + handleDist * Math.sin(handleAngle) * direction
+  };
+}
+/**
+ * @desc Get the current wheel value from user input
+ * @param props - wheel props
+ * @param x - global input x position
+ * @param y - global input y position
+ */
+
+function getWheelValueFromInput(props, x, y) {
+  var _getWheelDimensions3 = getWheelDimensions(props),
+      cx = _getWheelDimensions3.cx,
+      cy = _getWheelDimensions3.cy;
+
+  var handleRange = getHandleRange(props);
+  x = cx - x;
+  y = cy - y; // Calculate the hue by converting the angle to radians
+
+  var hue = translateWheelAngle(props, Math.atan2(-y, -x) * (360 / TAU)); // Find the point's distance from the center of the wheel
+  // This is used to show the saturation level
+
+  var handleDist = Math.min(dist(x, y), handleRange);
+  return {
+    h: Math.round(hue),
+    s: Math.round(100 / handleRange * handleDist)
+  };
+}
+/**
+ * @desc Get the bounding dimensions of the box
+ * @param props - box props
+ */
+
+function getBoxDimensions(props) {
+  var width = props.width,
+      boxHeight = props.boxHeight,
+      padding = props.padding,
+      handleRadius = props.handleRadius;
+  return {
+    width: width,
+    height: boxHeight != null ? boxHeight : width,
+    radius: padding + handleRadius
+  };
+}
+/**
+ * @desc Get the current box value from user input
+ * @param props - box props
+ * @param x - global input x position
+ * @param y - global input y position
+ */
+
+function getBoxValueFromInput(props, x, y) {
+  var _getBoxDimensions = getBoxDimensions(props),
+      width = _getBoxDimensions.width,
+      height = _getBoxDimensions.height,
+      radius = _getBoxDimensions.radius;
+
+  var handleStart = radius;
+  var handleRangeX = width - radius * 2;
+  var handleRangeY = height - radius * 2;
+  var percentX = (x - handleStart) / handleRangeX * 100;
+  var percentY = (y - handleStart) / handleRangeY * 100;
+  return {
+    s: Math.max(0, Math.min(percentX, 100)),
+    v: Math.max(0, Math.min(100 - percentY, 100))
+  };
+}
+/**
+ * @desc Get the current box handle position for a given color
+ * @param props - box props
+ * @param color
+ */
+
+function getBoxHandlePosition(props, color) {
+  var _getBoxDimensions2 = getBoxDimensions(props),
+      width = _getBoxDimensions2.width,
+      height = _getBoxDimensions2.height,
+      radius = _getBoxDimensions2.radius;
+
+  var hsv = color.hsv;
+  var handleStart = radius;
+  var handleRangeX = width - radius * 2;
+  var handleRangeY = height - radius * 2;
+  return {
+    x: handleStart + hsv.s / 100 * handleRangeX,
+    y: handleStart + (handleRangeY - hsv.v / 100 * handleRangeY)
+  };
+}
+/**
+ * @desc Get the gradient stops for a box
+ * @param props - box props
+ * @param color
+ */
+
+function getBoxGradients(props, color) {
+  var hue = color.hue;
+  return [// saturation gradient
+  [[0, '#fff'], [100, "hsl(" + hue + ",100%,50%)"]], // lightness gradient
+  [[0, 'rgba(0,0,0,0)'], [100, '#000']]];
+}
+
+// Keep track of html <base> elements for resolveSvgUrl
+// getElementsByTagName returns a live HTMLCollection, which stays in sync with the DOM tree
+// So it only needs to be called once
+var BASE_ELEMENTS;
+/**
+ * @desc Resolve an SVG reference URL
+ * This is required to work around how Safari and iOS webviews handle gradient URLS under certain conditions
+ * If a page is using a client-side routing library which makes use of the HTML <base> tag,
+ * Safari won't be able to render SVG gradients properly (as they are referenced by URLs)
+ * More info on the problem:
+ * https://stackoverflow.com/questions/19742805/angular-and-svg-filters/19753427#19753427
+ * https://github.com/jaames/iro.js/issues/18
+ * https://github.com/jaames/iro.js/issues/45
+ * https://github.com/jaames/iro.js/pull/89
+ * @props url - SVG reference URL
+ */
+
+function resolveSvgUrl(url) {
+  if (!BASE_ELEMENTS) { BASE_ELEMENTS = document.getElementsByTagName('base'); } // Sniff useragent string to check if the user is running Safari
+
+  var ua = window.navigator.userAgent;
+  var isSafari = /^((?!chrome|android).)*safari/i.test(ua);
+  var isIos = /iPhone|iPod|iPad/i.test(ua);
+  var location = window.location;
+  return (isSafari || isIos) && BASE_ELEMENTS.length > 0 ? location.protocol + "//" + location.host + location.pathname + location.search + url : url;
+}
+/**
+ * @desc Given a specifc (x, y) position, test if there's a handle there and return its index, else return null.
+ *       This is used for components like the box and wheel which support multiple handles when multicolor is active
+ * @props x - point x position
+ * @props y - point y position
+ * @props handlePositions - array of {x, y} coords for each handle
+ */
+
+function getHandleAtPoint(props, x, y, handlePositions) {
+  for (var i = 0; i < handlePositions.length; i++) {
+    var dX = handlePositions[i].x - x;
+    var dY = handlePositions[i].y - y;
+    var dist = Math.sqrt(dX * dX + dY * dY);
+
+    if (dist < props.handleRadius) {
+      return i;
+    }
+  }
+
+  return null;
+}
+
+function cssBorderStyles(props) {
+  return {
+    boxSizing: 'border-box',
+    border: props.borderWidth + "px solid " + props.borderColor
+  };
+}
+function cssGradient(type, direction, stops) {
+  return type + "-gradient(" + direction + ", " + stops.map(function (_ref) {
+    var o = _ref[0],
+        col = _ref[1];
+    return col + " " + o + "%";
+  }).join(',') + ")";
+}
+function cssValue(value) {
+  if (typeof value === 'string') { return value; }
+  return value + "px";
+}
+
+var iroColorPickerOptionDefaults = {
+  width: 300,
+  height: 300,
+  color: '#fff',
+  colors: [],
+  padding: 6,
+  layoutDirection: 'vertical',
+  borderColor: '#fff',
+  borderWidth: 0,
+  handleRadius: 8,
+  activeHandleRadius: null,
+  handleSvg: null,
+  handleProps: {
+    x: 0,
+    y: 0
+  },
+  wheelLightness: true,
+  wheelAngle: 0,
+  wheelDirection: 'anticlockwise',
+  sliderSize: null,
+  sliderMargin: 12,
+  boxHeight: null
+};
+
+var SECONDARY_EVENTS = ["mousemove" /* MouseMove */, "touchmove" /* TouchMove */, "mouseup" /* MouseUp */, "touchend" /* TouchEnd */];
+// Base component class for iro UI components
+// This extends the Preact component class to allow them to react to mouse/touch input events by themselves
+var IroComponentWrapper = /*@__PURE__*/(function (Component) {
+    function IroComponentWrapper(props) {
+        Component.call(this, props);
+        // Generate unique ID for the component
+        // This can be used to generate unique IDs for gradients, etc
+        this.uid = (Math.random() + 1).toString(36).substring(5);
+    }
+
+    if ( Component ) IroComponentWrapper.__proto__ = Component;
+    IroComponentWrapper.prototype = Object.create( Component && Component.prototype );
+    IroComponentWrapper.prototype.constructor = IroComponentWrapper;
+    IroComponentWrapper.prototype.render = function render (props) {
+        var eventHandler = this.handleEvent.bind(this);
+        var rootProps = {
+            onMouseDown: eventHandler,
+            // https://github.com/jaames/iro.js/issues/126
+            // https://github.com/preactjs/preact/issues/2113#issuecomment-553408767
+            ontouchstart: eventHandler,
+        };
+        var isHorizontal = props.layoutDirection === 'horizontal';
+        var margin = props.margin === null ? props.sliderMargin : props.margin;
+        var rootStyles = {
+            overflow: 'visible',
+            display: isHorizontal ? 'inline-block' : 'block'
+        };
+        // first component shouldn't have any margin
+        if (props.index > 0) {
+            rootStyles[isHorizontal ? 'marginLeft' : 'marginTop'] = margin;
+        }
+        return (h(d, null, props.children(this.uid, rootProps, rootStyles)));
+    };
+    // More info on handleEvent:
+    // https://medium.com/@WebReflection/dom-handleevent-a-cross-platform-standard-since-year-2000-5bf17287fd38
+    // TL;DR this lets us have a single point of entry for multiple events, and we can avoid callback/binding hell
+    IroComponentWrapper.prototype.handleEvent = function handleEvent (e) {
+        var this$1 = this;
+
+        var inputHandler = this.props.onInput;
+        // Get the screen position of the component
+        var bounds = this.base.getBoundingClientRect();
+        // Prefect default browser action
+        e.preventDefault();
+        // Detect if the event is a touch event by checking if it has the `touches` property
+        // If it is a touch event, use the first touch input
+        var point = e.touches ? e.changedTouches[0] : e;
+        var x = point.clientX - bounds.left;
+        var y = point.clientY - bounds.top;
+        switch (e.type) {
+            case "mousedown" /* MouseDown */:
+            case "touchstart" /* TouchStart */:
+                var result = inputHandler(x, y, 0 /* Start */);
+                if (result !== false) {
+                    SECONDARY_EVENTS.forEach(function (event) {
+                        document.addEventListener(event, this$1, { passive: false });
+                    });
+                }
+                break;
+            case "mousemove" /* MouseMove */:
+            case "touchmove" /* TouchMove */:
+                inputHandler(x, y, 1 /* Move */);
+                break;
+            case "mouseup" /* MouseUp */:
+            case "touchend" /* TouchEnd */:
+                inputHandler(x, y, 2 /* End */);
+                SECONDARY_EVENTS.forEach(function (event) {
+                    document.removeEventListener(event, this$1, { passive: false });
+                });
+                break;
+        }
+    };
+
+    return IroComponentWrapper;
+}(m));
+
+function IroHandle(props) {
+    var radius = props.r;
+    var url = props.url;
+    var cx = radius;
+    var cy = radius;
+    return (h("svg", { className: ("IroHandle IroHandle--" + (props.index) + " " + (props.isActive ? 'IroHandle--isActive' : '')), style: {
+            '-webkit-tap-highlight-color': 'rgba(0, 0, 0, 0);',
+            transform: ("translate(" + (cssValue(props.x)) + ", " + (cssValue(props.y)) + ")"),
+            willChange: 'transform',
+            top: cssValue(-radius),
+            left: cssValue(-radius),
+            width: cssValue(radius * 2),
+            height: cssValue(radius * 2),
+            position: 'absolute',
+            overflow: 'visible'
+        } },
+        url && (h("use", Object.assign({ xlinkHref: resolveSvgUrl(url) }, props.props))),
+        !url && (h("circle", { cx: cx, cy: cy, r: radius, fill: "none", "stroke-width": 2, stroke: "#000" })),
+        !url && (h("circle", { cx: cx, cy: cy, r: radius - 2, fill: props.fill, "stroke-width": 2, stroke: "#fff" }))));
+}
+IroHandle.defaultProps = {
+    fill: 'none',
+    x: 0,
+    y: 0,
+    r: 8,
+    url: null,
+    props: { x: 0, y: 0 }
+};
+
+function IroSlider(props) {
+    var activeIndex = props.activeIndex;
+    var activeColor = (activeIndex !== undefined && activeIndex < props.colors.length) ? props.colors[activeIndex] : props.color;
+    var ref = getSliderDimensions(props);
+    var width = ref.width;
+    var height = ref.height;
+    var radius = ref.radius;
+    var handlePos = getSliderHandlePosition(props, activeColor);
+    var gradient = getSliderGradient(props, activeColor);
+    function handleInput(x, y, type) {
+        var value = getSliderValueFromInput(props, x, y);
+        props.parent.inputActive = true;
+        activeColor[props.sliderType] = value;
+        props.onInput(type, props.id);
+    }
+    return (h(IroComponentWrapper, Object.assign({}, props, { onInput: handleInput }), function (uid, rootProps, rootStyles) { return (h("div", Object.assign({}, rootProps, { className: "IroSlider", style: Object.assign({}, {position: 'relative',
+            width: cssValue(width),
+            height: cssValue(height),
+            borderRadius: cssValue(radius),
+            // checkered bg to represent alpha
+            background: "conic-gradient(#ccc 25%, #fff 0 50%, #ccc 0 75%, #fff 0)",
+            backgroundSize: '8px 8px'},
+            rootStyles) }),
+        h("div", { className: "IroSliderGradient", style: Object.assign({}, {position: 'absolute',
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                borderRadius: cssValue(radius),
+                background: cssGradient('linear', props.layoutDirection === 'horizontal' ? 'to top' : 'to right', gradient)},
+                cssBorderStyles(props)) }),
+        h(IroHandle, { isActive: true, index: activeColor.index, r: props.handleRadius, url: props.handleSvg, props: props.handleProps, x: handlePos.x, y: handlePos.y }))); }));
+}
+IroSlider.defaultProps = Object.assign({}, sliderDefaultOptions);
+
+function IroBox(props) {
+    var ref = getBoxDimensions(props);
+    var width = ref.width;
+    var height = ref.height;
+    var radius = ref.radius;
+    var colors = props.colors;
+    var colorPicker = props.parent;
+    var activeIndex = props.activeIndex;
+    var activeColor = (activeIndex !== undefined && activeIndex < props.colors.length) ? props.colors[activeIndex] : props.color;
+    var gradients = getBoxGradients(props, activeColor);
+    var handlePositions = colors.map(function (color) { return getBoxHandlePosition(props, color); });
+    function handleInput(x, y, inputType) {
+        if (inputType === 0 /* Start */) {
+            // getHandleAtPoint() returns the index for the handle if the point 'hits' it, or null otherwise
+            var activeHandle = getHandleAtPoint(props, x, y, handlePositions);
+            // If the input hit a handle, set it as the active handle, but don't update the color
+            if (activeHandle !== null) {
+                colorPicker.setActiveColor(activeHandle);
+            }
+            // If the input didn't hit a handle, set the currently active handle to that position
+            else {
+                colorPicker.inputActive = true;
+                activeColor.hsv = getBoxValueFromInput(props, x, y);
+                props.onInput(inputType, props.id);
+            }
+        }
+        // move is fired when the user has started dragging
+        else if (inputType === 1 /* Move */) {
+            colorPicker.inputActive = true;
+            activeColor.hsv = getBoxValueFromInput(props, x, y);
+        }
+        // let the color picker fire input:start, input:move or input:end events
+        props.onInput(inputType, props.id);
+    }
+    return (h(IroComponentWrapper, Object.assign({}, props, { onInput: handleInput }), function (uid, rootProps, rootStyles) { return (h("div", Object.assign({}, rootProps, { className: "IroBox", style: Object.assign({}, {width: cssValue(width),
+            height: cssValue(height),
+            position: 'relative'},
+            rootStyles) }),
+        h("div", { className: "IroBox", style: Object.assign({}, {width: '100%',
+                height: '100%',
+                borderRadius: cssValue(radius)},
+                cssBorderStyles(props),
+                {background: cssGradient('linear', 'to bottom', gradients[1])
+                    + ',' +
+                    cssGradient('linear', 'to right', gradients[0])}) }),
+        colors.filter(function (color) { return color !== activeColor; }).map(function (color) { return (h(IroHandle, { isActive: false, index: color.index, fill: color.hslString, r: props.handleRadius, url: props.handleSvg, props: props.handleProps, x: handlePositions[color.index].x, y: handlePositions[color.index].y })); }),
+        h(IroHandle, { isActive: true, index: activeColor.index, fill: activeColor.hslString, r: props.activeHandleRadius || props.handleRadius, url: props.handleSvg, props: props.handleProps, x: handlePositions[activeColor.index].x, y: handlePositions[activeColor.index].y }))); }));
+}
+
+var HUE_GRADIENT_CLOCKWISE = 'conic-gradient(red, yellow, lime, aqua, blue, magenta, red)';
+var HUE_GRADIENT_ANTICLOCKWISE = 'conic-gradient(red, magenta, blue, aqua, lime, yellow, red)';
+function IroWheel(props) {
+    var ref = getWheelDimensions(props);
+    var width = ref.width;
+    var colors = props.colors;
+    var borderWidth = props.borderWidth;
+    var colorPicker = props.parent;
+    var activeColor = props.color;
+    var hsv = activeColor.hsv;
+    var handlePositions = colors.map(function (color) { return getWheelHandlePosition(props, color); });
+    var circleStyles = {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        borderRadius: '50%',
+        boxSizing: 'border-box'
+    };
+    function handleInput(x, y, inputType) {
+        if (inputType === 0 /* Start */) {
+            // input hitbox is a square, 
+            // so we want to ignore any initial clicks outside the circular shape of the wheel
+            if (!isInputInsideWheel(props, x, y)) {
+                // returning false will cease all event handling for this interaction
+                return false;
+            }
+            // getHandleAtPoint() returns the index for the handle if the point 'hits' it, or null otherwise
+            var activeHandle = getHandleAtPoint(props, x, y, handlePositions);
+            // If the input hit a handle, set it as the active handle, but don't update the color
+            if (activeHandle !== null) {
+                colorPicker.setActiveColor(activeHandle);
+            }
+            // If the input didn't hit a handle, set the currently active handle to that position
+            else {
+                colorPicker.inputActive = true;
+                activeColor.hsv = getWheelValueFromInput(props, x, y);
+                props.onInput(inputType, props.id);
+            }
+        }
+        // move is fired when the user has started dragging
+        else if (inputType === 1 /* Move */) {
+            colorPicker.inputActive = true;
+            activeColor.hsv = getWheelValueFromInput(props, x, y);
+        }
+        // let the color picker fire input:start, input:move or input:end events
+        props.onInput(inputType, props.id);
+    }
+    return (h(IroComponentWrapper, Object.assign({}, props, { onInput: handleInput }), function (uid, rootProps, rootStyles) { return (h("div", Object.assign({}, rootProps, { className: "IroWheel", style: Object.assign({}, {width: cssValue(width),
+            height: cssValue(width),
+            position: 'relative'},
+            rootStyles) }),
+        h("div", { className: "IroWheelHue", style: Object.assign({}, circleStyles,
+                {transform: ("rotateZ(" + (props.wheelAngle + 90) + "deg)"),
+                background: props.wheelDirection === 'clockwise' ? HUE_GRADIENT_CLOCKWISE : HUE_GRADIENT_ANTICLOCKWISE}) }),
+        h("div", { className: "IroWheelSaturation", style: Object.assign({}, circleStyles,
+                {background: 'radial-gradient(circle closest-side, #fff, transparent)'}) }),
+        props.wheelLightness && (h("div", { className: "IroWheelLightness", style: Object.assign({}, circleStyles,
+                {background: '#000',
+                opacity: 1 - hsv.v / 100}) })),
+        h("div", { className: "IroWheelBorder", style: Object.assign({}, circleStyles,
+                cssBorderStyles(props)) }),
+        colors.filter(function (color) { return color !== activeColor; }).map(function (color) { return (h(IroHandle, { isActive: false, index: color.index, fill: color.hslString, r: props.handleRadius, url: props.handleSvg, props: props.handleProps, x: handlePositions[color.index].x, y: handlePositions[color.index].y })); }),
+        h(IroHandle, { isActive: true, index: activeColor.index, fill: activeColor.hslString, r: props.activeHandleRadius || props.handleRadius, url: props.handleSvg, props: props.handleProps, x: handlePositions[activeColor.index].x, y: handlePositions[activeColor.index].y }))); }));
+}
+
+function createWidget(WidgetComponent) {
+    var widgetFactory = function (parent, props) {
+        var widget; // will become an instance of the widget component class
+        var widgetRoot = document.createElement('div');
+        // Render widget into a temp DOM node
+        I(h(WidgetComponent, Object.assign({}, {ref: function (ref) { return widget = ref; }},
+            props)), widgetRoot);
+        function mountWidget() {
+            var container = parent instanceof Element ? parent : document.querySelector(parent);
+            container.appendChild(widget.base);
+            widget.onMount(container);
+        }
+        // Mount it into the DOM when the page document is ready
+        if (document.readyState !== 'loading') {
+            mountWidget();
+        }
+        else {
+            document.addEventListener('DOMContentLoaded', mountWidget);
+        }
+        return widget;
+    };
+    // Allow the widget factory to inherit component prototype + static class methods
+    // This makes it easier for plugin authors to extend the base widget component
+    widgetFactory.prototype = WidgetComponent.prototype;
+    Object.assign(widgetFactory, WidgetComponent);
+    // Add reference to base component too
+    widgetFactory.__component = WidgetComponent;
+    return widgetFactory;
+}
+
+var IroColorPicker = /*@__PURE__*/(function (Component) {
+    function IroColorPicker(props) {
+        var this$1 = this;
+
+        Component.call(this, props);
+        this.colors = [];
+        this.inputActive = false;
+        this.events = {};
+        this.activeEvents = {};
+        this.deferredEvents = {};
+        this.id = props.id;
+        var colors = props.colors.length > 0 ? props.colors : [props.color];
+        colors.forEach(function (colorValue) { return this$1.addColor(colorValue); });
+        this.setActiveColor(0);
+        // Pass all the props into the component's state,
+        // Except we want to add the color object and make sure that refs aren't passed down to children
+        this.state = Object.assign({}, props,
+            {color: this.color,
+            colors: this.colors,
+            layout: props.layout});
+    }
+
+    if ( Component ) IroColorPicker.__proto__ = Component;
+    IroColorPicker.prototype = Object.create( Component && Component.prototype );
+    IroColorPicker.prototype.constructor = IroColorPicker;
+    // Plubic multicolor API
+    /**
+    * @desc Add a color to the color picker
+    * @param color new color to add
+    * @param index optional color index
+    */
+    IroColorPicker.prototype.addColor = function addColor (color, index) {
+        if ( index === void 0 ) index = this.colors.length;
+
+        // Create a new iro.Color
+        // Also bind it to onColorChange, so whenever the color changes it updates the color picker
+        var newColor = new IroColor(color, this.onColorChange.bind(this));
+        // Insert color @ the given index
+        this.colors.splice(index, 0, newColor);
+        // Reindex colors
+        this.colors.forEach(function (color, index) { return color.index = index; });
+        // Update picker state if necessary
+        if (this.state) {
+            this.setState({ colors: this.colors });
+        }
+        // Fire color init event
+        this.deferredEmit('color:init', newColor);
+    };
+    /**
+     * @desc Remove a color from the color picker
+     * @param index color index
+     */
+    IroColorPicker.prototype.removeColor = function removeColor (index) {
+        var color = this.colors.splice(index, 1)[0];
+        // Destroy the color object -- this unbinds it from the color picker
+        color.unbind();
+        // Reindex colors
+        this.colors.forEach(function (color, index) { return color.index = index; });
+        // Update picker state if necessary
+        if (this.state) {
+            this.setState({ colors: this.colors });
+        }
+        // If the active color was removed, default active color to 0
+        if (color.index === this.color.index) {
+            this.setActiveColor(0);
+        }
+        // Fire color remove event
+        this.emit('color:remove', color);
+    };
+    /**
+     * @desc Set the currently active color
+     * @param index color index
+     */
+    IroColorPicker.prototype.setActiveColor = function setActiveColor (index) {
+        this.color = this.colors[index];
+        if (this.state) {
+            this.setState({ color: this.color });
+        }
+        // Fire color switch event
+        this.emit('color:setActive', this.color);
+    };
+    /**
+     * @desc Replace all of the current colorPicker colors
+     * @param newColorValues list of new colors to add
+     */
+    IroColorPicker.prototype.setColors = function setColors (newColorValues, activeColorIndex) {
+        var this$1 = this;
+        if ( activeColorIndex === void 0 ) activeColorIndex = 0;
+
+        // Unbind color events
+        this.colors.forEach(function (color) { return color.unbind(); });
+        // Destroy old colors
+        this.colors = [];
+        // Add new colors
+        newColorValues.forEach(function (colorValue) { return this$1.addColor(colorValue); });
+        // Reset active color
+        this.setActiveColor(activeColorIndex);
+        this.emit('color:setAll', this.colors);
+    };
+    // Public ColorPicker events API
+    /**
+     * @desc Set a callback function for an event
+     * @param eventList event(s) to listen to
+     * @param callback - Function called when the event is fired
+     */
+    IroColorPicker.prototype.on = function on (eventList, callback) {
+        var this$1 = this;
+
+        var events = this.events;
+        // eventList can be an eventType string or an array of eventType strings
+        (!Array.isArray(eventList) ? [eventList] : eventList).forEach(function (eventType) {
+            // Add event callback
+            (events[eventType] || (events[eventType] = [])).push(callback);
+            // Call deferred events
+            // These are events that can be stored until a listener for them is added
+            if (this$1.deferredEvents[eventType]) {
+                // Deffered events store an array of arguments from when the event was called
+                this$1.deferredEvents[eventType].forEach(function (args) {
+                    callback.apply(null, args);
+                });
+                // Clear deferred events
+                this$1.deferredEvents[eventType] = [];
+            }
+        });
+    };
+    /**
+     * @desc Remove a callback function for an event added with on()
+     * @param eventList - event(s) to listen to
+     * @param callback - original callback function to remove
+     */
+    IroColorPicker.prototype.off = function off (eventList, callback) {
+        var this$1 = this;
+
+        (!Array.isArray(eventList) ? [eventList] : eventList).forEach(function (eventType) {
+            var callbackList = this$1.events[eventType];
+            // this.emitHook('event:off', eventType, callback);
+            if (callbackList)
+                { callbackList.splice(callbackList.indexOf(callback), 1); }
+        });
+    };
+    /**
+     * @desc Emit an event
+     * @param eventType event to emit
+     */
+    IroColorPicker.prototype.emit = function emit (eventType) {
+        var this$1 = this;
+        var args = [], len = arguments.length - 1;
+        while ( len-- > 0 ) args[ len ] = arguments[ len + 1 ];
+
+        var activeEvents = this.activeEvents;
+        var isEventActive = activeEvents.hasOwnProperty(eventType) ? activeEvents[eventType] : false;
+        // Prevent event callbacks from firing if the event is already active
+        // This stops infinite loops if something in an event callback causes the same event to be fired again
+        // (e.g. setting the color inside a color:change callback)
+        if (!isEventActive) {
+            activeEvents[eventType] = true;
+            var callbackList = this.events[eventType] || [];
+            callbackList.forEach(function (fn) { return fn.apply(this$1, args); });
+            activeEvents[eventType] = false;
+        }
+    };
+    /**
+     * @desc Emit an event now, or save it for when the relevent event listener is added
+     * @param eventType - The name of the event to emit
+     */
+    IroColorPicker.prototype.deferredEmit = function deferredEmit (eventType) {
+        var ref;
+
+        var args = [], len = arguments.length - 1;
+        while ( len-- > 0 ) args[ len ] = arguments[ len + 1 ];
+        var deferredEvents = this.deferredEvents;
+        (ref = this).emit.apply(ref, [ eventType ].concat( args ));
+        (deferredEvents[eventType] || (deferredEvents[eventType] = [])).push(args);
+    };
+    // Public utility methods
+    IroColorPicker.prototype.setOptions = function setOptions (newOptions) {
+        this.setState(newOptions);
+    };
+    /**
+     * @desc Resize the color picker
+     * @param width - new width
+     */
+    IroColorPicker.prototype.resize = function resize (width) {
+        this.setOptions({ width: width });
+    };
+    /**
+     * @desc Reset the color picker to the initial color provided in the color picker options
+     */
+    IroColorPicker.prototype.reset = function reset () {
+        this.colors.forEach(function (color) { return color.reset(); });
+        this.setState({ colors: this.colors });
+    };
+    /**
+     * @desc Called by the createWidget wrapper when the element is mounted into the page
+     * @param container - the container element for this ColorPicker instance
+     */
+    IroColorPicker.prototype.onMount = function onMount (container) {
+        this.el = container;
+        this.deferredEmit('mount', this);
+    };
+    // Internal methods
+    /**
+     * @desc React to a color update
+     * @param color - current color
+     * @param changes - shows which h,s,v,a color channels changed
+     */
+    IroColorPicker.prototype.onColorChange = function onColorChange (color, changes) {
+        this.setState({ color: this.color });
+        if (this.inputActive) {
+            this.inputActive = false;
+            this.emit('input:change', color, changes);
+        }
+        this.emit('color:change', color, changes);
+    };
+    /**
+     * @desc Handle input from a UI control element
+     * @param type - event type
+     */
+    IroColorPicker.prototype.emitInputEvent = function emitInputEvent (type, originId) {
+        if (type === 0 /* Start */) {
+            this.emit('input:start', this.color, originId);
+        }
+        else if (type === 1 /* Move */) {
+            this.emit('input:move', this.color, originId);
+        }
+        else if (type === 2 /* End */) {
+            this.emit('input:end', this.color, originId);
+        }
+    };
+    IroColorPicker.prototype.render = function render (props, state) {
+        var this$1 = this;
+
+        var layout = state.layout;
+        // use layout shorthands
+        if (!Array.isArray(layout)) {
+            switch (layout) {
+                // TODO: implement some?
+                default:
+                    layout = [
+                        { component: IroWheel },
+                        { component: IroSlider } ];
+            }
+            // add transparency slider to the layout
+            if (state.transparency) {
+                layout.push({
+                    component: IroSlider,
+                    options: {
+                        sliderType: 'alpha'
+                    }
+                });
+            }
+        }
+        return (h("div", { class: "IroColorPicker", id: state.id, style: {
+                display: state.display
+            } }, layout.map(function (ref, componentIndex) {
+                var UiComponent = ref.component;
+                var options = ref.options;
+
+                return (h(UiComponent, Object.assign({}, state, options, { ref: undefined, onInput: this$1.emitInputEvent.bind(this$1), parent: this$1, index: componentIndex })));
+        })));
+    };
+
+    return IroColorPicker;
+}(m));
+IroColorPicker.defaultProps = Object.assign({}, iroColorPickerOptionDefaults,
+    {colors: [],
+    display: 'block',
+    id: null,
+    layout: 'default',
+    margin: null});
+var IroColorPickerWidget = createWidget(IroColorPicker);
+
+var iro;
+(function (iro) {
+    iro.version = "5.5.2"; // replaced by @rollup/plugin-replace; see rollup.config.js
+    iro.Color = IroColor;
+    iro.ColorPicker = IroColorPickerWidget;
+    var ui;
+    (function (ui) {
+        ui.h = h;
+        ui.ComponentBase = IroComponentWrapper;
+        ui.Handle = IroHandle;
+        ui.Slider = IroSlider;
+        ui.Wheel = IroWheel;
+        ui.Box = IroBox;
+    })(ui = iro.ui || (iro.ui = {}));
+})(iro || (iro = {}));
+var iro$1 = iro;
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (iro$1);
+
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/gotrue-js/dist/module/GoTrueApi.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@supabase/gotrue-js/dist/module/GoTrueApi.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ GoTrueApi)
+/* harmony export */ });
+/* harmony import */ var _lib_fetch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/fetch */ "./node_modules/@supabase/gotrue-js/dist/module/lib/fetch.js");
+/* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/constants */ "./node_modules/@supabase/gotrue-js/dist/module/lib/constants.js");
+/* harmony import */ var _lib_cookies__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/cookies */ "./node_modules/@supabase/gotrue-js/dist/module/lib/cookies.js");
+/* harmony import */ var _lib_helpers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lib/helpers */ "./node_modules/@supabase/gotrue-js/dist/module/lib/helpers.js");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+
+
+
+class GoTrueApi {
+    constructor({ url = '', headers = {}, cookieOptions, }) {
+        this.url = url;
+        this.headers = headers;
+        this.cookieOptions = Object.assign(Object.assign({}, _lib_constants__WEBPACK_IMPORTED_MODULE_1__.COOKIE_OPTIONS), cookieOptions);
+    }
+    /**
+     * Creates a new user using their email address.
+     * @param email The email address of the user.
+     * @param password The password of the user.
+     * @param redirectTo A URL or mobile address to send the user to after they are confirmed.
+     *
+     * @returns A logged-in session if the server has "autoconfirm" ON
+     * @returns A user if the server has "autoconfirm" OFF
+     */
+    signUpWithEmail(email, password, options = {}) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                let headers = Object.assign({}, this.headers);
+                let queryString = '';
+                if (options.redirectTo) {
+                    queryString = '?redirect_to=' + encodeURIComponent(options.redirectTo);
+                }
+                const data = yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_0__.post)(`${this.url}/signup${queryString}`, { email, password }, { headers });
+                let session = Object.assign({}, data);
+                if (session.expires_in)
+                    session.expires_at = (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_3__.expiresAt)(data.expires_in);
+                return { data: session, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Logs in an existing user using their email address.
+     * @param email The email address of the user.
+     * @param password The password of the user.
+     * @param redirectTo A URL or mobile address to send the user to after they are confirmed.
+     */
+    signInWithEmail(email, password, options = {}) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                let headers = Object.assign({}, this.headers);
+                let queryString = '?grant_type=password';
+                if (options.redirectTo) {
+                    queryString += '&redirect_to=' + encodeURIComponent(options.redirectTo);
+                }
+                const data = yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_0__.post)(`${this.url}/token${queryString}`, { email, password }, { headers });
+                let session = Object.assign({}, data);
+                if (session.expires_in)
+                    session.expires_at = (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_3__.expiresAt)(data.expires_in);
+                return { data: session, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Signs up a new user using their phone number and a password.
+     * @param phone The phone number of the user.
+     * @param password The password of the user.
+     */
+    signUpWithPhone(phone, password) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                let headers = Object.assign({}, this.headers);
+                const data = yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_0__.post)(`${this.url}/signup`, { phone, password }, { headers });
+                let session = Object.assign({}, data);
+                if (session.expires_in)
+                    session.expires_at = (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_3__.expiresAt)(data.expires_in);
+                return { data: session, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Logs in an existing user using their phone number and password.
+     * @param phone The phone number of the user.
+     * @param password The password of the user.
+     */
+    signInWithPhone(phone, password) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                let headers = Object.assign({}, this.headers);
+                let queryString = '?grant_type=password';
+                const data = yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_0__.post)(`${this.url}/token${queryString}`, { phone, password }, { headers });
+                let session = Object.assign({}, data);
+                if (session.expires_in)
+                    session.expires_at = (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_3__.expiresAt)(data.expires_in);
+                return { data: session, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Sends a magic login link to an email address.
+     * @param email The email address of the user.
+     * @param redirectTo A URL or mobile address to send the user to after they are confirmed.
+     */
+    sendMagicLinkEmail(email, options = {}) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                let headers = Object.assign({}, this.headers);
+                let queryString = '';
+                if (options.redirectTo) {
+                    queryString += '?redirect_to=' + encodeURIComponent(options.redirectTo);
+                }
+                const data = yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_0__.post)(`${this.url}/magiclink${queryString}`, { email }, { headers });
+                return { data, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Sends a mobile OTP via SMS. Will register the account if it doesn't already exist
+     * @param phone The user's phone number WITH international prefix
+     */
+    sendMobileOTP(phone) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                let headers = Object.assign({}, this.headers);
+                const data = yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_0__.post)(`${this.url}/otp`, { phone }, { headers });
+                return { data, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Send User supplied Mobile OTP to be verified
+     * @param phone The user's phone number WITH international prefix
+     * @param token token that user was sent to their mobile phone
+     * @param redirectTo A URL or mobile address to send the user to after they are confirmed.
+     */
+    verifyMobileOTP(phone, token, options = {}) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                let headers = Object.assign({}, this.headers);
+                const data = yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_0__.post)(`${this.url}/verify`, { phone, token, type: 'sms', redirect_to: options.redirectTo }, { headers });
+                return { data, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Sends an invite link to an email address.
+     * @param email The email address of the user.
+     * @param redirectTo A URL or mobile address to send the user to after they are confirmed.
+     */
+    inviteUserByEmail(email, options = {}) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                let headers = Object.assign({}, this.headers);
+                let queryString = '';
+                if (options.redirectTo) {
+                    queryString += '?redirect_to=' + encodeURIComponent(options.redirectTo);
+                }
+                const data = yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_0__.post)(`${this.url}/invite${queryString}`, { email }, { headers });
+                return { data, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Sends a reset request to an email address.
+     * @param email The email address of the user.
+     * @param redirectTo A URL or mobile address to send the user to after they are confirmed.
+     */
+    resetPasswordForEmail(email, options = {}) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                let headers = Object.assign({}, this.headers);
+                let queryString = '';
+                if (options.redirectTo) {
+                    queryString += '?redirect_to=' + encodeURIComponent(options.redirectTo);
+                }
+                const data = yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_0__.post)(`${this.url}/recover${queryString}`, { email }, { headers });
+                return { data, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Create a temporary object with all configured headers and
+     * adds the Authorization token to be used on request methods
+     * @param jwt A valid, logged-in JWT.
+     */
+    _createRequestHeaders(jwt) {
+        const headers = Object.assign({}, this.headers);
+        headers['Authorization'] = `Bearer ${jwt}`;
+        return headers;
+    }
+    /**
+     * Removes a logged-in session.
+     * @param jwt A valid, logged-in JWT.
+     */
+    signOut(jwt) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_0__.post)(`${this.url}/logout`, {}, { headers: this._createRequestHeaders(jwt), noResolveJson: true });
+                return { error: null };
+            }
+            catch (error) {
+                return { error };
+            }
+        });
+    }
+    /**
+     * Generates the relevant login URL for a third-party provider.
+     * @param provider One of the providers supported by GoTrue.
+     * @param redirectTo A URL or mobile address to send the user to after they are confirmed.
+     * @param scopes A space-separated list of scopes granted to the OAuth application.
+     */
+    getUrlForProvider(provider, options) {
+        let urlParams = [`provider=${encodeURIComponent(provider)}`];
+        if (options === null || options === void 0 ? void 0 : options.redirectTo) {
+            urlParams.push(`redirect_to=${encodeURIComponent(options.redirectTo)}`);
+        }
+        if (options === null || options === void 0 ? void 0 : options.scopes) {
+            urlParams.push(`scopes=${encodeURIComponent(options.scopes)}`);
+        }
+        return `${this.url}/authorize?${urlParams.join('&')}`;
+    }
+    /**
+     * Gets the user details.
+     * @param jwt A valid, logged-in JWT.
+     */
+    getUser(jwt) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const data = yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_0__.get)(`${this.url}/user`, { headers: this._createRequestHeaders(jwt) });
+                return { user: data, data, error: null };
+            }
+            catch (error) {
+                return { user: null, data: null, error };
+            }
+        });
+    }
+    /**
+     * Updates the user data.
+     * @param jwt A valid, logged-in JWT.
+     * @param attributes The data you want to update.
+     */
+    updateUser(jwt, attributes) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const data = yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_0__.put)(`${this.url}/user`, attributes, {
+                    headers: this._createRequestHeaders(jwt),
+                });
+                return { user: data, data, error: null };
+            }
+            catch (error) {
+                return { user: null, data: null, error };
+            }
+        });
+    }
+    /**
+     * Delete an user.
+     * @param uid The user uid you want to remove.
+     * @param jwt A valid JWT. Must be a full-access API key (e.g. service_role key).
+     */
+    deleteUser(uid, jwt) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const data = yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_0__.remove)(`${this.url}/admin/users/${uid}`, {}, {
+                    headers: this._createRequestHeaders(jwt),
+                });
+                return { user: data, data, error: null };
+            }
+            catch (error) {
+                return { user: null, data: null, error };
+            }
+        });
+    }
+    /**
+     * Generates a new JWT.
+     * @param refreshToken A valid refresh token that was returned on login.
+     */
+    refreshAccessToken(refreshToken) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const data = yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_0__.post)(`${this.url}/token?grant_type=refresh_token`, { refresh_token: refreshToken }, { headers: this.headers });
+                let session = Object.assign({}, data);
+                if (session.expires_in)
+                    session.expires_at = (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_3__.expiresAt)(data.expires_in);
+                return { data: session, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Set/delete the auth cookie based on the AuthChangeEvent.
+     * Works for Next.js & Express (requires cookie-parser middleware).
+     */
+    setAuthCookie(req, res) {
+        if (req.method !== 'POST') {
+            res.setHeader('Allow', 'POST');
+            res.status(405).end('Method Not Allowed');
+        }
+        const { event, session } = req.body;
+        if (!event)
+            throw new Error('Auth event missing!');
+        if (event === 'SIGNED_IN') {
+            if (!session)
+                throw new Error('Auth session missing!');
+            (0,_lib_cookies__WEBPACK_IMPORTED_MODULE_2__.setCookie)(req, res, {
+                name: this.cookieOptions.name,
+                value: session.access_token,
+                domain: this.cookieOptions.domain,
+                maxAge: this.cookieOptions.lifetime,
+                path: this.cookieOptions.path,
+                sameSite: this.cookieOptions.sameSite,
+            });
+        }
+        if (event === 'SIGNED_OUT')
+            (0,_lib_cookies__WEBPACK_IMPORTED_MODULE_2__.deleteCookie)(req, res, this.cookieOptions.name);
+        res.status(200).json({});
+    }
+    /**
+     * Get user by reading the cookie from the request.
+     * Works for Next.js & Express (requires cookie-parser middleware).
+     */
+    getUserByCookie(req) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                if (!req.cookies)
+                    throw new Error('Not able to parse cookies! When using Express make sure the cookie-parser middleware is in use!');
+                if (!req.cookies[this.cookieOptions.name])
+                    throw new Error('No cookie found!');
+                const token = req.cookies[this.cookieOptions.name];
+                const { user, error } = yield this.getUser(token);
+                if (error)
+                    throw error;
+                return { user, data: user, error: null };
+            }
+            catch (error) {
+                return { user: null, data: null, error };
+            }
+        });
+    }
+    /**
+     * Generates links to be sent via email or other.
+     * @param type The link type ("signup" or "magiclink" or "recovery" or "invite").
+     * @param email The user's email.
+     * @param password User password. For signup only.
+     * @param data Optional user metadata. For signup only.
+     * @param redirectTo The link type ("signup" or "magiclink" or "recovery" or "invite").
+     */
+    generateLink(type, email, options = {}) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const data = yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_0__.post)(`${this.url}/admin/generate_link`, {
+                    type,
+                    email,
+                    password: options.password,
+                    data: options.data,
+                    redirect_to: options.redirectTo,
+                }, { headers: this.headers });
+                return { data, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+}
+//# sourceMappingURL=GoTrueApi.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/gotrue-js/dist/module/GoTrueClient.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@supabase/gotrue-js/dist/module/GoTrueClient.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ GoTrueClient)
+/* harmony export */ });
+/* harmony import */ var _GoTrueApi__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GoTrueApi */ "./node_modules/@supabase/gotrue-js/dist/module/GoTrueApi.js");
+/* harmony import */ var _lib_helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/helpers */ "./node_modules/@supabase/gotrue-js/dist/module/lib/helpers.js");
+/* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/constants */ "./node_modules/@supabase/gotrue-js/dist/module/lib/constants.js");
+/* harmony import */ var _lib_polyfills__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lib/polyfills */ "./node_modules/@supabase/gotrue-js/dist/module/lib/polyfills.js");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+
+
+
+(0,_lib_polyfills__WEBPACK_IMPORTED_MODULE_3__.polyfillGlobalThis)(); // Make "globalThis" available
+const DEFAULT_OPTIONS = {
+    url: _lib_constants__WEBPACK_IMPORTED_MODULE_2__.GOTRUE_URL,
+    autoRefreshToken: true,
+    persistSession: true,
+    detectSessionInUrl: true,
+    headers: _lib_constants__WEBPACK_IMPORTED_MODULE_2__.DEFAULT_HEADERS,
+};
+class GoTrueClient {
+    /**
+     * Create a new client for use in the browser.
+     * @param options.url The URL of the GoTrue server.
+     * @param options.headers Any additional headers to send to the GoTrue server.
+     * @param options.detectSessionInUrl Set to "true" if you want to automatically detects OAuth grants in the URL and signs in the user.
+     * @param options.autoRefreshToken Set to "true" if you want to automatically refresh the token before expiring.
+     * @param options.persistSession Set to "true" if you want to automatically save the user session into local storage.
+     * @param options.localStorage
+     */
+    constructor(options) {
+        this.stateChangeEmitters = new Map();
+        const settings = Object.assign(Object.assign({}, DEFAULT_OPTIONS), options);
+        this.currentUser = null;
+        this.currentSession = null;
+        this.autoRefreshToken = settings.autoRefreshToken;
+        this.persistSession = settings.persistSession;
+        this.localStorage = settings.localStorage || globalThis.localStorage;
+        this.api = new _GoTrueApi__WEBPACK_IMPORTED_MODULE_0__.default({
+            url: settings.url,
+            headers: settings.headers,
+            cookieOptions: settings.cookieOptions,
+        });
+        this._recoverSession();
+        this._recoverAndRefresh();
+        // Handle the OAuth redirect
+        try {
+            if (settings.detectSessionInUrl && (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_1__.isBrowser)() && !!(0,_lib_helpers__WEBPACK_IMPORTED_MODULE_1__.getParameterByName)('access_token')) {
+                this.getSessionFromUrl({ storeSession: true });
+            }
+        }
+        catch (error) {
+            console.log('Error getting session from URL.');
+        }
+    }
+    /**
+     * Creates a new user.
+     * @type UserCredentials
+     * @param email The user's email address.
+     * @param password The user's password.
+     * @param phone The user's phone number.
+     * @param redirectTo A URL or mobile address to send the user to after they are confirmed.
+     */
+    signUp({ email, password, phone }, options = {}) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                this._removeSession();
+                const { data, error } = phone && password
+                    ? yield this.api.signUpWithPhone(phone, password)
+                    : yield this.api.signUpWithEmail(email, password, {
+                        redirectTo: options.redirectTo,
+                    });
+                if (error) {
+                    throw error;
+                }
+                if (!data) {
+                    throw 'An error occurred on sign up.';
+                }
+                let session = null;
+                let user = null;
+                if (data.access_token) {
+                    session = data;
+                    user = session.user;
+                    this._saveSession(session);
+                    this._notifyAllSubscribers('SIGNED_IN');
+                }
+                if (data.id) {
+                    user = data;
+                }
+                return { data, user, session, error: null };
+            }
+            catch (error) {
+                return { data: null, user: null, session: null, error };
+            }
+        });
+    }
+    /**
+     * Log in an existing user, or login via a third-party provider.
+     * @type UserCredentials
+     * @param email The user's email address.
+     * @param password The user's password.
+     * @param refreshToken A valid refresh token that was returned on login.
+     * @param provider One of the providers supported by GoTrue.
+     * @param redirectTo A URL or mobile address to send the user to after they are confirmed.
+     * @param scopes A space-separated list of scopes granted to the OAuth application.
+     */
+    signIn({ email, phone, password, refreshToken, provider }, options = {}) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                this._removeSession();
+                if (email && !password) {
+                    const { error } = yield this.api.sendMagicLinkEmail(email, {
+                        redirectTo: options.redirectTo,
+                    });
+                    return { data: null, user: null, session: null, error };
+                }
+                if (email && password) {
+                    return this._handleEmailSignIn(email, password, {
+                        redirectTo: options.redirectTo,
+                    });
+                }
+                if (phone && !password) {
+                    const { error } = yield this.api.sendMobileOTP(phone);
+                    return { data: null, user: null, session: null, error };
+                }
+                if (phone && password) {
+                    return this._handlePhoneSignIn(phone, password);
+                }
+                if (refreshToken) {
+                    // currentSession and currentUser will be updated to latest on _callRefreshToken using the passed refreshToken
+                    const { error } = yield this._callRefreshToken(refreshToken);
+                    if (error)
+                        throw error;
+                    return {
+                        data: this.currentSession,
+                        user: this.currentUser,
+                        session: this.currentSession,
+                        error: null,
+                    };
+                }
+                if (provider) {
+                    return this._handleProviderSignIn(provider, {
+                        redirectTo: options.redirectTo,
+                        scopes: options.scopes,
+                    });
+                }
+                throw new Error(`You must provide either an email, phone number or a third-party provider.`);
+            }
+            catch (error) {
+                return { data: null, user: null, session: null, error };
+            }
+        });
+    }
+    /**
+     * Log in a user given a User supplied OTP received via mobile.
+     * @param phone The user's phone number.
+     * @param token The user's password.
+     * @param redirectTo A URL or mobile address to send the user to after they are confirmed.
+     */
+    verifyOTP({ phone, token }, options = {}) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                this._removeSession();
+                const { data, error } = yield this.api.verifyMobileOTP(phone, token, options);
+                if (error) {
+                    throw error;
+                }
+                if (!data) {
+                    throw 'An error occurred on token verification.';
+                }
+                let session = null;
+                let user = null;
+                if (data.access_token) {
+                    session = data;
+                    user = session.user;
+                    this._saveSession(session);
+                    this._notifyAllSubscribers('SIGNED_IN');
+                }
+                if (data.id) {
+                    user = data;
+                }
+                return { data, user, session, error: null };
+            }
+            catch (error) {
+                return { data: null, user: null, session: null, error };
+            }
+        });
+    }
+    /**
+     * Inside a browser context, `user()` will return the user data, if there is a logged in user.
+     *
+     * For server-side management, you can get a user through `auth.api.getUserByCookie()`
+     */
+    user() {
+        return this.currentUser;
+    }
+    /**
+     * Returns the session data, if there is an active session.
+     */
+    session() {
+        return this.currentSession;
+    }
+    /**
+     * Force refreshes the session including the user data in case it was updated in a different session.
+     */
+    refreshSession() {
+        var _a;
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                if (!((_a = this.currentSession) === null || _a === void 0 ? void 0 : _a.access_token))
+                    throw new Error('Not logged in.');
+                // currentSession and currentUser will be updated to latest on _callRefreshToken
+                const { error } = yield this._callRefreshToken();
+                if (error)
+                    throw error;
+                return { data: this.currentSession, user: this.currentUser, error: null };
+            }
+            catch (error) {
+                return { data: null, user: null, error };
+            }
+        });
+    }
+    /**
+     * Updates user data, if there is a logged in user.
+     */
+    update(attributes) {
+        var _a;
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                if (!((_a = this.currentSession) === null || _a === void 0 ? void 0 : _a.access_token))
+                    throw new Error('Not logged in.');
+                const { user, error } = yield this.api.updateUser(this.currentSession.access_token, attributes);
+                if (error)
+                    throw error;
+                if (!user)
+                    throw Error('Invalid user data.');
+                const session = Object.assign(Object.assign({}, this.currentSession), { user });
+                this._saveSession(session);
+                this._notifyAllSubscribers('USER_UPDATED');
+                return { data: user, user, error: null };
+            }
+            catch (error) {
+                return { data: null, user: null, error };
+            }
+        });
+    }
+    /**
+     * Sets the session data from refresh_token and returns current Session and Error
+     * @param refresh_token a JWT token
+     */
+    setSession(refresh_token) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                if (!refresh_token) {
+                    throw new Error('No current session.');
+                }
+                const { data, error } = yield this.api.refreshAccessToken(refresh_token);
+                if (error) {
+                    return { session: null, error: error };
+                }
+                if (!data) {
+                    return {
+                        session: null,
+                        error: { name: 'Invalid refresh_token', message: 'JWT token provided is Invalid' },
+                    };
+                }
+                this._saveSession(data);
+                this._notifyAllSubscribers('SIGNED_IN');
+                return { session: data, error: null };
+            }
+            catch (error) {
+                return { error, session: null };
+            }
+        });
+    }
+    /**
+     * Overrides the JWT on the current client. The JWT will then be sent in all subsequent network requests.
+     * @param access_token a jwt access token
+     */
+    setAuth(access_token) {
+        this.currentSession = Object.assign(Object.assign({}, this.currentSession), { access_token, token_type: 'bearer', user: null });
+        return this.currentSession;
+    }
+    /**
+     * Gets the session data from a URL string
+     * @param options.storeSession Optionally store the session in the browser
+     */
+    getSessionFromUrl(options) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                if (!(0,_lib_helpers__WEBPACK_IMPORTED_MODULE_1__.isBrowser)())
+                    throw new Error('No browser detected.');
+                const error_description = (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_1__.getParameterByName)('error_description');
+                if (error_description)
+                    throw new Error(error_description);
+                const provider_token = (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_1__.getParameterByName)('provider_token');
+                const access_token = (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_1__.getParameterByName)('access_token');
+                if (!access_token)
+                    throw new Error('No access_token detected.');
+                const expires_in = (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_1__.getParameterByName)('expires_in');
+                if (!expires_in)
+                    throw new Error('No expires_in detected.');
+                const refresh_token = (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_1__.getParameterByName)('refresh_token');
+                if (!refresh_token)
+                    throw new Error('No refresh_token detected.');
+                const token_type = (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_1__.getParameterByName)('token_type');
+                if (!token_type)
+                    throw new Error('No token_type detected.');
+                const timeNow = Math.round(Date.now() / 1000);
+                const expires_at = timeNow + parseInt(expires_in);
+                const { user, error } = yield this.api.getUser(access_token);
+                if (error)
+                    throw error;
+                const session = {
+                    provider_token,
+                    access_token,
+                    expires_in: parseInt(expires_in),
+                    expires_at,
+                    refresh_token,
+                    token_type,
+                    user: user,
+                };
+                if (options === null || options === void 0 ? void 0 : options.storeSession) {
+                    this._saveSession(session);
+                    this._notifyAllSubscribers('SIGNED_IN');
+                    if ((0,_lib_helpers__WEBPACK_IMPORTED_MODULE_1__.getParameterByName)('type') === 'recovery') {
+                        this._notifyAllSubscribers('PASSWORD_RECOVERY');
+                    }
+                }
+                // Remove tokens from URL
+                window.location.hash = '';
+                return { data: session, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Inside a browser context, `signOut()` will remove the logged in user from the browser session
+     * and log them out - removing all items from localstorage and then trigger a "SIGNED_OUT" event.
+     *
+     * For server-side management, you can disable sessions by passing a JWT through to `auth.api.signOut(JWT: string)`
+     */
+    signOut() {
+        var _a;
+        return __awaiter(this, void 0, void 0, function* () {
+            const accessToken = (_a = this.currentSession) === null || _a === void 0 ? void 0 : _a.access_token;
+            this._removeSession();
+            this._notifyAllSubscribers('SIGNED_OUT');
+            if (accessToken) {
+                const { error } = yield this.api.signOut(accessToken);
+                if (error)
+                    return { error };
+            }
+            return { error: null };
+        });
+    }
+    /**
+     * Receive a notification every time an auth event happens.
+     * @returns {Subscription} A subscription object which can be used to unsubscribe itself.
+     */
+    onAuthStateChange(callback) {
+        try {
+            const id = (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_1__.uuid)();
+            const self = this;
+            const subscription = {
+                id,
+                callback,
+                unsubscribe: () => {
+                    self.stateChangeEmitters.delete(id);
+                },
+            };
+            this.stateChangeEmitters.set(id, subscription);
+            return { data: subscription, error: null };
+        }
+        catch (error) {
+            return { data: null, error };
+        }
+    }
+    _handleEmailSignIn(email, password, options = {}) {
+        var _a, _b;
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const { data, error } = yield this.api.signInWithEmail(email, password, {
+                    redirectTo: options.redirectTo,
+                });
+                if (error || !data)
+                    return { data: null, user: null, session: null, error };
+                if (((_a = data === null || data === void 0 ? void 0 : data.user) === null || _a === void 0 ? void 0 : _a.confirmed_at) || ((_b = data === null || data === void 0 ? void 0 : data.user) === null || _b === void 0 ? void 0 : _b.email_confirmed_at)) {
+                    this._saveSession(data);
+                    this._notifyAllSubscribers('SIGNED_IN');
+                }
+                return { data, user: data.user, session: data, error: null };
+            }
+            catch (error) {
+                return { data: null, user: null, session: null, error };
+            }
+        });
+    }
+    _handlePhoneSignIn(phone, password) {
+        var _a;
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const { data, error } = yield this.api.signInWithPhone(phone, password);
+                if (error || !data)
+                    return { data: null, user: null, session: null, error };
+                if ((_a = data === null || data === void 0 ? void 0 : data.user) === null || _a === void 0 ? void 0 : _a.phone_confirmed_at) {
+                    this._saveSession(data);
+                    this._notifyAllSubscribers('SIGNED_IN');
+                }
+                return { data, user: data.user, session: data, error: null };
+            }
+            catch (error) {
+                return { data: null, user: null, session: null, error };
+            }
+        });
+    }
+    _handleProviderSignIn(provider, options = {}) {
+        const url = this.api.getUrlForProvider(provider, {
+            redirectTo: options.redirectTo,
+            scopes: options.scopes,
+        });
+        try {
+            // try to open on the browser
+            if ((0,_lib_helpers__WEBPACK_IMPORTED_MODULE_1__.isBrowser)()) {
+                window.location.href = url;
+            }
+            return { provider, url, data: null, session: null, user: null, error: null };
+        }
+        catch (error) {
+            // fallback to returning the URL
+            if (!!url)
+                return { provider, url, data: null, session: null, user: null, error: null };
+            return { data: null, user: null, session: null, error };
+        }
+    }
+    /**
+     * Attempts to get the session from LocalStorage
+     * Note: this should never be async (even for React Native), as we need it to return immediately in the constructor.
+     */
+    _recoverSession() {
+        var _a;
+        try {
+            const json = (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_1__.isBrowser)() && ((_a = this.localStorage) === null || _a === void 0 ? void 0 : _a.getItem(_lib_constants__WEBPACK_IMPORTED_MODULE_2__.STORAGE_KEY));
+            if (!json || typeof json !== 'string') {
+                return null;
+            }
+            const data = JSON.parse(json);
+            const { currentSession, expiresAt } = data;
+            const timeNow = Math.round(Date.now() / 1000);
+            if (expiresAt >= timeNow && (currentSession === null || currentSession === void 0 ? void 0 : currentSession.user)) {
+                this._saveSession(currentSession);
+                this._notifyAllSubscribers('SIGNED_IN');
+            }
+        }
+        catch (error) {
+            console.log('error', error);
+        }
+    }
+    /**
+     * Recovers the session from LocalStorage and refreshes
+     * Note: this method is async to accommodate for AsyncStorage e.g. in React native.
+     */
+    _recoverAndRefresh() {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const json = (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_1__.isBrowser)() && (yield this.localStorage.getItem(_lib_constants__WEBPACK_IMPORTED_MODULE_2__.STORAGE_KEY));
+                if (!json) {
+                    return null;
+                }
+                const data = JSON.parse(json);
+                const { currentSession, expiresAt } = data;
+                const timeNow = Math.round(Date.now() / 1000);
+                if (expiresAt < timeNow) {
+                    if (this.autoRefreshToken && currentSession.refresh_token) {
+                        const { error } = yield this._callRefreshToken(currentSession.refresh_token);
+                        if (error) {
+                            console.log(error.message);
+                            yield this._removeSession();
+                        }
+                    }
+                    else {
+                        this._removeSession();
+                    }
+                }
+                else if (!currentSession || !currentSession.user) {
+                    console.log('Current session is missing data.');
+                    this._removeSession();
+                }
+                else {
+                    // should be handled on _recoverSession method already
+                    // But we still need the code here to accommodate for AsyncStorage e.g. in React native
+                    this._saveSession(currentSession);
+                    this._notifyAllSubscribers('SIGNED_IN');
+                }
+            }
+            catch (err) {
+                console.error(err);
+                return null;
+            }
+        });
+    }
+    _callRefreshToken(refresh_token) {
+        var _a;
+        if (refresh_token === void 0) { refresh_token = (_a = this.currentSession) === null || _a === void 0 ? void 0 : _a.refresh_token; }
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                if (!refresh_token) {
+                    throw new Error('No current session.');
+                }
+                const { data, error } = yield this.api.refreshAccessToken(refresh_token);
+                if (error)
+                    throw error;
+                if (!data)
+                    throw Error('Invalid session data.');
+                this._saveSession(data);
+                this._notifyAllSubscribers('SIGNED_IN');
+                return { data, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    _notifyAllSubscribers(event) {
+        this.stateChangeEmitters.forEach((x) => x.callback(event, this.currentSession));
+    }
+    /**
+     * set currentSession and currentUser
+     * process to _startAutoRefreshToken if possible
+     */
+    _saveSession(session) {
+        this.currentSession = session;
+        this.currentUser = session.user;
+        const expiresAt = session.expires_at;
+        if (expiresAt) {
+            const timeNow = Math.round(Date.now() / 1000);
+            const expiresIn = expiresAt - timeNow;
+            const refreshDurationBeforeExpires = expiresIn > 60 ? 60 : 0.5;
+            this._startAutoRefreshToken((expiresIn - refreshDurationBeforeExpires) * 1000);
+        }
+        // Do we need any extra check before persist session
+        // access_token or user ?
+        if (this.persistSession && session.expires_at) {
+            this._persistSession(this.currentSession);
+        }
+    }
+    _persistSession(currentSession) {
+        const data = { currentSession, expiresAt: currentSession.expires_at };
+        (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_1__.isBrowser)() && this.localStorage.setItem(_lib_constants__WEBPACK_IMPORTED_MODULE_2__.STORAGE_KEY, JSON.stringify(data));
+    }
+    _removeSession() {
+        return __awaiter(this, void 0, void 0, function* () {
+            this.currentSession = null;
+            this.currentUser = null;
+            if (this.refreshTokenTimer)
+                clearTimeout(this.refreshTokenTimer);
+            (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_1__.isBrowser)() && (yield this.localStorage.removeItem(_lib_constants__WEBPACK_IMPORTED_MODULE_2__.STORAGE_KEY));
+        });
+    }
+    /**
+     * Clear and re-create refresh token timer
+     * @param value time intervals in milliseconds
+     */
+    _startAutoRefreshToken(value) {
+        if (this.refreshTokenTimer)
+            clearTimeout(this.refreshTokenTimer);
+        if (value <= 0 || !this.autoRefreshToken)
+            return;
+        this.refreshTokenTimer = setTimeout(() => this._callRefreshToken(), value);
+        if (typeof this.refreshTokenTimer.unref === 'function')
+            this.refreshTokenTimer.unref();
+    }
+}
+//# sourceMappingURL=GoTrueClient.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/gotrue-js/dist/module/index.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@supabase/gotrue-js/dist/module/index.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "GoTrueApi": () => (/* reexport safe */ _GoTrueApi__WEBPACK_IMPORTED_MODULE_0__.default),
+/* harmony export */   "GoTrueClient": () => (/* reexport safe */ _GoTrueClient__WEBPACK_IMPORTED_MODULE_1__.default)
+/* harmony export */ });
+/* harmony import */ var _GoTrueApi__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GoTrueApi */ "./node_modules/@supabase/gotrue-js/dist/module/GoTrueApi.js");
+/* harmony import */ var _GoTrueClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GoTrueClient */ "./node_modules/@supabase/gotrue-js/dist/module/GoTrueClient.js");
+/* harmony import */ var _lib_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/types */ "./node_modules/@supabase/gotrue-js/dist/module/lib/types.js");
+
+
+
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/gotrue-js/dist/module/lib/constants.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@supabase/gotrue-js/dist/module/lib/constants.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "GOTRUE_URL": () => (/* binding */ GOTRUE_URL),
+/* harmony export */   "AUDIENCE": () => (/* binding */ AUDIENCE),
+/* harmony export */   "DEFAULT_HEADERS": () => (/* binding */ DEFAULT_HEADERS),
+/* harmony export */   "EXPIRY_MARGIN": () => (/* binding */ EXPIRY_MARGIN),
+/* harmony export */   "STORAGE_KEY": () => (/* binding */ STORAGE_KEY),
+/* harmony export */   "COOKIE_OPTIONS": () => (/* binding */ COOKIE_OPTIONS)
+/* harmony export */ });
+/* harmony import */ var _version__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./version */ "./node_modules/@supabase/gotrue-js/dist/module/lib/version.js");
+
+const GOTRUE_URL = 'http://localhost:9999';
+const AUDIENCE = '';
+const DEFAULT_HEADERS = { 'X-Client-Info': `gotrue-js/${_version__WEBPACK_IMPORTED_MODULE_0__.version}` };
+const EXPIRY_MARGIN = 60 * 1000;
+const STORAGE_KEY = 'supabase.auth.token';
+const COOKIE_OPTIONS = {
+    name: 'sb:token',
+    lifetime: 60 * 60 * 8,
+    domain: '',
+    path: '/',
+    sameSite: 'lax',
+};
+//# sourceMappingURL=constants.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/gotrue-js/dist/module/lib/cookies.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/@supabase/gotrue-js/dist/module/lib/cookies.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "setCookies": () => (/* binding */ setCookies),
+/* harmony export */   "setCookie": () => (/* binding */ setCookie),
+/* harmony export */   "deleteCookie": () => (/* binding */ deleteCookie)
+/* harmony export */ });
+/**
+ * Serialize data into a cookie header.
+ */
+function serialize(name, val, options) {
+    const opt = options || {};
+    const enc = encodeURIComponent;
+    const fieldContentRegExp = /^[\u0009\u0020-\u007e\u0080-\u00ff]+$/;
+    if (typeof enc !== 'function') {
+        throw new TypeError('option encode is invalid');
+    }
+    if (!fieldContentRegExp.test(name)) {
+        throw new TypeError('argument name is invalid');
+    }
+    const value = enc(val);
+    if (value && !fieldContentRegExp.test(value)) {
+        throw new TypeError('argument val is invalid');
+    }
+    let str = name + '=' + value;
+    if (null != opt.maxAge) {
+        const maxAge = opt.maxAge - 0;
+        if (isNaN(maxAge) || !isFinite(maxAge)) {
+            throw new TypeError('option maxAge is invalid');
+        }
+        str += '; Max-Age=' + Math.floor(maxAge);
+    }
+    if (opt.domain) {
+        if (!fieldContentRegExp.test(opt.domain)) {
+            throw new TypeError('option domain is invalid');
+        }
+        str += '; Domain=' + opt.domain;
+    }
+    if (opt.path) {
+        if (!fieldContentRegExp.test(opt.path)) {
+            throw new TypeError('option path is invalid');
+        }
+        str += '; Path=' + opt.path;
+    }
+    if (opt.expires) {
+        if (typeof opt.expires.toUTCString !== 'function') {
+            throw new TypeError('option expires is invalid');
+        }
+        str += '; Expires=' + opt.expires.toUTCString();
+    }
+    if (opt.httpOnly) {
+        str += '; HttpOnly';
+    }
+    if (opt.secure) {
+        str += '; Secure';
+    }
+    if (opt.sameSite) {
+        const sameSite = typeof opt.sameSite === 'string' ? opt.sameSite.toLowerCase() : opt.sameSite;
+        switch (sameSite) {
+            case 'lax':
+                str += '; SameSite=Lax';
+                break;
+            case 'strict':
+                str += '; SameSite=Strict';
+                break;
+            case 'none':
+                str += '; SameSite=None';
+                break;
+            default:
+                throw new TypeError('option sameSite is invalid');
+        }
+    }
+    return str;
+}
+/**
+ * Based on the environment and the request we know if a secure cookie can be set.
+ */
+function isSecureEnvironment(req) {
+    if (!req || !req.headers || !req.headers.host) {
+        throw new Error('The "host" request header is not available');
+    }
+    const host = (req.headers.host.indexOf(':') > -1 && req.headers.host.split(':')[0]) || req.headers.host;
+    if (['localhost', '127.0.0.1'].indexOf(host) > -1 || host.endsWith('.local')) {
+        return false;
+    }
+    return true;
+}
+/**
+ * Serialize a cookie to a string.
+ */
+function serializeCookie(cookie, secure) {
+    var _a, _b, _c;
+    return serialize(cookie.name, cookie.value, {
+        maxAge: cookie.maxAge,
+        expires: new Date(Date.now() + cookie.maxAge * 1000),
+        httpOnly: true,
+        secure,
+        path: (_a = cookie.path) !== null && _a !== void 0 ? _a : '/',
+        domain: (_b = cookie.domain) !== null && _b !== void 0 ? _b : '',
+        sameSite: (_c = cookie.sameSite) !== null && _c !== void 0 ? _c : 'lax',
+    });
+}
+/**
+ * Set one or more cookies.
+ */
+function setCookies(req, res, cookies) {
+    const strCookies = cookies.map((c) => serializeCookie(c, isSecureEnvironment(req)));
+    const previousCookies = res.getHeader('Set-Cookie');
+    if (previousCookies) {
+        if (previousCookies instanceof Array) {
+            Array.prototype.push.apply(strCookies, previousCookies);
+        }
+        else if (typeof previousCookies === 'string') {
+            strCookies.push(previousCookies);
+        }
+    }
+    res.setHeader('Set-Cookie', strCookies);
+}
+/**
+ * Set one or more cookies.
+ */
+function setCookie(req, res, cookie) {
+    setCookies(req, res, [cookie]);
+}
+function deleteCookie(req, res, name) {
+    setCookie(req, res, {
+        name,
+        value: '',
+        maxAge: -1,
+    });
+}
+//# sourceMappingURL=cookies.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/gotrue-js/dist/module/lib/fetch.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@supabase/gotrue-js/dist/module/lib/fetch.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "get": () => (/* binding */ get),
+/* harmony export */   "post": () => (/* binding */ post),
+/* harmony export */   "put": () => (/* binding */ put),
+/* harmony export */   "remove": () => (/* binding */ remove)
+/* harmony export */ });
+/* harmony import */ var cross_fetch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cross-fetch */ "./node_modules/cross-fetch/dist/browser-ponyfill.js");
+/* harmony import */ var cross_fetch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(cross_fetch__WEBPACK_IMPORTED_MODULE_0__);
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+const _getErrorMessage = (err) => err.msg || err.message || err.error_description || err.error || JSON.stringify(err);
+const handleError = (error, reject) => {
+    if (typeof error.json !== 'function') {
+        return reject(error);
+    }
+    error.json().then((err) => {
+        return reject({
+            message: _getErrorMessage(err),
+            status: (error === null || error === void 0 ? void 0 : error.status) || 500,
+        });
+    });
+};
+const _getRequestParams = (method, options, body) => {
+    const params = { method, headers: (options === null || options === void 0 ? void 0 : options.headers) || {} };
+    if (method === 'GET') {
+        return params;
+    }
+    params.headers = Object.assign({ 'Content-Type': 'text/plain;charset=UTF-8' }, options === null || options === void 0 ? void 0 : options.headers);
+    params.body = JSON.stringify(body);
+    return params;
+};
+function _handleRequest(method, url, options, body) {
+    return __awaiter(this, void 0, void 0, function* () {
+        return new Promise((resolve, reject) => {
+            cross_fetch__WEBPACK_IMPORTED_MODULE_0___default()(url, _getRequestParams(method, options, body))
+                .then((result) => {
+                if (!result.ok)
+                    throw result;
+                if (options === null || options === void 0 ? void 0 : options.noResolveJson)
+                    return resolve;
+                return result.json();
+            })
+                .then((data) => resolve(data))
+                .catch((error) => handleError(error, reject));
+        });
+    });
+}
+function get(url, options) {
+    return __awaiter(this, void 0, void 0, function* () {
+        return _handleRequest('GET', url, options);
+    });
+}
+function post(url, body, options) {
+    return __awaiter(this, void 0, void 0, function* () {
+        return _handleRequest('POST', url, options, body);
+    });
+}
+function put(url, body, options) {
+    return __awaiter(this, void 0, void 0, function* () {
+        return _handleRequest('PUT', url, options, body);
+    });
+}
+function remove(url, body, options) {
+    return __awaiter(this, void 0, void 0, function* () {
+        return _handleRequest('DELETE', url, options, body);
+    });
+}
+//# sourceMappingURL=fetch.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/gotrue-js/dist/module/lib/helpers.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/@supabase/gotrue-js/dist/module/lib/helpers.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "expiresAt": () => (/* binding */ expiresAt),
+/* harmony export */   "uuid": () => (/* binding */ uuid),
+/* harmony export */   "isBrowser": () => (/* binding */ isBrowser),
+/* harmony export */   "getParameterByName": () => (/* binding */ getParameterByName)
+/* harmony export */ });
+function expiresAt(expiresIn) {
+    const timeNow = Math.round(Date.now() / 1000);
+    return timeNow + expiresIn;
+}
+function uuid() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+        var r = (Math.random() * 16) | 0, v = c == 'x' ? r : (r & 0x3) | 0x8;
+        return v.toString(16);
+    });
+}
+const isBrowser = () => typeof window !== 'undefined';
+function getParameterByName(name, url) {
+    if (!url)
+        url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&#]' + name + '(=([^&#]*)|&|#|$)'), results = regex.exec(url);
+    if (!results)
+        return null;
+    if (!results[2])
+        return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+//# sourceMappingURL=helpers.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/gotrue-js/dist/module/lib/polyfills.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@supabase/gotrue-js/dist/module/lib/polyfills.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "polyfillGlobalThis": () => (/* binding */ polyfillGlobalThis)
+/* harmony export */ });
+// @ts-nocheck
+/**
+ * https://mathiasbynens.be/notes/globalthis
+ */
+function polyfillGlobalThis() {
+    if (typeof globalThis === 'object')
+        return;
+    try {
+        Object.defineProperty(Object.prototype, '__magic__', {
+            get: function () {
+                return this;
+            },
+            configurable: true,
+        });
+        __magic__.globalThis = __magic__;
+        delete Object.prototype.__magic__;
+    }
+    catch (e) {
+        if (typeof self !== 'undefined') {
+            self.globalThis = self;
+        }
+    }
+}
+//# sourceMappingURL=polyfills.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/gotrue-js/dist/module/lib/types.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@supabase/gotrue-js/dist/module/lib/types.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+//# sourceMappingURL=types.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/gotrue-js/dist/module/lib/version.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/@supabase/gotrue-js/dist/module/lib/version.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "version": () => (/* binding */ version)
+/* harmony export */ });
+// generated by genversion
+const version = '1.17.1';
+//# sourceMappingURL=version.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/postgrest-js/dist/module/PostgrestClient.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@supabase/postgrest-js/dist/module/PostgrestClient.js ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ PostgrestClient)
+/* harmony export */ });
+/* harmony import */ var _lib_PostgrestQueryBuilder__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/PostgrestQueryBuilder */ "./node_modules/@supabase/postgrest-js/dist/module/lib/PostgrestQueryBuilder.js");
+/* harmony import */ var _lib_PostgrestRpcBuilder__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/PostgrestRpcBuilder */ "./node_modules/@supabase/postgrest-js/dist/module/lib/PostgrestRpcBuilder.js");
+/* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/constants */ "./node_modules/@supabase/postgrest-js/dist/module/lib/constants.js");
+
+
+
+class PostgrestClient {
+    /**
+     * Creates a PostgREST client.
+     *
+     * @param url  URL of the PostgREST endpoint.
+     * @param headers  Custom headers.
+     * @param schema  Postgres schema to switch to.
+     */
+    constructor(url, { headers = {}, schema } = {}) {
+        this.url = url;
+        this.headers = Object.assign(Object.assign({}, _lib_constants__WEBPACK_IMPORTED_MODULE_2__.DEFAULT_HEADERS), headers);
+        this.schema = schema;
+    }
+    /**
+     * Authenticates the request with JWT.
+     *
+     * @param token  The JWT token to use.
+     */
+    auth(token) {
+        this.headers['Authorization'] = `Bearer ${token}`;
+        return this;
+    }
+    /**
+     * Perform a table operation.
+     *
+     * @param table  The table name to operate on.
+     */
+    from(table) {
+        const url = `${this.url}/${table}`;
+        return new _lib_PostgrestQueryBuilder__WEBPACK_IMPORTED_MODULE_0__.default(url, { headers: this.headers, schema: this.schema });
+    }
+    /**
+     * Perform a function call.
+     *
+     * @param fn  The function name to call.
+     * @param params  The parameters to pass to the function call.
+     * @param count  Count algorithm to use to count rows in a table.
+     */
+    rpc(fn, params, { count = null, } = {}) {
+        const url = `${this.url}/rpc/${fn}`;
+        return new _lib_PostgrestRpcBuilder__WEBPACK_IMPORTED_MODULE_1__.default(url, {
+            headers: this.headers,
+            schema: this.schema,
+        }).rpc(params, { count });
+    }
+}
+//# sourceMappingURL=PostgrestClient.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/postgrest-js/dist/module/index.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@supabase/postgrest-js/dist/module/index.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PostgrestClient": () => (/* reexport safe */ _PostgrestClient__WEBPACK_IMPORTED_MODULE_0__.default),
+/* harmony export */   "PostgrestBuilder": () => (/* reexport safe */ _lib_types__WEBPACK_IMPORTED_MODULE_3__.PostgrestBuilder),
+/* harmony export */   "PostgrestQueryBuilder": () => (/* reexport safe */ _lib_PostgrestQueryBuilder__WEBPACK_IMPORTED_MODULE_2__.default),
+/* harmony export */   "PostgrestFilterBuilder": () => (/* reexport safe */ _lib_PostgrestFilterBuilder__WEBPACK_IMPORTED_MODULE_1__.default)
+/* harmony export */ });
+/* harmony import */ var _PostgrestClient__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PostgrestClient */ "./node_modules/@supabase/postgrest-js/dist/module/PostgrestClient.js");
+/* harmony import */ var _lib_PostgrestFilterBuilder__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/PostgrestFilterBuilder */ "./node_modules/@supabase/postgrest-js/dist/module/lib/PostgrestFilterBuilder.js");
+/* harmony import */ var _lib_PostgrestQueryBuilder__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/PostgrestQueryBuilder */ "./node_modules/@supabase/postgrest-js/dist/module/lib/PostgrestQueryBuilder.js");
+/* harmony import */ var _lib_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lib/types */ "./node_modules/@supabase/postgrest-js/dist/module/lib/types.js");
+
+
+
+
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/postgrest-js/dist/module/lib/PostgrestFilterBuilder.js":
+/*!***************************************************************************************!*\
+  !*** ./node_modules/@supabase/postgrest-js/dist/module/lib/PostgrestFilterBuilder.js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ PostgrestFilterBuilder)
+/* harmony export */ });
+/* harmony import */ var _PostgrestTransformBuilder__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PostgrestTransformBuilder */ "./node_modules/@supabase/postgrest-js/dist/module/lib/PostgrestTransformBuilder.js");
+
+class PostgrestFilterBuilder extends _PostgrestTransformBuilder__WEBPACK_IMPORTED_MODULE_0__.default {
+    constructor() {
+        super(...arguments);
+        /** @deprecated Use `contains()` instead. */
+        this.cs = this.contains;
+        /** @deprecated Use `containedBy()` instead. */
+        this.cd = this.containedBy;
+        /** @deprecated Use `rangeLt()` instead. */
+        this.sl = this.rangeLt;
+        /** @deprecated Use `rangeGt()` instead. */
+        this.sr = this.rangeGt;
+        /** @deprecated Use `rangeGte()` instead. */
+        this.nxl = this.rangeGte;
+        /** @deprecated Use `rangeLte()` instead. */
+        this.nxr = this.rangeLte;
+        /** @deprecated Use `rangeAdjacent()` instead. */
+        this.adj = this.rangeAdjacent;
+        /** @deprecated Use `overlaps()` instead. */
+        this.ov = this.overlaps;
+    }
+    /**
+     * Finds all rows which doesn't satisfy the filter.
+     *
+     * @param column  The column to filter on.
+     * @param operator  The operator to filter with.
+     * @param value  The value to filter with.
+     */
+    not(column, operator, value) {
+        this.url.searchParams.append(`${column}`, `not.${operator}.${value}`);
+        return this;
+    }
+    /**
+     * Finds all rows satisfying at least one of the filters.
+     *
+     * @param filters  The filters to use, separated by commas.
+     * @param foreignTable  The foreign table to use (if `column` is a foreign column).
+     */
+    or(filters, { foreignTable } = {}) {
+        const key = typeof foreignTable === 'undefined' ? 'or' : `${foreignTable}.or`;
+        this.url.searchParams.append(key, `(${filters})`);
+        return this;
+    }
+    /**
+     * Finds all rows whose value on the stated `column` exactly matches the
+     * specified `value`.
+     *
+     * @param column  The column to filter on.
+     * @param value  The value to filter with.
+     */
+    eq(column, value) {
+        this.url.searchParams.append(`${column}`, `eq.${value}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose value on the stated `column` doesn't match the
+     * specified `value`.
+     *
+     * @param column  The column to filter on.
+     * @param value  The value to filter with.
+     */
+    neq(column, value) {
+        this.url.searchParams.append(`${column}`, `neq.${value}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose value on the stated `column` is greater than the
+     * specified `value`.
+     *
+     * @param column  The column to filter on.
+     * @param value  The value to filter with.
+     */
+    gt(column, value) {
+        this.url.searchParams.append(`${column}`, `gt.${value}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose value on the stated `column` is greater than or
+     * equal to the specified `value`.
+     *
+     * @param column  The column to filter on.
+     * @param value  The value to filter with.
+     */
+    gte(column, value) {
+        this.url.searchParams.append(`${column}`, `gte.${value}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose value on the stated `column` is less than the
+     * specified `value`.
+     *
+     * @param column  The column to filter on.
+     * @param value  The value to filter with.
+     */
+    lt(column, value) {
+        this.url.searchParams.append(`${column}`, `lt.${value}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose value on the stated `column` is less than or equal
+     * to the specified `value`.
+     *
+     * @param column  The column to filter on.
+     * @param value  The value to filter with.
+     */
+    lte(column, value) {
+        this.url.searchParams.append(`${column}`, `lte.${value}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose value in the stated `column` matches the supplied
+     * `pattern` (case sensitive).
+     *
+     * @param column  The column to filter on.
+     * @param pattern  The pattern to filter with.
+     */
+    like(column, pattern) {
+        this.url.searchParams.append(`${column}`, `like.${pattern}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose value in the stated `column` matches the supplied
+     * `pattern` (case insensitive).
+     *
+     * @param column  The column to filter on.
+     * @param pattern  The pattern to filter with.
+     */
+    ilike(column, pattern) {
+        this.url.searchParams.append(`${column}`, `ilike.${pattern}`);
+        return this;
+    }
+    /**
+     * A check for exact equality (null, true, false), finds all rows whose
+     * value on the stated `column` exactly match the specified `value`.
+     *
+     * @param column  The column to filter on.
+     * @param value  The value to filter with.
+     */
+    is(column, value) {
+        this.url.searchParams.append(`${column}`, `is.${value}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose value on the stated `column` is found on the
+     * specified `values`.
+     *
+     * @param column  The column to filter on.
+     * @param values  The values to filter with.
+     */
+    in(column, values) {
+        const cleanedValues = values
+            .map((s) => {
+            // handle postgrest reserved characters
+            // https://postgrest.org/en/v7.0.0/api.html#reserved-characters
+            if (typeof s === 'string' && new RegExp('[,()]').test(s))
+                return `"${s}"`;
+            else
+                return `${s}`;
+        })
+            .join(',');
+        this.url.searchParams.append(`${column}`, `in.(${cleanedValues})`);
+        return this;
+    }
+    /**
+     * Finds all rows whose json, array, or range value on the stated `column`
+     * contains the values specified in `value`.
+     *
+     * @param column  The column to filter on.
+     * @param value  The value to filter with.
+     */
+    contains(column, value) {
+        if (typeof value === 'string') {
+            // range types can be inclusive '[', ']' or exclusive '(', ')' so just
+            // keep it simple and accept a string
+            this.url.searchParams.append(`${column}`, `cs.${value}`);
+        }
+        else if (Array.isArray(value)) {
+            // array
+            this.url.searchParams.append(`${column}`, `cs.{${value.join(',')}}`);
+        }
+        else {
+            // json
+            this.url.searchParams.append(`${column}`, `cs.${JSON.stringify(value)}`);
+        }
+        return this;
+    }
+    /**
+     * Finds all rows whose json, array, or range value on the stated `column` is
+     * contained by the specified `value`.
+     *
+     * @param column  The column to filter on.
+     * @param value  The value to filter with.
+     */
+    containedBy(column, value) {
+        if (typeof value === 'string') {
+            // range
+            this.url.searchParams.append(`${column}`, `cd.${value}`);
+        }
+        else if (Array.isArray(value)) {
+            // array
+            this.url.searchParams.append(`${column}`, `cd.{${value.join(',')}}`);
+        }
+        else {
+            // json
+            this.url.searchParams.append(`${column}`, `cd.${JSON.stringify(value)}`);
+        }
+        return this;
+    }
+    /**
+     * Finds all rows whose range value on the stated `column` is strictly to the
+     * left of the specified `range`.
+     *
+     * @param column  The column to filter on.
+     * @param range  The range to filter with.
+     */
+    rangeLt(column, range) {
+        this.url.searchParams.append(`${column}`, `sl.${range}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose range value on the stated `column` is strictly to
+     * the right of the specified `range`.
+     *
+     * @param column  The column to filter on.
+     * @param range  The range to filter with.
+     */
+    rangeGt(column, range) {
+        this.url.searchParams.append(`${column}`, `sr.${range}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose range value on the stated `column` does not extend
+     * to the left of the specified `range`.
+     *
+     * @param column  The column to filter on.
+     * @param range  The range to filter with.
+     */
+    rangeGte(column, range) {
+        this.url.searchParams.append(`${column}`, `nxl.${range}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose range value on the stated `column` does not extend
+     * to the right of the specified `range`.
+     *
+     * @param column  The column to filter on.
+     * @param range  The range to filter with.
+     */
+    rangeLte(column, range) {
+        this.url.searchParams.append(`${column}`, `nxr.${range}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose range value on the stated `column` is adjacent to
+     * the specified `range`.
+     *
+     * @param column  The column to filter on.
+     * @param range  The range to filter with.
+     */
+    rangeAdjacent(column, range) {
+        this.url.searchParams.append(`${column}`, `adj.${range}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose array or range value on the stated `column` overlaps
+     * (has a value in common) with the specified `value`.
+     *
+     * @param column  The column to filter on.
+     * @param value  The value to filter with.
+     */
+    overlaps(column, value) {
+        if (typeof value === 'string') {
+            // range
+            this.url.searchParams.append(`${column}`, `ov.${value}`);
+        }
+        else {
+            // array
+            this.url.searchParams.append(`${column}`, `ov.{${value.join(',')}}`);
+        }
+        return this;
+    }
+    /**
+     * Finds all rows whose text or tsvector value on the stated `column` matches
+     * the tsquery in `query`.
+     *
+     * @param column  The column to filter on.
+     * @param query  The Postgres tsquery string to filter with.
+     * @param config  The text search configuration to use.
+     * @param type  The type of tsquery conversion to use on `query`.
+     */
+    textSearch(column, query, { config, type = null, } = {}) {
+        let typePart = '';
+        if (type === 'plain') {
+            typePart = 'pl';
+        }
+        else if (type === 'phrase') {
+            typePart = 'ph';
+        }
+        else if (type === 'websearch') {
+            typePart = 'w';
+        }
+        const configPart = config === undefined ? '' : `(${config})`;
+        this.url.searchParams.append(`${column}`, `${typePart}fts${configPart}.${query}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose tsvector value on the stated `column` matches
+     * to_tsquery(`query`).
+     *
+     * @param column  The column to filter on.
+     * @param query  The Postgres tsquery string to filter with.
+     * @param config  The text search configuration to use.
+     *
+     * @deprecated Use `textSearch()` instead.
+     */
+    fts(column, query, { config } = {}) {
+        const configPart = typeof config === 'undefined' ? '' : `(${config})`;
+        this.url.searchParams.append(`${column}`, `fts${configPart}.${query}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose tsvector value on the stated `column` matches
+     * plainto_tsquery(`query`).
+     *
+     * @param column  The column to filter on.
+     * @param query  The Postgres tsquery string to filter with.
+     * @param config  The text search configuration to use.
+     *
+     * @deprecated Use `textSearch()` with `type: 'plain'` instead.
+     */
+    plfts(column, query, { config } = {}) {
+        const configPart = typeof config === 'undefined' ? '' : `(${config})`;
+        this.url.searchParams.append(`${column}`, `plfts${configPart}.${query}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose tsvector value on the stated `column` matches
+     * phraseto_tsquery(`query`).
+     *
+     * @param column  The column to filter on.
+     * @param query  The Postgres tsquery string to filter with.
+     * @param config  The text search configuration to use.
+     *
+     * @deprecated Use `textSearch()` with `type: 'phrase'` instead.
+     */
+    phfts(column, query, { config } = {}) {
+        const configPart = typeof config === 'undefined' ? '' : `(${config})`;
+        this.url.searchParams.append(`${column}`, `phfts${configPart}.${query}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose tsvector value on the stated `column` matches
+     * websearch_to_tsquery(`query`).
+     *
+     * @param column  The column to filter on.
+     * @param query  The Postgres tsquery string to filter with.
+     * @param config  The text search configuration to use.
+     *
+     * @deprecated Use `textSearch()` with `type: 'websearch'` instead.
+     */
+    wfts(column, query, { config } = {}) {
+        const configPart = typeof config === 'undefined' ? '' : `(${config})`;
+        this.url.searchParams.append(`${column}`, `wfts${configPart}.${query}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose `column` satisfies the filter.
+     *
+     * @param column  The column to filter on.
+     * @param operator  The operator to filter with.
+     * @param value  The value to filter with.
+     */
+    filter(column, operator, value) {
+        this.url.searchParams.append(`${column}`, `${operator}.${value}`);
+        return this;
+    }
+    /**
+     * Finds all rows whose columns match the specified `query` object.
+     *
+     * @param query  The object to filter with, with column names as keys mapped
+     *               to their filter values.
+     */
+    match(query) {
+        Object.keys(query).forEach((key) => {
+            this.url.searchParams.append(`${key}`, `eq.${query[key]}`);
+        });
+        return this;
+    }
+}
+//# sourceMappingURL=PostgrestFilterBuilder.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/postgrest-js/dist/module/lib/PostgrestQueryBuilder.js":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/@supabase/postgrest-js/dist/module/lib/PostgrestQueryBuilder.js ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ PostgrestQueryBuilder)
+/* harmony export */ });
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./types */ "./node_modules/@supabase/postgrest-js/dist/module/lib/types.js");
+/* harmony import */ var _PostgrestFilterBuilder__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PostgrestFilterBuilder */ "./node_modules/@supabase/postgrest-js/dist/module/lib/PostgrestFilterBuilder.js");
+
+
+class PostgrestQueryBuilder extends _types__WEBPACK_IMPORTED_MODULE_0__.PostgrestBuilder {
+    constructor(url, { headers = {}, schema } = {}) {
+        super({});
+        this.url = new URL(url);
+        this.headers = Object.assign({}, headers);
+        this.schema = schema;
+    }
+    /**
+     * Performs vertical filtering with SELECT.
+     *
+     * @param columns  The columns to retrieve, separated by commas.
+     * @param head  When set to true, select will void data.
+     * @param count  Count algorithm to use to count rows in a table.
+     */
+    select(columns = '*', { head = false, count = null, } = {}) {
+        this.method = 'GET';
+        // Remove whitespaces except when quoted
+        let quoted = false;
+        const cleanedColumns = columns
+            .split('')
+            .map((c) => {
+            if (/\s/.test(c) && !quoted) {
+                return '';
+            }
+            if (c === '"') {
+                quoted = !quoted;
+            }
+            return c;
+        })
+            .join('');
+        this.url.searchParams.set('select', cleanedColumns);
+        if (count) {
+            this.headers['Prefer'] = `count=${count}`;
+        }
+        if (head) {
+            this.method = 'HEAD';
+        }
+        return new _PostgrestFilterBuilder__WEBPACK_IMPORTED_MODULE_1__.default(this);
+    }
+    insert(values, { upsert = false, onConflict, returning = 'representation', count = null, } = {}) {
+        this.method = 'POST';
+        const prefersHeaders = [`return=${returning}`];
+        if (upsert)
+            prefersHeaders.push('resolution=merge-duplicates');
+        if (upsert && onConflict !== undefined)
+            this.url.searchParams.set('on_conflict', onConflict);
+        this.body = values;
+        if (count) {
+            prefersHeaders.push(`count=${count}`);
+        }
+        this.headers['Prefer'] = prefersHeaders.join(',');
+        if (Array.isArray(values)) {
+            const columns = values.reduce((acc, x) => acc.concat(Object.keys(x)), []);
+            if (columns.length > 0) {
+                const uniqueColumns = [...new Set(columns)].map((column) => `"${column}"`);
+                this.url.searchParams.set('columns', uniqueColumns.join(','));
+            }
+        }
+        return new _PostgrestFilterBuilder__WEBPACK_IMPORTED_MODULE_1__.default(this);
+    }
+    /**
+     * Performs an UPSERT into the table.
+     *
+     * @param values  The values to insert.
+     * @param onConflict  By specifying the `on_conflict` query parameter, you can make UPSERT work on a column(s) that has a UNIQUE constraint.
+     * @param returning  By default the new record is returned. Set this to 'minimal' if you don't need this value.
+     * @param count  Count algorithm to use to count rows in a table.
+     * @param ignoreDuplicates  Specifies if duplicate rows should be ignored and not inserted.
+     */
+    upsert(values, { onConflict, returning = 'representation', count = null, ignoreDuplicates = false, } = {}) {
+        this.method = 'POST';
+        const prefersHeaders = [
+            `resolution=${ignoreDuplicates ? 'ignore' : 'merge'}-duplicates`,
+            `return=${returning}`,
+        ];
+        if (onConflict !== undefined)
+            this.url.searchParams.set('on_conflict', onConflict);
+        this.body = values;
+        if (count) {
+            prefersHeaders.push(`count=${count}`);
+        }
+        this.headers['Prefer'] = prefersHeaders.join(',');
+        return new _PostgrestFilterBuilder__WEBPACK_IMPORTED_MODULE_1__.default(this);
+    }
+    /**
+     * Performs an UPDATE on the table.
+     *
+     * @param values  The values to update.
+     * @param returning  By default the updated record is returned. Set this to 'minimal' if you don't need this value.
+     * @param count  Count algorithm to use to count rows in a table.
+     */
+    update(values, { returning = 'representation', count = null, } = {}) {
+        this.method = 'PATCH';
+        const prefersHeaders = [`return=${returning}`];
+        this.body = values;
+        if (count) {
+            prefersHeaders.push(`count=${count}`);
+        }
+        this.headers['Prefer'] = prefersHeaders.join(',');
+        return new _PostgrestFilterBuilder__WEBPACK_IMPORTED_MODULE_1__.default(this);
+    }
+    /**
+     * Performs a DELETE on the table.
+     *
+     * @param returning  If `true`, return the deleted row(s) in the response.
+     * @param count  Count algorithm to use to count rows in a table.
+     */
+    delete({ returning = 'representation', count = null, } = {}) {
+        this.method = 'DELETE';
+        const prefersHeaders = [`return=${returning}`];
+        if (count) {
+            prefersHeaders.push(`count=${count}`);
+        }
+        this.headers['Prefer'] = prefersHeaders.join(',');
+        return new _PostgrestFilterBuilder__WEBPACK_IMPORTED_MODULE_1__.default(this);
+    }
+}
+//# sourceMappingURL=PostgrestQueryBuilder.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/postgrest-js/dist/module/lib/PostgrestRpcBuilder.js":
+/*!************************************************************************************!*\
+  !*** ./node_modules/@supabase/postgrest-js/dist/module/lib/PostgrestRpcBuilder.js ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ PostgrestRpcBuilder)
+/* harmony export */ });
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./types */ "./node_modules/@supabase/postgrest-js/dist/module/lib/types.js");
+/* harmony import */ var _PostgrestFilterBuilder__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PostgrestFilterBuilder */ "./node_modules/@supabase/postgrest-js/dist/module/lib/PostgrestFilterBuilder.js");
+
+
+class PostgrestRpcBuilder extends _types__WEBPACK_IMPORTED_MODULE_0__.PostgrestBuilder {
+    constructor(url, { headers = {}, schema } = {}) {
+        super({});
+        this.url = new URL(url);
+        this.headers = Object.assign({}, headers);
+        this.schema = schema;
+    }
+    /**
+     * Perform a function call.
+     */
+    rpc(params, { count = null, } = {}) {
+        this.method = 'POST';
+        this.body = params;
+        if (count) {
+            if (this.headers['Prefer'] !== undefined)
+                this.headers['Prefer'] += `,count=${count}`;
+            else
+                this.headers['Prefer'] = `count=${count}`;
+        }
+        return new _PostgrestFilterBuilder__WEBPACK_IMPORTED_MODULE_1__.default(this);
+    }
+}
+//# sourceMappingURL=PostgrestRpcBuilder.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/postgrest-js/dist/module/lib/PostgrestTransformBuilder.js":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/@supabase/postgrest-js/dist/module/lib/PostgrestTransformBuilder.js ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ PostgrestTransformBuilder)
+/* harmony export */ });
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./types */ "./node_modules/@supabase/postgrest-js/dist/module/lib/types.js");
+
+/**
+ * Post-filters (transforms)
+ */
+class PostgrestTransformBuilder extends _types__WEBPACK_IMPORTED_MODULE_0__.PostgrestBuilder {
+    /**
+     * Performs vertical filtering with SELECT.
+     *
+     * @param columns  The columns to retrieve, separated by commas.
+     */
+    select(columns = '*') {
+        // Remove whitespaces except when quoted
+        let quoted = false;
+        const cleanedColumns = columns
+            .split('')
+            .map((c) => {
+            if (/\s/.test(c) && !quoted) {
+                return '';
+            }
+            if (c === '"') {
+                quoted = !quoted;
+            }
+            return c;
+        })
+            .join('');
+        this.url.searchParams.set('select', cleanedColumns);
+        return this;
+    }
+    /**
+     * Orders the result with the specified `column`.
+     *
+     * @param column  The column to order on.
+     * @param ascending  If `true`, the result will be in ascending order.
+     * @param nullsFirst  If `true`, `null`s appear first.
+     * @param foreignTable  The foreign table to use (if `column` is a foreign column).
+     */
+    order(column, { ascending = true, nullsFirst = false, foreignTable, } = {}) {
+        const key = typeof foreignTable === 'undefined' ? 'order' : `${foreignTable}.order`;
+        const existingOrder = this.url.searchParams.get(key);
+        this.url.searchParams.set(key, `${existingOrder ? `${existingOrder},` : ''}${column}.${ascending ? 'asc' : 'desc'}.${nullsFirst ? 'nullsfirst' : 'nullslast'}`);
+        return this;
+    }
+    /**
+     * Limits the result with the specified `count`.
+     *
+     * @param count  The maximum no. of rows to limit to.
+     * @param foreignTable  The foreign table to use (for foreign columns).
+     */
+    limit(count, { foreignTable } = {}) {
+        const key = typeof foreignTable === 'undefined' ? 'limit' : `${foreignTable}.limit`;
+        this.url.searchParams.set(key, `${count}`);
+        return this;
+    }
+    /**
+     * Limits the result to rows within the specified range, inclusive.
+     *
+     * @param from  The starting index from which to limit the result, inclusive.
+     * @param to  The last index to which to limit the result, inclusive.
+     * @param foreignTable  The foreign table to use (for foreign columns).
+     */
+    range(from, to, { foreignTable } = {}) {
+        const keyOffset = typeof foreignTable === 'undefined' ? 'offset' : `${foreignTable}.offset`;
+        const keyLimit = typeof foreignTable === 'undefined' ? 'limit' : `${foreignTable}.limit`;
+        this.url.searchParams.set(keyOffset, `${from}`);
+        // Range is inclusive, so add 1
+        this.url.searchParams.set(keyLimit, `${to - from + 1}`);
+        return this;
+    }
+    /**
+     * Retrieves only one row from the result. Result must be one row (e.g. using
+     * `limit`), otherwise this will result in an error.
+     */
+    single() {
+        this.headers['Accept'] = 'application/vnd.pgrst.object+json';
+        return this;
+    }
+    /**
+     * Retrieves at most one row from the result. Result must be at most one row
+     * (e.g. using `eq` on a UNIQUE column), otherwise this will result in an
+     * error.
+     */
+    maybeSingle() {
+        this.headers['Accept'] = 'application/vnd.pgrst.object+json';
+        const _this = new PostgrestTransformBuilder(this);
+        _this.then = ((onfulfilled, onrejected) => this.then((res) => {
+            var _a, _b;
+            if ((_b = (_a = res.error) === null || _a === void 0 ? void 0 : _a.details) === null || _b === void 0 ? void 0 : _b.includes('Results contain 0 rows')) {
+                return onfulfilled({
+                    error: null,
+                    data: null,
+                    count: res.count,
+                    status: 200,
+                    statusText: 'OK',
+                    body: null,
+                });
+            }
+            return onfulfilled(res);
+        }, onrejected));
+        return _this;
+    }
+    /**
+     * Set the response type to CSV.
+     */
+    csv() {
+        this.headers['Accept'] = 'text/csv';
+        return this;
+    }
+}
+//# sourceMappingURL=PostgrestTransformBuilder.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/postgrest-js/dist/module/lib/constants.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@supabase/postgrest-js/dist/module/lib/constants.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DEFAULT_HEADERS": () => (/* binding */ DEFAULT_HEADERS)
+/* harmony export */ });
+/* harmony import */ var _version__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./version */ "./node_modules/@supabase/postgrest-js/dist/module/lib/version.js");
+
+const DEFAULT_HEADERS = { 'X-Client-Info': `postgrest-js/${_version__WEBPACK_IMPORTED_MODULE_0__.version}` };
+//# sourceMappingURL=constants.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/postgrest-js/dist/module/lib/types.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@supabase/postgrest-js/dist/module/lib/types.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PostgrestBuilder": () => (/* binding */ PostgrestBuilder)
+/* harmony export */ });
+/* harmony import */ var cross_fetch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cross-fetch */ "./node_modules/cross-fetch/dist/browser-ponyfill.js");
+/* harmony import */ var cross_fetch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(cross_fetch__WEBPACK_IMPORTED_MODULE_0__);
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+class PostgrestBuilder {
+    constructor(builder) {
+        Object.assign(this, builder);
+    }
+    /**
+     * If there's an error with the query, throwOnError will reject the promise by
+     * throwing the error instead of returning it as part of a successful response.
+     *
+     * {@link https://github.com/supabase/supabase-js/issues/92}
+     */
+    throwOnError() {
+        this.shouldThrowOnError = true;
+        return this;
+    }
+    then(onfulfilled, onrejected) {
+        // https://postgrest.org/en/stable/api.html#switching-schemas
+        if (typeof this.schema === 'undefined') {
+            // skip
+        }
+        else if (['GET', 'HEAD'].includes(this.method)) {
+            this.headers['Accept-Profile'] = this.schema;
+        }
+        else {
+            this.headers['Content-Profile'] = this.schema;
+        }
+        if (this.method !== 'GET' && this.method !== 'HEAD') {
+            this.headers['Content-Type'] = 'application/json';
+        }
+        return cross_fetch__WEBPACK_IMPORTED_MODULE_0___default()(this.url.toString(), {
+            method: this.method,
+            headers: this.headers,
+            body: JSON.stringify(this.body),
+        })
+            .then((res) => __awaiter(this, void 0, void 0, function* () {
+            var _a, _b, _c;
+            let error = null;
+            let data = null;
+            let count = null;
+            if (res.ok) {
+                const isReturnMinimal = (_a = this.headers['Prefer']) === null || _a === void 0 ? void 0 : _a.split(',').includes('return=minimal');
+                if (this.method !== 'HEAD' && !isReturnMinimal) {
+                    const text = yield res.text();
+                    if (!text) {
+                        // discard `text`
+                    }
+                    else if (this.headers['Accept'] === 'text/csv') {
+                        data = text;
+                    }
+                    else {
+                        data = JSON.parse(text);
+                    }
+                }
+                const countHeader = (_b = this.headers['Prefer']) === null || _b === void 0 ? void 0 : _b.match(/count=(exact|planned|estimated)/);
+                const contentRange = (_c = res.headers.get('content-range')) === null || _c === void 0 ? void 0 : _c.split('/');
+                if (countHeader && contentRange && contentRange.length > 1) {
+                    count = parseInt(contentRange[1]);
+                }
+            }
+            else {
+                error = yield res.json();
+                if (error && this.shouldThrowOnError) {
+                    throw error;
+                }
+            }
+            const postgrestResponse = {
+                error,
+                data,
+                count,
+                status: res.status,
+                statusText: res.statusText,
+                body: data,
+            };
+            return postgrestResponse;
+        }))
+            .then(onfulfilled, onrejected);
+    }
+}
+//# sourceMappingURL=types.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/postgrest-js/dist/module/lib/version.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/@supabase/postgrest-js/dist/module/lib/version.js ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "version": () => (/* binding */ version)
+/* harmony export */ });
+// generated by genversion
+const version = '0.33.3';
+//# sourceMappingURL=version.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/realtime-js/dist/module/RealtimeClient.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@supabase/realtime-js/dist/module/RealtimeClient.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ RealtimeClient)
+/* harmony export */ });
+/* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/constants */ "./node_modules/@supabase/realtime-js/dist/module/lib/constants.js");
+/* harmony import */ var _lib_timer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/timer */ "./node_modules/@supabase/realtime-js/dist/module/lib/timer.js");
+/* harmony import */ var _RealtimeSubscription__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./RealtimeSubscription */ "./node_modules/@supabase/realtime-js/dist/module/RealtimeSubscription.js");
+/* harmony import */ var websocket__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! websocket */ "./node_modules/websocket/lib/browser.js");
+/* harmony import */ var websocket__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(websocket__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _lib_serializer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./lib/serializer */ "./node_modules/@supabase/realtime-js/dist/module/lib/serializer.js");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+
+
+
+
+const noop = () => { };
+class RealtimeClient {
+    /**
+     * Initializes the Socket
+     *
+     * @param endPoint The string WebSocket endpoint, ie, "ws://example.com/socket", "wss://example.com", "/socket" (inherited host & protocol)
+     * @param options.transport The Websocket Transport, for example WebSocket.
+     * @param options.timeout The default timeout in milliseconds to trigger push timeouts.
+     * @param options.params The optional params to pass when connecting.
+     * @param options.headers The optional headers to pass when connecting.
+     * @param options.heartbeatIntervalMs The millisec interval to send a heartbeat message.
+     * @param options.logger The optional function for specialized logging, ie: logger: (kind, msg, data) => { console.log(`${kind}: ${msg}`, data) }
+     * @param options.encode The function to encode outgoing messages. Defaults to JSON: (payload, callback) => callback(JSON.stringify(payload))
+     * @param options.decode The function to decode incoming messages. Defaults to Serializer's decode.
+     * @param options.longpollerTimeout The maximum timeout of a long poll AJAX request. Defaults to 20s (double the server long poll timer).
+     * @param options.reconnectAfterMs he optional function that returns the millsec reconnect interval. Defaults to stepped backoff off.
+     */
+    constructor(endPoint, options) {
+        this.channels = [];
+        this.endPoint = '';
+        this.headers = _lib_constants__WEBPACK_IMPORTED_MODULE_0__.DEFAULT_HEADERS;
+        this.params = {};
+        this.timeout = _lib_constants__WEBPACK_IMPORTED_MODULE_0__.DEFAULT_TIMEOUT;
+        this.transport = websocket__WEBPACK_IMPORTED_MODULE_3__.w3cwebsocket;
+        this.heartbeatIntervalMs = 30000;
+        this.longpollerTimeout = 20000;
+        this.heartbeatTimer = undefined;
+        this.pendingHeartbeatRef = null;
+        this.ref = 0;
+        this.logger = noop;
+        this.conn = null;
+        this.sendBuffer = [];
+        this.serializer = new _lib_serializer__WEBPACK_IMPORTED_MODULE_4__.default();
+        this.stateChangeCallbacks = {
+            open: [],
+            close: [],
+            error: [],
+            message: [],
+        };
+        this.endPoint = `${endPoint}/${_lib_constants__WEBPACK_IMPORTED_MODULE_0__.TRANSPORTS.websocket}`;
+        if (options === null || options === void 0 ? void 0 : options.params)
+            this.params = options.params;
+        if (options === null || options === void 0 ? void 0 : options.headers)
+            this.headers = Object.assign(Object.assign({}, this.headers), options.headers);
+        if (options === null || options === void 0 ? void 0 : options.timeout)
+            this.timeout = options.timeout;
+        if (options === null || options === void 0 ? void 0 : options.logger)
+            this.logger = options.logger;
+        if (options === null || options === void 0 ? void 0 : options.transport)
+            this.transport = options.transport;
+        if (options === null || options === void 0 ? void 0 : options.heartbeatIntervalMs)
+            this.heartbeatIntervalMs = options.heartbeatIntervalMs;
+        if (options === null || options === void 0 ? void 0 : options.longpollerTimeout)
+            this.longpollerTimeout = options.longpollerTimeout;
+        this.reconnectAfterMs = (options === null || options === void 0 ? void 0 : options.reconnectAfterMs) ? options.reconnectAfterMs
+            : (tries) => {
+                return [1000, 2000, 5000, 10000][tries - 1] || 10000;
+            };
+        this.encode = (options === null || options === void 0 ? void 0 : options.encode) ? options.encode
+            : (payload, callback) => {
+                return callback(JSON.stringify(payload));
+            };
+        this.decode = (options === null || options === void 0 ? void 0 : options.decode) ? options.decode
+            : this.serializer.decode.bind(this.serializer);
+        this.reconnectTimer = new _lib_timer__WEBPACK_IMPORTED_MODULE_1__.default(() => __awaiter(this, void 0, void 0, function* () {
+            yield this.disconnect();
+            this.connect();
+        }), this.reconnectAfterMs);
+    }
+    /**
+     * Connects the socket.
+     */
+    connect() {
+        if (this.conn) {
+            return;
+        }
+        this.conn = new this.transport(this.endPointURL(), [], null, this.headers);
+        if (this.conn) {
+            // this.conn.timeout = this.longpollerTimeout // TYPE ERROR
+            this.conn.binaryType = 'arraybuffer';
+            this.conn.onopen = () => this._onConnOpen();
+            this.conn.onerror = (error) => this._onConnError(error);
+            this.conn.onmessage = (event) => this.onConnMessage(event);
+            this.conn.onclose = (event) => this._onConnClose(event);
+        }
+    }
+    /**
+     * Disconnects the socket.
+     *
+     * @param code A numeric status code to send on disconnect.
+     * @param reason A custom reason for the disconnect.
+     */
+    disconnect(code, reason) {
+        return new Promise((resolve, _reject) => {
+            try {
+                if (this.conn) {
+                    this.conn.onclose = function () { }; // noop
+                    if (code) {
+                        this.conn.close(code, reason || '');
+                    }
+                    else {
+                        this.conn.close();
+                    }
+                    this.conn = null;
+                    // remove open handles
+                    this.heartbeatTimer && clearInterval(this.heartbeatTimer);
+                    this.reconnectTimer.reset();
+                }
+                resolve({ error: null, data: true });
+            }
+            catch (error) {
+                resolve({ error, data: false });
+            }
+        });
+    }
+    /**
+     * Logs the message. Override `this.logger` for specialized logging.
+     */
+    log(kind, msg, data) {
+        this.logger(kind, msg, data);
+    }
+    /**
+     * Registers a callback for connection state change event.
+     * @param callback A function to be called when the event occurs.
+     *
+     * @example
+     *    socket.onOpen(() => console.log("Socket opened."))
+     */
+    onOpen(callback) {
+        this.stateChangeCallbacks.open.push(callback);
+    }
+    /**
+     * Registers a callbacks for connection state change events.
+     * @param callback A function to be called when the event occurs.
+     *
+     * @example
+     *    socket.onOpen(() => console.log("Socket closed."))
+     */
+    onClose(callback) {
+        this.stateChangeCallbacks.close.push(callback);
+    }
+    /**
+     * Registers a callback for connection state change events.
+     * @param callback A function to be called when the event occurs.
+     *
+     * @example
+     *    socket.onOpen((error) => console.log("An error occurred"))
+     */
+    onError(callback) {
+        this.stateChangeCallbacks.error.push(callback);
+    }
+    /**
+     * Calls a function any time a message is received.
+     * @param callback A function to be called when the event occurs.
+     *
+     * @example
+     *    socket.onMessage((message) => console.log(message))
+     */
+    onMessage(callback) {
+        this.stateChangeCallbacks.message.push(callback);
+    }
+    /**
+     * Returns the current state of the socket.
+     */
+    connectionState() {
+        switch (this.conn && this.conn.readyState) {
+            case _lib_constants__WEBPACK_IMPORTED_MODULE_0__.SOCKET_STATES.connecting:
+                return 'connecting';
+            case _lib_constants__WEBPACK_IMPORTED_MODULE_0__.SOCKET_STATES.open:
+                return 'open';
+            case _lib_constants__WEBPACK_IMPORTED_MODULE_0__.SOCKET_STATES.closing:
+                return 'closing';
+            default:
+                return 'closed';
+        }
+    }
+    /**
+     * Retuns `true` is the connection is open.
+     */
+    isConnected() {
+        return this.connectionState() === 'open';
+    }
+    /**
+     * Removes a subscription from the socket.
+     *
+     * @param channel An open subscription.
+     */
+    remove(channel) {
+        this.channels = this.channels.filter((c) => c.joinRef() !== channel.joinRef());
+    }
+    channel(topic, chanParams = {}) {
+        let chan = new _RealtimeSubscription__WEBPACK_IMPORTED_MODULE_2__.default(topic, chanParams, this);
+        this.channels.push(chan);
+        return chan;
+    }
+    push(data) {
+        let { topic, event, payload, ref } = data;
+        let callback = () => {
+            this.encode(data, (result) => {
+                var _a;
+                (_a = this.conn) === null || _a === void 0 ? void 0 : _a.send(result);
+            });
+        };
+        this.log('push', `${topic} ${event} (${ref})`, payload);
+        if (this.isConnected()) {
+            callback();
+        }
+        else {
+            this.sendBuffer.push(callback);
+        }
+    }
+    onConnMessage(rawMessage) {
+        this.decode(rawMessage.data, (msg) => {
+            let { topic, event, payload, ref } = msg;
+            if (ref && ref === this.pendingHeartbeatRef) {
+                this.pendingHeartbeatRef = null;
+            }
+            else if (event === (payload === null || payload === void 0 ? void 0 : payload.type)) {
+                this._resetHeartbeat();
+            }
+            this.log('receive', `${payload.status || ''} ${topic} ${event} ${(ref && '(' + ref + ')') || ''}`, payload);
+            this.channels
+                .filter((channel) => channel.isMember(topic))
+                .forEach((channel) => channel.trigger(event, payload, ref));
+            this.stateChangeCallbacks.message.forEach((callback) => callback(msg));
+        });
+    }
+    /**
+     * Returns the URL of the websocket.
+     */
+    endPointURL() {
+        return this._appendParams(this.endPoint, Object.assign({}, this.params, { vsn: _lib_constants__WEBPACK_IMPORTED_MODULE_0__.VSN }));
+    }
+    /**
+     * Return the next message ref, accounting for overflows
+     */
+    makeRef() {
+        let newRef = this.ref + 1;
+        if (newRef === this.ref) {
+            this.ref = 0;
+        }
+        else {
+            this.ref = newRef;
+        }
+        return this.ref.toString();
+    }
+    _onConnOpen() {
+        this.log('transport', `connected to ${this.endPointURL()}`);
+        this._flushSendBuffer();
+        this.reconnectTimer.reset();
+        this._resetHeartbeat();
+        this.stateChangeCallbacks.open.forEach((callback) => callback());
+    }
+    _onConnClose(event) {
+        this.log('transport', 'close', event);
+        this._triggerChanError();
+        this.heartbeatTimer && clearInterval(this.heartbeatTimer);
+        this.reconnectTimer.scheduleTimeout();
+        this.stateChangeCallbacks.close.forEach((callback) => callback(event));
+    }
+    _onConnError(error) {
+        this.log('transport', error.message);
+        this._triggerChanError();
+        this.stateChangeCallbacks.error.forEach((callback) => callback(error));
+    }
+    _triggerChanError() {
+        this.channels.forEach((channel) => channel.trigger(_lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_EVENTS.error));
+    }
+    _appendParams(url, params) {
+        if (Object.keys(params).length === 0) {
+            return url;
+        }
+        const prefix = url.match(/\?/) ? '&' : '?';
+        const query = new URLSearchParams(params);
+        return `${url}${prefix}${query}`;
+    }
+    _flushSendBuffer() {
+        if (this.isConnected() && this.sendBuffer.length > 0) {
+            this.sendBuffer.forEach((callback) => callback());
+            this.sendBuffer = [];
+        }
+    }
+    _resetHeartbeat() {
+        this.pendingHeartbeatRef = null;
+        this.heartbeatTimer && clearInterval(this.heartbeatTimer);
+        this.heartbeatTimer = setInterval(() => this._sendHeartbeat(), this.heartbeatIntervalMs);
+    }
+    _sendHeartbeat() {
+        var _a;
+        if (!this.isConnected()) {
+            return;
+        }
+        if (this.pendingHeartbeatRef) {
+            this.pendingHeartbeatRef = null;
+            this.log('transport', 'heartbeat timeout. Attempting to re-establish connection');
+            (_a = this.conn) === null || _a === void 0 ? void 0 : _a.close(_lib_constants__WEBPACK_IMPORTED_MODULE_0__.WS_CLOSE_NORMAL, 'hearbeat timeout');
+            return;
+        }
+        this.pendingHeartbeatRef = this.makeRef();
+        this.push({
+            topic: 'phoenix',
+            event: 'heartbeat',
+            payload: {},
+            ref: this.pendingHeartbeatRef,
+        });
+    }
+}
+//# sourceMappingURL=RealtimeClient.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/realtime-js/dist/module/RealtimeSubscription.js":
+/*!********************************************************************************!*\
+  !*** ./node_modules/@supabase/realtime-js/dist/module/RealtimeSubscription.js ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ RealtimeSubscription)
+/* harmony export */ });
+/* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/constants */ "./node_modules/@supabase/realtime-js/dist/module/lib/constants.js");
+/* harmony import */ var _lib_push__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/push */ "./node_modules/@supabase/realtime-js/dist/module/lib/push.js");
+/* harmony import */ var _lib_timer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/timer */ "./node_modules/@supabase/realtime-js/dist/module/lib/timer.js");
+
+
+
+class RealtimeSubscription {
+    constructor(topic, params = {}, socket) {
+        this.topic = topic;
+        this.params = params;
+        this.socket = socket;
+        this.bindings = [];
+        this.state = _lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_STATES.closed;
+        this.joinedOnce = false;
+        this.pushBuffer = [];
+        this.timeout = this.socket.timeout;
+        this.joinPush = new _lib_push__WEBPACK_IMPORTED_MODULE_1__.default(this, _lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_EVENTS.join, this.params, this.timeout);
+        this.rejoinTimer = new _lib_timer__WEBPACK_IMPORTED_MODULE_2__.default(() => this.rejoinUntilConnected(), this.socket.reconnectAfterMs);
+        this.joinPush.receive('ok', () => {
+            this.state = _lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_STATES.joined;
+            this.rejoinTimer.reset();
+            this.pushBuffer.forEach((pushEvent) => pushEvent.send());
+            this.pushBuffer = [];
+        });
+        this.onClose(() => {
+            this.rejoinTimer.reset();
+            this.socket.log('channel', `close ${this.topic} ${this.joinRef()}`);
+            this.state = _lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_STATES.closed;
+            this.socket.remove(this);
+        });
+        this.onError((reason) => {
+            if (this.isLeaving() || this.isClosed()) {
+                return;
+            }
+            this.socket.log('channel', `error ${this.topic}`, reason);
+            this.state = _lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_STATES.errored;
+            this.rejoinTimer.scheduleTimeout();
+        });
+        this.joinPush.receive('timeout', () => {
+            if (!this.isJoining()) {
+                return;
+            }
+            this.socket.log('channel', `timeout ${this.topic}`, this.joinPush.timeout);
+            this.state = _lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_STATES.errored;
+            this.rejoinTimer.scheduleTimeout();
+        });
+        this.on(_lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_EVENTS.reply, (payload, ref) => {
+            this.trigger(this.replyEventName(ref), payload);
+        });
+    }
+    rejoinUntilConnected() {
+        this.rejoinTimer.scheduleTimeout();
+        if (this.socket.isConnected()) {
+            this.rejoin();
+        }
+    }
+    subscribe(timeout = this.timeout) {
+        if (this.joinedOnce) {
+            throw `tried to subscribe multiple times. 'subscribe' can only be called a single time per channel instance`;
+        }
+        else {
+            this.joinedOnce = true;
+            this.rejoin(timeout);
+            return this.joinPush;
+        }
+    }
+    onClose(callback) {
+        this.on(_lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_EVENTS.close, callback);
+    }
+    onError(callback) {
+        this.on(_lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_EVENTS.error, (reason) => callback(reason));
+    }
+    on(event, callback) {
+        this.bindings.push({ event, callback });
+    }
+    off(event) {
+        this.bindings = this.bindings.filter((bind) => bind.event !== event);
+    }
+    canPush() {
+        return this.socket.isConnected() && this.isJoined();
+    }
+    push(event, payload, timeout = this.timeout) {
+        if (!this.joinedOnce) {
+            throw `tried to push '${event}' to '${this.topic}' before joining. Use channel.subscribe() before pushing events`;
+        }
+        let pushEvent = new _lib_push__WEBPACK_IMPORTED_MODULE_1__.default(this, event, payload, timeout);
+        if (this.canPush()) {
+            pushEvent.send();
+        }
+        else {
+            pushEvent.startTimeout();
+            this.pushBuffer.push(pushEvent);
+        }
+        return pushEvent;
+    }
+    /**
+     * Leaves the channel
+     *
+     * Unsubscribes from server events, and instructs channel to terminate on server.
+     * Triggers onClose() hooks.
+     *
+     * To receive leave acknowledgements, use the a `receive` hook to bind to the server ack, ie:
+     * channel.unsubscribe().receive("ok", () => alert("left!") )
+     */
+    unsubscribe(timeout = this.timeout) {
+        this.state = _lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_STATES.leaving;
+        let onClose = () => {
+            this.socket.log('channel', `leave ${this.topic}`);
+            this.trigger(_lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_EVENTS.close, 'leave', this.joinRef());
+        };
+        // Destroy joinPush to avoid connection timeouts during unscription phase
+        this.joinPush.destroy();
+        let leavePush = new _lib_push__WEBPACK_IMPORTED_MODULE_1__.default(this, _lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_EVENTS.leave, {}, timeout);
+        leavePush.receive('ok', () => onClose()).receive('timeout', () => onClose());
+        leavePush.send();
+        if (!this.canPush()) {
+            leavePush.trigger('ok', {});
+        }
+        return leavePush;
+    }
+    /**
+     * Overridable message hook
+     *
+     * Receives all events for specialized message handling before dispatching to the channel callbacks.
+     * Must return the payload, modified or unmodified.
+     */
+    onMessage(event, payload, ref) {
+        return payload;
+    }
+    isMember(topic) {
+        return this.topic === topic;
+    }
+    joinRef() {
+        return this.joinPush.ref;
+    }
+    sendJoin(timeout) {
+        this.state = _lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_STATES.joining;
+        this.joinPush.resend(timeout);
+    }
+    rejoin(timeout = this.timeout) {
+        if (this.isLeaving()) {
+            return;
+        }
+        this.sendJoin(timeout);
+    }
+    trigger(event, payload, ref) {
+        let { close, error, leave, join } = _lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_EVENTS;
+        let events = [close, error, leave, join];
+        if (ref && events.indexOf(event) >= 0 && ref !== this.joinRef()) {
+            return;
+        }
+        let handledPayload = this.onMessage(event, payload, ref);
+        if (payload && !handledPayload) {
+            throw 'channel onMessage callbacks must return the payload, modified or unmodified';
+        }
+        this.bindings
+            .filter((bind) => {
+            // Bind all events if the user specifies a wildcard.
+            if (bind.event === '*') {
+                return event === (payload === null || payload === void 0 ? void 0 : payload.type);
+            }
+            else {
+                return bind.event === event;
+            }
+        })
+            .map((bind) => bind.callback(handledPayload, ref));
+    }
+    replyEventName(ref) {
+        return `chan_reply_${ref}`;
+    }
+    isClosed() {
+        return this.state === _lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_STATES.closed;
+    }
+    isErrored() {
+        return this.state === _lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_STATES.errored;
+    }
+    isJoined() {
+        return this.state === _lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_STATES.joined;
+    }
+    isJoining() {
+        return this.state === _lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_STATES.joining;
+    }
+    isLeaving() {
+        return this.state === _lib_constants__WEBPACK_IMPORTED_MODULE_0__.CHANNEL_STATES.leaving;
+    }
+}
+//# sourceMappingURL=RealtimeSubscription.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/realtime-js/dist/module/index.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@supabase/realtime-js/dist/module/index.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "RealtimeClient": () => (/* reexport safe */ _RealtimeClient__WEBPACK_IMPORTED_MODULE_1__.default),
+/* harmony export */   "RealtimeSubscription": () => (/* reexport safe */ _RealtimeSubscription__WEBPACK_IMPORTED_MODULE_2__.default),
+/* harmony export */   "Transformers": () => (/* reexport module object */ _lib_transformers__WEBPACK_IMPORTED_MODULE_0__)
+/* harmony export */ });
+/* harmony import */ var _lib_transformers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/transformers */ "./node_modules/@supabase/realtime-js/dist/module/lib/transformers.js");
+/* harmony import */ var _RealtimeClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RealtimeClient */ "./node_modules/@supabase/realtime-js/dist/module/RealtimeClient.js");
+/* harmony import */ var _RealtimeSubscription__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./RealtimeSubscription */ "./node_modules/@supabase/realtime-js/dist/module/RealtimeSubscription.js");
+
+
+
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/realtime-js/dist/module/lib/constants.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/@supabase/realtime-js/dist/module/lib/constants.js ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DEFAULT_HEADERS": () => (/* binding */ DEFAULT_HEADERS),
+/* harmony export */   "VSN": () => (/* binding */ VSN),
+/* harmony export */   "DEFAULT_TIMEOUT": () => (/* binding */ DEFAULT_TIMEOUT),
+/* harmony export */   "WS_CLOSE_NORMAL": () => (/* binding */ WS_CLOSE_NORMAL),
+/* harmony export */   "SOCKET_STATES": () => (/* binding */ SOCKET_STATES),
+/* harmony export */   "CHANNEL_STATES": () => (/* binding */ CHANNEL_STATES),
+/* harmony export */   "CHANNEL_EVENTS": () => (/* binding */ CHANNEL_EVENTS),
+/* harmony export */   "TRANSPORTS": () => (/* binding */ TRANSPORTS)
+/* harmony export */ });
+/* harmony import */ var _version__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./version */ "./node_modules/@supabase/realtime-js/dist/module/lib/version.js");
+
+const DEFAULT_HEADERS = { 'X-Client-Info': `realtime-js/${_version__WEBPACK_IMPORTED_MODULE_0__.version}` };
+const VSN = '1.0.0';
+const DEFAULT_TIMEOUT = 10000;
+const WS_CLOSE_NORMAL = 1000;
+var SOCKET_STATES;
+(function (SOCKET_STATES) {
+    SOCKET_STATES[SOCKET_STATES["connecting"] = 0] = "connecting";
+    SOCKET_STATES[SOCKET_STATES["open"] = 1] = "open";
+    SOCKET_STATES[SOCKET_STATES["closing"] = 2] = "closing";
+    SOCKET_STATES[SOCKET_STATES["closed"] = 3] = "closed";
+})(SOCKET_STATES || (SOCKET_STATES = {}));
+var CHANNEL_STATES;
+(function (CHANNEL_STATES) {
+    CHANNEL_STATES["closed"] = "closed";
+    CHANNEL_STATES["errored"] = "errored";
+    CHANNEL_STATES["joined"] = "joined";
+    CHANNEL_STATES["joining"] = "joining";
+    CHANNEL_STATES["leaving"] = "leaving";
+})(CHANNEL_STATES || (CHANNEL_STATES = {}));
+var CHANNEL_EVENTS;
+(function (CHANNEL_EVENTS) {
+    CHANNEL_EVENTS["close"] = "phx_close";
+    CHANNEL_EVENTS["error"] = "phx_error";
+    CHANNEL_EVENTS["join"] = "phx_join";
+    CHANNEL_EVENTS["reply"] = "phx_reply";
+    CHANNEL_EVENTS["leave"] = "phx_leave";
+})(CHANNEL_EVENTS || (CHANNEL_EVENTS = {}));
+var TRANSPORTS;
+(function (TRANSPORTS) {
+    TRANSPORTS["websocket"] = "websocket";
+})(TRANSPORTS || (TRANSPORTS = {}));
+//# sourceMappingURL=constants.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/realtime-js/dist/module/lib/push.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@supabase/realtime-js/dist/module/lib/push.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Push)
+/* harmony export */ });
+/* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../lib/constants */ "./node_modules/@supabase/realtime-js/dist/module/lib/constants.js");
+
+class Push {
+    /**
+     * Initializes the Push
+     *
+     * @param channel The Channel
+     * @param event The event, for example `"phx_join"`
+     * @param payload The payload, for example `{user_id: 123}`
+     * @param timeout The push timeout in milliseconds
+     */
+    constructor(channel, event, payload = {}, timeout = _lib_constants__WEBPACK_IMPORTED_MODULE_0__.DEFAULT_TIMEOUT) {
+        this.channel = channel;
+        this.event = event;
+        this.payload = payload;
+        this.timeout = timeout;
+        this.sent = false;
+        this.timeoutTimer = undefined;
+        this.ref = '';
+        this.receivedResp = null;
+        this.recHooks = [];
+        this.refEvent = null;
+    }
+    resend(timeout) {
+        this.timeout = timeout;
+        this._cancelRefEvent();
+        this.ref = '';
+        this.refEvent = null;
+        this.receivedResp = null;
+        this.sent = false;
+        this.send();
+    }
+    send() {
+        if (this._hasReceived('timeout')) {
+            return;
+        }
+        this.startTimeout();
+        this.sent = true;
+        this.channel.socket.push({
+            topic: this.channel.topic,
+            event: this.event,
+            payload: this.payload,
+            ref: this.ref,
+        });
+    }
+    receive(status, callback) {
+        var _a;
+        if (this._hasReceived(status)) {
+            callback((_a = this.receivedResp) === null || _a === void 0 ? void 0 : _a.response);
+        }
+        this.recHooks.push({ status, callback });
+        return this;
+    }
+    startTimeout() {
+        if (this.timeoutTimer) {
+            return;
+        }
+        this.ref = this.channel.socket.makeRef();
+        this.refEvent = this.channel.replyEventName(this.ref);
+        this.channel.on(this.refEvent, (payload) => {
+            this._cancelRefEvent();
+            this._cancelTimeout();
+            this.receivedResp = payload;
+            this._matchReceive(payload);
+        });
+        this.timeoutTimer = setTimeout(() => {
+            this.trigger('timeout', {});
+        }, this.timeout);
+    }
+    trigger(status, response) {
+        if (this.refEvent)
+            this.channel.trigger(this.refEvent, { status, response });
+    }
+    destroy() {
+        this._cancelRefEvent();
+        this._cancelTimeout();
+    }
+    _cancelRefEvent() {
+        if (!this.refEvent) {
+            return;
+        }
+        this.channel.off(this.refEvent);
+    }
+    _cancelTimeout() {
+        clearTimeout(this.timeoutTimer);
+        this.timeoutTimer = undefined;
+    }
+    _matchReceive({ status, response, }) {
+        this.recHooks
+            .filter((h) => h.status === status)
+            .forEach((h) => h.callback(response));
+    }
+    _hasReceived(status) {
+        return this.receivedResp && this.receivedResp.status === status;
+    }
+}
+//# sourceMappingURL=push.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/realtime-js/dist/module/lib/serializer.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@supabase/realtime-js/dist/module/lib/serializer.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Serializer)
+/* harmony export */ });
+// This file draws heavily from https://github.com/phoenixframework/phoenix/commit/cf098e9cf7a44ee6479d31d911a97d3c7430c6fe
+// License: https://github.com/phoenixframework/phoenix/blob/master/LICENSE.md
+class Serializer {
+    constructor() {
+        this.HEADER_LENGTH = 1;
+    }
+    decode(rawPayload, callback) {
+        if (rawPayload.constructor === ArrayBuffer) {
+            return callback(this._binaryDecode(rawPayload));
+        }
+        if (typeof rawPayload === 'string') {
+            return callback(JSON.parse(rawPayload));
+        }
+        return callback({});
+    }
+    _binaryDecode(buffer) {
+        const view = new DataView(buffer);
+        const decoder = new TextDecoder();
+        return this._decodeBroadcast(buffer, view, decoder);
+    }
+    _decodeBroadcast(buffer, view, decoder) {
+        const topicSize = view.getUint8(1);
+        const eventSize = view.getUint8(2);
+        let offset = this.HEADER_LENGTH + 2;
+        const topic = decoder.decode(buffer.slice(offset, offset + topicSize));
+        offset = offset + topicSize;
+        const event = decoder.decode(buffer.slice(offset, offset + eventSize));
+        offset = offset + eventSize;
+        const data = JSON.parse(decoder.decode(buffer.slice(offset, buffer.byteLength)));
+        return { ref: null, topic: topic, event: event, payload: data };
+    }
+}
+//# sourceMappingURL=serializer.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/realtime-js/dist/module/lib/timer.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/@supabase/realtime-js/dist/module/lib/timer.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Timer)
+/* harmony export */ });
+/**
+ * Creates a timer that accepts a `timerCalc` function to perform calculated timeout retries, such as exponential backoff.
+ *
+ * @example
+ *    let reconnectTimer = new Timer(() => this.connect(), function(tries){
+ *      return [1000, 5000, 10000][tries - 1] || 10000
+ *    })
+ *    reconnectTimer.scheduleTimeout() // fires after 1000
+ *    reconnectTimer.scheduleTimeout() // fires after 5000
+ *    reconnectTimer.reset()
+ *    reconnectTimer.scheduleTimeout() // fires after 1000
+ */
+class Timer {
+    constructor(callback, timerCalc) {
+        this.callback = callback;
+        this.timerCalc = timerCalc;
+        this.timer = undefined;
+        this.tries = 0;
+        this.callback = callback;
+        this.timerCalc = timerCalc;
+    }
+    reset() {
+        this.tries = 0;
+        clearTimeout(this.timer);
+    }
+    // Cancels any previous scheduleTimeout and schedules callback
+    scheduleTimeout() {
+        clearTimeout(this.timer);
+        this.timer = setTimeout(() => {
+            this.tries = this.tries + 1;
+            this.callback();
+        }, this.timerCalc(this.tries + 1));
+    }
+}
+//# sourceMappingURL=timer.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/realtime-js/dist/module/lib/transformers.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@supabase/realtime-js/dist/module/lib/transformers.js ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PostgresTypes": () => (/* binding */ PostgresTypes),
+/* harmony export */   "convertChangeData": () => (/* binding */ convertChangeData),
+/* harmony export */   "convertColumn": () => (/* binding */ convertColumn),
+/* harmony export */   "convertCell": () => (/* binding */ convertCell),
+/* harmony export */   "toBoolean": () => (/* binding */ toBoolean),
+/* harmony export */   "toDate": () => (/* binding */ toDate),
+/* harmony export */   "toDateRange": () => (/* binding */ toDateRange),
+/* harmony export */   "toFloat": () => (/* binding */ toFloat),
+/* harmony export */   "toInt": () => (/* binding */ toInt),
+/* harmony export */   "toIntRange": () => (/* binding */ toIntRange),
+/* harmony export */   "toJson": () => (/* binding */ toJson),
+/* harmony export */   "toArray": () => (/* binding */ toArray),
+/* harmony export */   "toTimestampString": () => (/* binding */ toTimestampString)
+/* harmony export */ });
+/**
+ * Helpers to convert the change Payload into native JS types.
+ */
+// Adapted from epgsql (src/epgsql_binary.erl), this module licensed under
+// 3-clause BSD found here: https://raw.githubusercontent.com/epgsql/epgsql/devel/LICENSE
+var PostgresTypes;
+(function (PostgresTypes) {
+    PostgresTypes["abstime"] = "abstime";
+    PostgresTypes["bool"] = "bool";
+    PostgresTypes["date"] = "date";
+    PostgresTypes["daterange"] = "daterange";
+    PostgresTypes["float4"] = "float4";
+    PostgresTypes["float8"] = "float8";
+    PostgresTypes["int2"] = "int2";
+    PostgresTypes["int4"] = "int4";
+    PostgresTypes["int4range"] = "int4range";
+    PostgresTypes["int8"] = "int8";
+    PostgresTypes["int8range"] = "int8range";
+    PostgresTypes["json"] = "json";
+    PostgresTypes["jsonb"] = "jsonb";
+    PostgresTypes["money"] = "money";
+    PostgresTypes["numeric"] = "numeric";
+    PostgresTypes["oid"] = "oid";
+    PostgresTypes["reltime"] = "reltime";
+    PostgresTypes["time"] = "time";
+    PostgresTypes["timestamp"] = "timestamp";
+    PostgresTypes["timestamptz"] = "timestamptz";
+    PostgresTypes["timetz"] = "timetz";
+    PostgresTypes["tsrange"] = "tsrange";
+    PostgresTypes["tstzrange"] = "tstzrange";
+})(PostgresTypes || (PostgresTypes = {}));
+/**
+ * Takes an array of columns and an object of string values then converts each string value
+ * to its mapped type.
+ *
+ * @param {{name: String, type: String}[]} columns
+ * @param {Object} records
+ * @param {Object} options The map of various options that can be applied to the mapper
+ * @param {Array} options.skipTypes The array of types that should not be converted
+ *
+ * @example convertChangeData([{name: 'first_name', type: 'text'}, {name: 'age', type: 'int4'}], {first_name: 'Paul', age:'33'}, {})
+ * //=>{ first_name: 'Paul', age: 33 }
+ */
+const convertChangeData = (columns, records, options = {}) => {
+    let result = {};
+    let skipTypes = typeof options.skipTypes !== 'undefined' ? options.skipTypes : [];
+    Object.entries(records).map(([key, value]) => {
+        result[key] = convertColumn(key, columns, records, skipTypes);
+    });
+    return result;
+};
+/**
+ * Converts the value of an individual column.
+ *
+ * @param {String} columnName The column that you want to convert
+ * @param {{name: String, type: String}[]} columns All of the columns
+ * @param {Object} records The map of string values
+ * @param {Array} skipTypes An array of types that should not be converted
+ * @return {object} Useless information
+ *
+ * @example convertColumn('age', [{name: 'first_name', type: 'text'}, {name: 'age', type: 'int4'}], {first_name: 'Paul', age: '33'}, [])
+ * //=> 33
+ * @example convertColumn('age', [{name: 'first_name', type: 'text'}, {name: 'age', type: 'int4'}], {first_name: 'Paul', age: '33'}, ['int4'])
+ * //=> "33"
+ */
+const convertColumn = (columnName, columns, records, skipTypes) => {
+    let column = columns.find((x) => x.name == columnName);
+    if (!column || skipTypes.includes(column.type)) {
+        return noop(records[columnName]);
+    }
+    else {
+        return convertCell(column.type, records[columnName]);
+    }
+};
+/**
+ * If the value of the cell is `null`, returns null.
+ * Otherwise converts the string value to the correct type.
+ * @param {String} type A postgres column type
+ * @param {String} stringValue The cell value
+ *
+ * @example convertCell('bool', 't')
+ * //=> true
+ * @example convertCell('int8', '10')
+ * //=> 10
+ * @example convertCell('_int4', '{1,2,3,4}')
+ * //=> [1,2,3,4]
+ */
+const convertCell = (type, stringValue) => {
+    try {
+        if (stringValue === null)
+            return null;
+        // if data type is an array
+        if (type.charAt(0) === '_') {
+            let arrayValue = type.slice(1, type.length);
+            return toArray(stringValue, arrayValue);
+        }
+        // If not null, convert to correct type.
+        switch (type) {
+            case PostgresTypes.abstime:
+                return noop(stringValue); // To allow users to cast it based on Timezone
+            case PostgresTypes.bool:
+                return toBoolean(stringValue);
+            case PostgresTypes.date:
+                return noop(stringValue); // To allow users to cast it based on Timezone
+            case PostgresTypes.daterange:
+                return toDateRange(stringValue);
+            case PostgresTypes.float4:
+                return toFloat(stringValue);
+            case PostgresTypes.float8:
+                return toFloat(stringValue);
+            case PostgresTypes.int2:
+                return toInt(stringValue);
+            case PostgresTypes.int4:
+                return toInt(stringValue);
+            case PostgresTypes.int4range:
+                return toIntRange(stringValue);
+            case PostgresTypes.int8:
+                return toInt(stringValue);
+            case PostgresTypes.int8range:
+                return toIntRange(stringValue);
+            case PostgresTypes.json:
+                return toJson(stringValue);
+            case PostgresTypes.jsonb:
+                return toJson(stringValue);
+            case PostgresTypes.money:
+                return toFloat(stringValue);
+            case PostgresTypes.numeric:
+                return toFloat(stringValue);
+            case PostgresTypes.oid:
+                return toInt(stringValue);
+            case PostgresTypes.reltime:
+                return noop(stringValue); // To allow users to cast it based on Timezone
+            case PostgresTypes.time:
+                return noop(stringValue); // To allow users to cast it based on Timezone
+            case PostgresTypes.timestamp:
+                return toTimestampString(stringValue); // Format to be consistent with PostgREST
+            case PostgresTypes.timestamptz:
+                return noop(stringValue); // To allow users to cast it based on Timezone
+            case PostgresTypes.timetz:
+                return noop(stringValue); // To allow users to cast it based on Timezone
+            case PostgresTypes.tsrange:
+                return toDateRange(stringValue);
+            case PostgresTypes.tstzrange:
+                return toDateRange(stringValue);
+            default:
+                // All the rest will be returned as strings
+                return noop(stringValue);
+        }
+    }
+    catch (error) {
+        console.log(`Could not convert cell of type ${type} and value ${stringValue}`);
+        console.log(`This is the error: ${error}`);
+        return stringValue;
+    }
+};
+const noop = (stringValue) => {
+    return stringValue;
+};
+const toBoolean = (stringValue) => {
+    switch (stringValue) {
+        case 't':
+            return true;
+        case 'f':
+            return false;
+        default:
+            return null;
+    }
+};
+const toDate = (stringValue) => {
+    return new Date(stringValue);
+};
+const toDateRange = (stringValue) => {
+    let arr = JSON.parse(stringValue);
+    return [new Date(arr[0]), new Date(arr[1])];
+};
+const toFloat = (stringValue) => {
+    return parseFloat(stringValue);
+};
+const toInt = (stringValue) => {
+    return parseInt(stringValue);
+};
+const toIntRange = (stringValue) => {
+    let arr = JSON.parse(stringValue);
+    return [parseInt(arr[0]), parseInt(arr[1])];
+};
+const toJson = (stringValue) => {
+    return JSON.parse(stringValue);
+};
+/**
+ * Converts a Postgres Array into a native JS array
+ *
+ * @example toArray('{1,2,3,4}', 'int4')
+ * //=> [1,2,3,4]
+ * @example toArray('{}', 'int4')
+ * //=> []
+ */
+const toArray = (stringValue, type) => {
+    // this takes off the '{' & '}'
+    let stringEnriched = stringValue.slice(1, stringValue.length - 1);
+    // converts the string into an array
+    // if string is empty (meaning the array was empty), an empty array will be immediately returned
+    let stringArray = stringEnriched.length > 0 ? stringEnriched.split(',') : [];
+    let array = stringArray.map((string) => {
+        return convertCell(type, string);
+    });
+    return array;
+};
+/**
+ * Fixes timestamp to be ISO-8601. Swaps the space between the date and time for a 'T'
+ * See https://github.com/supabase/supabase/issues/18
+ *
+ * @example toTimestampString('2019-09-10 00:00:00')
+ * //=> '2019-09-10T00:00:00'
+ */
+const toTimestampString = (stringValue) => {
+    return stringValue.replace(' ', 'T');
+};
+//# sourceMappingURL=transformers.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/realtime-js/dist/module/lib/version.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@supabase/realtime-js/dist/module/lib/version.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "version": () => (/* binding */ version)
+/* harmony export */ });
+// generated by genversion
+const version = '1.1.3';
+//# sourceMappingURL=version.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/storage-js/dist/module/SupabaseStorageClient.js":
+/*!********************************************************************************!*\
+  !*** ./node_modules/@supabase/storage-js/dist/module/SupabaseStorageClient.js ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SupabaseStorageClient": () => (/* binding */ SupabaseStorageClient)
+/* harmony export */ });
+/* harmony import */ var _lib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib */ "./node_modules/@supabase/storage-js/dist/module/lib/StorageBucketApi.js");
+/* harmony import */ var _lib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib */ "./node_modules/@supabase/storage-js/dist/module/lib/StorageFileApi.js");
+
+class SupabaseStorageClient extends _lib__WEBPACK_IMPORTED_MODULE_0__.StorageBucketApi {
+    constructor(url, headers = {}) {
+        super(url, headers);
+    }
+    /**
+     * Perform file operation in a bucket.
+     *
+     * @param id The bucket id to operate on.
+     */
+    from(id) {
+        return new _lib__WEBPACK_IMPORTED_MODULE_1__.StorageFileApi(this.url, this.headers, id);
+    }
+}
+//# sourceMappingURL=SupabaseStorageClient.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/storage-js/dist/module/lib/StorageBucketApi.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/@supabase/storage-js/dist/module/lib/StorageBucketApi.js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "StorageBucketApi": () => (/* binding */ StorageBucketApi)
+/* harmony export */ });
+/* harmony import */ var _fetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fetch */ "./node_modules/@supabase/storage-js/dist/module/lib/fetch.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */ "./node_modules/@supabase/storage-js/dist/module/lib/constants.js");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+
+class StorageBucketApi {
+    constructor(url, headers = {}) {
+        this.url = url;
+        this.headers = Object.assign(Object.assign({}, _constants__WEBPACK_IMPORTED_MODULE_0__.DEFAULT_HEADERS), headers);
+    }
+    /**
+     * Retrieves the details of all Storage buckets within an existing product.
+     */
+    listBuckets() {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const data = yield (0,_fetch__WEBPACK_IMPORTED_MODULE_1__.get)(`${this.url}/bucket`, { headers: this.headers });
+                return { data, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Retrieves the details of an existing Storage bucket.
+     *
+     * @param id The unique identifier of the bucket you would like to retrieve.
+     */
+    getBucket(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const data = yield (0,_fetch__WEBPACK_IMPORTED_MODULE_1__.get)(`${this.url}/bucket/${id}`, { headers: this.headers });
+                return { data, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Creates a new Storage bucket
+     *
+     * @param id A unique identifier for the bucket you are creating.
+     * @returns newly created bucket id
+     */
+    createBucket(id, options = { public: false }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const data = yield (0,_fetch__WEBPACK_IMPORTED_MODULE_1__.post)(`${this.url}/bucket`, { id, name: id, public: options.public }, { headers: this.headers });
+                return { data: data.name, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Updates a new Storage bucket
+     *
+     * @param id A unique identifier for the bucket you are creating.
+     */
+    updateBucket(id, options) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const data = yield (0,_fetch__WEBPACK_IMPORTED_MODULE_1__.put)(`${this.url}/bucket/${id}`, { id, name: id, public: options.public }, { headers: this.headers });
+                return { data, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Removes all objects inside a single bucket.
+     *
+     * @param id The unique identifier of the bucket you would like to empty.
+     */
+    emptyBucket(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const data = yield (0,_fetch__WEBPACK_IMPORTED_MODULE_1__.post)(`${this.url}/bucket/${id}/empty`, {}, { headers: this.headers });
+                return { data, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Deletes an existing bucket. A bucket can't be deleted with existing objects inside it.
+     * You must first `empty()` the bucket.
+     *
+     * @param id The unique identifier of the bucket you would like to delete.
+     */
+    deleteBucket(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const data = yield (0,_fetch__WEBPACK_IMPORTED_MODULE_1__.remove)(`${this.url}/bucket/${id}`, {}, { headers: this.headers });
+                return { data, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+}
+//# sourceMappingURL=StorageBucketApi.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/storage-js/dist/module/lib/StorageFileApi.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/@supabase/storage-js/dist/module/lib/StorageFileApi.js ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "StorageFileApi": () => (/* binding */ StorageFileApi)
+/* harmony export */ });
+/* harmony import */ var _fetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fetch */ "./node_modules/@supabase/storage-js/dist/module/lib/fetch.js");
+/* harmony import */ var cross_fetch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cross-fetch */ "./node_modules/cross-fetch/dist/browser-ponyfill.js");
+/* harmony import */ var cross_fetch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(cross_fetch__WEBPACK_IMPORTED_MODULE_0__);
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+
+const DEFAULT_SEARCH_OPTIONS = {
+    limit: 100,
+    offset: 0,
+    sortBy: {
+        column: 'name',
+        order: 'asc',
+    },
+};
+const DEFAULT_FILE_OPTIONS = {
+    cacheControl: '3600',
+    contentType: 'text/plain;charset=UTF-8',
+    upsert: false,
+};
+class StorageFileApi {
+    constructor(url, headers = {}, bucketId) {
+        this.url = url;
+        this.headers = headers;
+        this.bucketId = bucketId;
+    }
+    /**
+     * Uploads a file to an existing bucket or replaces an existing file at the specified path with a new one.
+     *
+     * @param method HTTP method.
+     * @param path The relative file path. Should be of the format `folder/subfolder/filename.png`. The bucket must already exist before attempting to upload.
+     * @param fileBody The body of the file to be stored in the bucket.
+     * @param fileOptions HTTP headers.
+     * `cacheControl`: string, the `Cache-Control: max-age=<seconds>` seconds value.
+     * `contentType`: string, the `Content-Type` header value. Should be specified if using a `fileBody` that is neither `Blob` nor `File` nor `FormData`, otherwise will default to `text/plain;charset=UTF-8`.
+     * `upsert`: boolean, whether to perform an upsert.
+     */
+    uploadOrUpdate(method, path, fileBody, fileOptions) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                let body;
+                const options = Object.assign(Object.assign({}, DEFAULT_FILE_OPTIONS), fileOptions);
+                const headers = Object.assign(Object.assign({}, this.headers), (method === 'POST' && { 'x-upsert': String(options.upsert) }));
+                if (typeof Blob !== 'undefined' && fileBody instanceof Blob) {
+                    body = new FormData();
+                    body.append('cacheControl', options.cacheControl);
+                    body.append('', fileBody);
+                }
+                else if (typeof FormData !== 'undefined' && fileBody instanceof FormData) {
+                    body = fileBody;
+                    body.append('cacheControl', options.cacheControl);
+                }
+                else {
+                    body = fileBody;
+                    headers['cache-control'] = `max-age=${options.cacheControl}`;
+                    headers['content-type'] = options.contentType;
+                }
+                const _path = this._getFinalPath(path);
+                const res = yield cross_fetch__WEBPACK_IMPORTED_MODULE_0___default()(`${this.url}/object/${_path}`, {
+                    method,
+                    body: body,
+                    headers,
+                });
+                if (res.ok) {
+                    // const data = await res.json()
+                    // temporary fix till backend is updated to the latest storage-api version
+                    return { data: { Key: _path }, error: null };
+                }
+                else {
+                    const error = yield res.json();
+                    return { data: null, error };
+                }
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Uploads a file to an existing bucket.
+     *
+     * @param path The relative file path. Should be of the format `folder/subfolder/filename.png`. The bucket must already exist before attempting to upload.
+     * @param fileBody The body of the file to be stored in the bucket.
+     * @param fileOptions HTTP headers.
+     * `cacheControl`: string, the `Cache-Control: max-age=<seconds>` seconds value.
+     * `contentType`: string, the `Content-Type` header value. Should be specified if using a `fileBody` that is neither `Blob` nor `File` nor `FormData`, otherwise will default to `text/plain;charset=UTF-8`.
+     * `upsert`: boolean, whether to perform an upsert.
+     */
+    upload(path, fileBody, fileOptions) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return this.uploadOrUpdate('POST', path, fileBody, fileOptions);
+        });
+    }
+    /**
+     * Replaces an existing file at the specified path with a new one.
+     *
+     * @param path The relative file path. Should be of the format `folder/subfolder/filename.png`. The bucket must already exist before attempting to upload.
+     * @param fileBody The body of the file to be stored in the bucket.
+     * @param fileOptions HTTP headers.
+     * `cacheControl`: string, the `Cache-Control: max-age=<seconds>` seconds value.
+     * `contentType`: string, the `Content-Type` header value. Should be specified if using a `fileBody` that is neither `Blob` nor `File` nor `FormData`, otherwise will default to `text/plain;charset=UTF-8`.
+     * `upsert`: boolean, whether to perform an upsert.
+     */
+    update(path, fileBody, fileOptions) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return this.uploadOrUpdate('PUT', path, fileBody, fileOptions);
+        });
+    }
+    /**
+     * Moves an existing file, optionally renaming it at the same time.
+     *
+     * @param fromPath The original file path, including the current file name. For example `folder/image.png`.
+     * @param toPath The new file path, including the new file name. For example `folder/image-copy.png`.
+     */
+    move(fromPath, toPath) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const data = yield (0,_fetch__WEBPACK_IMPORTED_MODULE_1__.post)(`${this.url}/object/move`, { bucketId: this.bucketId, sourceKey: fromPath, destinationKey: toPath }, { headers: this.headers });
+                return { data, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Create signed url to download file without requiring permissions. This URL can be valid for a set number of seconds.
+     *
+     * @param path The file path to be downloaded, including the current file name. For example `folder/image.png`.
+     * @param expiresIn The number of seconds until the signed URL expires. For example, `60` for a URL which is valid for one minute.
+     */
+    createSignedUrl(path, expiresIn) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const _path = this._getFinalPath(path);
+                let data = yield (0,_fetch__WEBPACK_IMPORTED_MODULE_1__.post)(`${this.url}/object/sign/${_path}`, { expiresIn }, { headers: this.headers });
+                const signedURL = `${this.url}${data.signedURL}`;
+                data = { signedURL };
+                return { data, error: null, signedURL };
+            }
+            catch (error) {
+                return { data: null, error, signedURL: null };
+            }
+        });
+    }
+    /**
+     * Downloads a file.
+     *
+     * @param path The file path to be downloaded, including the path and file name. For example `folder/image.png`.
+     */
+    download(path) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const _path = this._getFinalPath(path);
+                const res = yield (0,_fetch__WEBPACK_IMPORTED_MODULE_1__.get)(`${this.url}/object/${_path}`, {
+                    headers: this.headers,
+                    noResolveJson: true,
+                });
+                const data = yield res.blob();
+                return { data, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Retrieve URLs for assets in public buckets
+     *
+     * @param path The file path to be downloaded, including the path and file name. For example `folder/image.png`.
+     */
+    getPublicUrl(path) {
+        try {
+            const _path = this._getFinalPath(path);
+            const publicURL = `${this.url}/object/public/${_path}`;
+            const data = { publicURL };
+            return { data, error: null, publicURL };
+        }
+        catch (error) {
+            return { data: null, error, publicURL: null };
+        }
+    }
+    /**
+     * Deletes files within the same bucket
+     *
+     * @param paths An array of files to be deletes, including the path and file name. For example [`folder/image.png`].
+     */
+    remove(paths) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const data = yield (0,_fetch__WEBPACK_IMPORTED_MODULE_1__.remove)(`${this.url}/object/${this.bucketId}`, { prefixes: paths }, { headers: this.headers });
+                return { data, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    /**
+     * Get file metadata
+     * @param id the file id to retrieve metadata
+     */
+    // async getMetadata(id: string): Promise<{ data: Metadata | null; error: Error | null }> {
+    //   try {
+    //     const data = await get(`${this.url}/metadata/${id}`, { headers: this.headers })
+    //     return { data, error: null }
+    //   } catch (error) {
+    //     return { data: null, error }
+    //   }
+    // }
+    /**
+     * Update file metadata
+     * @param id the file id to update metadata
+     * @param meta the new file metadata
+     */
+    // async updateMetadata(
+    //   id: string,
+    //   meta: Metadata
+    // ): Promise<{ data: Metadata | null; error: Error | null }> {
+    //   try {
+    //     const data = await post(`${this.url}/metadata/${id}`, { ...meta }, { headers: this.headers })
+    //     return { data, error: null }
+    //   } catch (error) {
+    //     return { data: null, error }
+    //   }
+    // }
+    /**
+     * Lists all the files within a bucket.
+     * @param path The folder path.
+     * @param options Search options, including `limit`, `offset`, and `sortBy`.
+     * @param parameters Fetch parameters, currently only supports `signal`, which is an AbortController's signal
+     */
+    list(path, options, parameters) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const body = Object.assign(Object.assign(Object.assign({}, DEFAULT_SEARCH_OPTIONS), options), { prefix: path || '' });
+                const data = yield (0,_fetch__WEBPACK_IMPORTED_MODULE_1__.post)(`${this.url}/object/list/${this.bucketId}`, body, { headers: this.headers }, parameters);
+                return { data, error: null };
+            }
+            catch (error) {
+                return { data: null, error };
+            }
+        });
+    }
+    _getFinalPath(path) {
+        return `${this.bucketId}/${path}`;
+    }
+}
+//# sourceMappingURL=StorageFileApi.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/storage-js/dist/module/lib/constants.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/@supabase/storage-js/dist/module/lib/constants.js ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DEFAULT_HEADERS": () => (/* binding */ DEFAULT_HEADERS)
+/* harmony export */ });
+/* harmony import */ var _version__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./version */ "./node_modules/@supabase/storage-js/dist/module/lib/version.js");
+
+const DEFAULT_HEADERS = { 'X-Client-Info': `storage-js/${_version__WEBPACK_IMPORTED_MODULE_0__.version}` };
+//# sourceMappingURL=constants.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/storage-js/dist/module/lib/fetch.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@supabase/storage-js/dist/module/lib/fetch.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "get": () => (/* binding */ get),
+/* harmony export */   "post": () => (/* binding */ post),
+/* harmony export */   "put": () => (/* binding */ put),
+/* harmony export */   "remove": () => (/* binding */ remove)
+/* harmony export */ });
+/* harmony import */ var cross_fetch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cross-fetch */ "./node_modules/cross-fetch/dist/browser-ponyfill.js");
+/* harmony import */ var cross_fetch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(cross_fetch__WEBPACK_IMPORTED_MODULE_0__);
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+const _getErrorMessage = (err) => err.msg || err.message || err.error_description || err.error || JSON.stringify(err);
+const handleError = (error, reject) => {
+    if (typeof error.json !== 'function') {
+        return reject(error);
+    }
+    error.json().then((err) => {
+        return reject({
+            message: _getErrorMessage(err),
+            status: (error === null || error === void 0 ? void 0 : error.status) || 500,
+        });
+    });
+};
+const _getRequestParams = (method, options, parameters, body) => {
+    const params = { method, headers: (options === null || options === void 0 ? void 0 : options.headers) || {} };
+    if (method === 'GET') {
+        return params;
+    }
+    params.headers = Object.assign({ 'Content-Type': 'application/json' }, options === null || options === void 0 ? void 0 : options.headers);
+    params.body = JSON.stringify(body);
+    return Object.assign(Object.assign({}, params), parameters);
+};
+function _handleRequest(method, url, options, parameters, body) {
+    return __awaiter(this, void 0, void 0, function* () {
+        return new Promise((resolve, reject) => {
+            cross_fetch__WEBPACK_IMPORTED_MODULE_0___default()(url, _getRequestParams(method, options, parameters, body))
+                .then((result) => {
+                if (!result.ok)
+                    throw result;
+                if (options === null || options === void 0 ? void 0 : options.noResolveJson)
+                    return resolve(result);
+                return result.json();
+            })
+                .then((data) => resolve(data))
+                .catch((error) => handleError(error, reject));
+        });
+    });
+}
+function get(url, options, parameters) {
+    return __awaiter(this, void 0, void 0, function* () {
+        return _handleRequest('GET', url, options, parameters);
+    });
+}
+function post(url, body, options, parameters) {
+    return __awaiter(this, void 0, void 0, function* () {
+        return _handleRequest('POST', url, options, parameters, body);
+    });
+}
+function put(url, body, options, parameters) {
+    return __awaiter(this, void 0, void 0, function* () {
+        return _handleRequest('PUT', url, options, parameters, body);
+    });
+}
+function remove(url, body, options, parameters) {
+    return __awaiter(this, void 0, void 0, function* () {
+        return _handleRequest('DELETE', url, options, parameters, body);
+    });
+}
+//# sourceMappingURL=fetch.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/storage-js/dist/module/lib/version.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@supabase/storage-js/dist/module/lib/version.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "version": () => (/* binding */ version)
+/* harmony export */ });
+// generated by genversion
+const version = '0.0.0';
+//# sourceMappingURL=version.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/supabase-js/dist/module/SupabaseClient.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@supabase/supabase-js/dist/module/SupabaseClient.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SupabaseClient)
+/* harmony export */ });
+/* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/constants */ "./node_modules/@supabase/supabase-js/dist/module/lib/constants.js");
+/* harmony import */ var _lib_SupabaseAuthClient__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./lib/SupabaseAuthClient */ "./node_modules/@supabase/supabase-js/dist/module/lib/SupabaseAuthClient.js");
+/* harmony import */ var _lib_SupabaseQueryBuilder__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./lib/SupabaseQueryBuilder */ "./node_modules/@supabase/supabase-js/dist/module/lib/SupabaseQueryBuilder.js");
+/* harmony import */ var _supabase_storage_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @supabase/storage-js */ "./node_modules/@supabase/storage-js/dist/module/SupabaseStorageClient.js");
+/* harmony import */ var _supabase_postgrest_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @supabase/postgrest-js */ "./node_modules/@supabase/postgrest-js/dist/module/index.js");
+/* harmony import */ var _supabase_realtime_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @supabase/realtime-js */ "./node_modules/@supabase/realtime-js/dist/module/index.js");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+
+
+
+
+
+const DEFAULT_OPTIONS = {
+    schema: 'public',
+    autoRefreshToken: true,
+    persistSession: true,
+    detectSessionInUrl: true,
+    headers: _lib_constants__WEBPACK_IMPORTED_MODULE_2__.DEFAULT_HEADERS,
+};
+/**
+ * Supabase Client.
+ *
+ * An isomorphic Javascript client for interacting with Postgres.
+ */
+class SupabaseClient {
+    /**
+     * Create a new client for use in the browser.
+     * @param supabaseUrl The unique Supabase URL which is supplied when you create a new project in your project dashboard.
+     * @param supabaseKey The unique Supabase Key which is supplied when you create a new project in your project dashboard.
+     * @param options.schema You can switch in between schemas. The schema needs to be on the list of exposed schemas inside Supabase.
+     * @param options.autoRefreshToken Set to "true" if you want to automatically refresh the token before expiring.
+     * @param options.persistSession Set to "true" if you want to automatically save the user session into local storage.
+     * @param options.detectSessionInUrl Set to "true" if you want to automatically detects OAuth grants in the URL and signs in the user.
+     * @param options.headers Any additional headers to send with each network request.
+     * @param options.realtime Options passed along to realtime-js constructor.
+     */
+    constructor(supabaseUrl, supabaseKey, options) {
+        this.supabaseUrl = supabaseUrl;
+        this.supabaseKey = supabaseKey;
+        if (!supabaseUrl)
+            throw new Error('supabaseUrl is required.');
+        if (!supabaseKey)
+            throw new Error('supabaseKey is required.');
+        const settings = Object.assign(Object.assign({}, DEFAULT_OPTIONS), options);
+        this.restUrl = `${supabaseUrl}/rest/v1`;
+        this.realtimeUrl = `${supabaseUrl}/realtime/v1`.replace('http', 'ws');
+        this.authUrl = `${supabaseUrl}/auth/v1`;
+        this.storageUrl = `${supabaseUrl}/storage/v1`;
+        this.schema = settings.schema;
+        this.auth = this._initSupabaseAuthClient(settings);
+        this.realtime = this._initRealtimeClient(settings.realtime);
+        // In the future we might allow the user to pass in a logger to receive these events.
+        // this.realtime.onOpen(() => console.log('OPEN'))
+        // this.realtime.onClose(() => console.log('CLOSED'))
+        // this.realtime.onError((e: Error) => console.log('Socket error', e))
+    }
+    /**
+     * Supabase Storage allows you to manage user-generated content, such as photos or videos.
+     */
+    get storage() {
+        return new _supabase_storage_js__WEBPACK_IMPORTED_MODULE_3__.SupabaseStorageClient(this.storageUrl, this._getAuthHeaders());
+    }
+    /**
+     * Perform a table operation.
+     *
+     * @param table The table name to operate on.
+     */
+    from(table) {
+        const url = `${this.restUrl}/${table}`;
+        return new _lib_SupabaseQueryBuilder__WEBPACK_IMPORTED_MODULE_4__.SupabaseQueryBuilder(url, {
+            headers: this._getAuthHeaders(),
+            schema: this.schema,
+            realtime: this.realtime,
+            table,
+        });
+    }
+    /**
+     * Perform a function call.
+     *
+     * @param fn  The function name to call.
+     * @param params  The parameters to pass to the function call.
+     * @param count  Count algorithm to use to count rows in a table.
+     *
+     */
+    rpc(fn, params, { count = null } = {}) {
+        const rest = this._initPostgRESTClient();
+        return rest.rpc(fn, params, { count });
+    }
+    /**
+     * Removes an active subscription and returns the number of open connections.
+     *
+     * @param subscription The subscription you want to remove.
+     */
+    removeSubscription(subscription) {
+        return new Promise((resolve) => __awaiter(this, void 0, void 0, function* () {
+            try {
+                yield this._closeSubscription(subscription);
+                const openSubscriptions = this.getSubscriptions().length;
+                if (!openSubscriptions) {
+                    const { error } = yield this.realtime.disconnect();
+                    if (error)
+                        return resolve({ error });
+                }
+                return resolve({ error: null, data: { openSubscriptions } });
+            }
+            catch (error) {
+                return resolve({ error });
+            }
+        }));
+    }
+    _closeSubscription(subscription) {
+        return __awaiter(this, void 0, void 0, function* () {
+            if (!subscription.isClosed()) {
+                yield this._closeChannel(subscription);
+            }
+        });
+    }
+    /**
+     * Returns an array of all your subscriptions.
+     */
+    getSubscriptions() {
+        return this.realtime.channels;
+    }
+    _initSupabaseAuthClient({ autoRefreshToken, persistSession, detectSessionInUrl, localStorage, headers, }) {
+        const authHeaders = {
+            Authorization: `Bearer ${this.supabaseKey}`,
+            apikey: `${this.supabaseKey}`,
+        };
+        return new _lib_SupabaseAuthClient__WEBPACK_IMPORTED_MODULE_5__.SupabaseAuthClient({
+            url: this.authUrl,
+            headers: Object.assign(Object.assign({}, headers), authHeaders),
+            autoRefreshToken,
+            persistSession,
+            detectSessionInUrl,
+            localStorage,
+        });
+    }
+    _initRealtimeClient(options) {
+        return new _supabase_realtime_js__WEBPACK_IMPORTED_MODULE_1__.RealtimeClient(this.realtimeUrl, Object.assign(Object.assign({}, options), { params: Object.assign(Object.assign({}, options === null || options === void 0 ? void 0 : options.params), { apikey: this.supabaseKey }) }));
+    }
+    _initPostgRESTClient() {
+        return new _supabase_postgrest_js__WEBPACK_IMPORTED_MODULE_0__.PostgrestClient(this.restUrl, {
+            headers: this._getAuthHeaders(),
+            schema: this.schema,
+        });
+    }
+    _getAuthHeaders() {
+        var _a, _b;
+        const headers = {};
+        const authBearer = (_b = (_a = this.auth.session()) === null || _a === void 0 ? void 0 : _a.access_token) !== null && _b !== void 0 ? _b : this.supabaseKey;
+        headers['apikey'] = this.supabaseKey;
+        headers['Authorization'] = `Bearer ${authBearer}`;
+        return headers;
+    }
+    _closeChannel(subscription) {
+        return new Promise((resolve, reject) => {
+            subscription
+                .unsubscribe()
+                .receive('ok', () => {
+                this.realtime.remove(subscription);
+                return resolve(true);
+            })
+                .receive('error', (e) => reject(e));
+        });
+    }
+}
+//# sourceMappingURL=SupabaseClient.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/supabase-js/dist/module/index.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@supabase/supabase-js/dist/module/index.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "GoTrueApi": () => (/* reexport safe */ _supabase_gotrue_js__WEBPACK_IMPORTED_MODULE_0__.GoTrueApi),
+/* harmony export */   "GoTrueClient": () => (/* reexport safe */ _supabase_gotrue_js__WEBPACK_IMPORTED_MODULE_0__.GoTrueClient),
+/* harmony export */   "RealtimeClient": () => (/* reexport safe */ _supabase_realtime_js__WEBPACK_IMPORTED_MODULE_1__.RealtimeClient),
+/* harmony export */   "RealtimeSubscription": () => (/* reexport safe */ _supabase_realtime_js__WEBPACK_IMPORTED_MODULE_1__.RealtimeSubscription),
+/* harmony export */   "Transformers": () => (/* reexport safe */ _supabase_realtime_js__WEBPACK_IMPORTED_MODULE_1__.Transformers),
+/* harmony export */   "createClient": () => (/* binding */ createClient),
+/* harmony export */   "SupabaseClient": () => (/* reexport safe */ _SupabaseClient__WEBPACK_IMPORTED_MODULE_2__.default)
+/* harmony export */ });
+/* harmony import */ var _SupabaseClient__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SupabaseClient */ "./node_modules/@supabase/supabase-js/dist/module/SupabaseClient.js");
+/* harmony import */ var _supabase_gotrue_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @supabase/gotrue-js */ "./node_modules/@supabase/gotrue-js/dist/module/index.js");
+/* harmony import */ var _supabase_realtime_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @supabase/realtime-js */ "./node_modules/@supabase/realtime-js/dist/module/index.js");
+
+
+
+/**
+ * Creates a new Supabase Client.
+ */
+const createClient = (supabaseUrl, supabaseKey, options) => {
+    return new _SupabaseClient__WEBPACK_IMPORTED_MODULE_2__.default(supabaseUrl, supabaseKey, options);
+};
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/supabase-js/dist/module/lib/SupabaseAuthClient.js":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/@supabase/supabase-js/dist/module/lib/SupabaseAuthClient.js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SupabaseAuthClient": () => (/* binding */ SupabaseAuthClient)
+/* harmony export */ });
+/* harmony import */ var _supabase_gotrue_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @supabase/gotrue-js */ "./node_modules/@supabase/gotrue-js/dist/module/index.js");
+
+class SupabaseAuthClient extends _supabase_gotrue_js__WEBPACK_IMPORTED_MODULE_0__.GoTrueClient {
+    constructor(options) {
+        super(options);
+    }
+}
+//# sourceMappingURL=SupabaseAuthClient.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/supabase-js/dist/module/lib/SupabaseQueryBuilder.js":
+/*!************************************************************************************!*\
+  !*** ./node_modules/@supabase/supabase-js/dist/module/lib/SupabaseQueryBuilder.js ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SupabaseQueryBuilder": () => (/* binding */ SupabaseQueryBuilder)
+/* harmony export */ });
+/* harmony import */ var _supabase_postgrest_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @supabase/postgrest-js */ "./node_modules/@supabase/postgrest-js/dist/module/index.js");
+/* harmony import */ var _SupabaseRealtimeClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SupabaseRealtimeClient */ "./node_modules/@supabase/supabase-js/dist/module/lib/SupabaseRealtimeClient.js");
+
+
+class SupabaseQueryBuilder extends _supabase_postgrest_js__WEBPACK_IMPORTED_MODULE_0__.PostgrestQueryBuilder {
+    constructor(url, { headers = {}, schema, realtime, table, }) {
+        super(url, { headers, schema });
+        this._subscription = new _SupabaseRealtimeClient__WEBPACK_IMPORTED_MODULE_1__.SupabaseRealtimeClient(realtime, schema, table);
+        this._realtime = realtime;
+    }
+    /**
+     * Subscribe to realtime changes in your databse.
+     * @param event The database event which you would like to receive updates for, or you can use the special wildcard `*` to listen to all changes.
+     * @param callback A callback that will handle the payload that is sent whenever your database changes.
+     */
+    on(event, callback) {
+        if (!this._realtime.isConnected()) {
+            this._realtime.connect();
+        }
+        return this._subscription.on(event, callback);
+    }
+}
+//# sourceMappingURL=SupabaseQueryBuilder.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/supabase-js/dist/module/lib/SupabaseRealtimeClient.js":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/@supabase/supabase-js/dist/module/lib/SupabaseRealtimeClient.js ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SupabaseRealtimeClient": () => (/* binding */ SupabaseRealtimeClient)
+/* harmony export */ });
+/* harmony import */ var _supabase_realtime_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @supabase/realtime-js */ "./node_modules/@supabase/realtime-js/dist/module/index.js");
+
+class SupabaseRealtimeClient {
+    constructor(socket, schema, tableName) {
+        const topic = tableName === '*' ? `realtime:${schema}` : `realtime:${schema}:${tableName}`;
+        this.subscription = socket.channel(topic);
+    }
+    getPayloadRecords(payload) {
+        const records = {
+            new: {},
+            old: {},
+        };
+        if (payload.type === 'INSERT' || payload.type === 'UPDATE') {
+            records.new = _supabase_realtime_js__WEBPACK_IMPORTED_MODULE_0__.Transformers.convertChangeData(payload.columns, payload.record);
+        }
+        if (payload.type === 'UPDATE' || payload.type === 'DELETE') {
+            records.old = _supabase_realtime_js__WEBPACK_IMPORTED_MODULE_0__.Transformers.convertChangeData(payload.columns, payload.old_record);
+        }
+        return records;
+    }
+    /**
+     * The event you want to listen to.
+     *
+     * @param event The event
+     * @param callback A callback function that is called whenever the event occurs.
+     */
+    on(event, callback) {
+        this.subscription.on(event, (payload) => {
+            let enrichedPayload = {
+                schema: payload.schema,
+                table: payload.table,
+                commit_timestamp: payload.commit_timestamp,
+                eventType: payload.type,
+                new: {},
+                old: {},
+            };
+            enrichedPayload = Object.assign(Object.assign({}, enrichedPayload), this.getPayloadRecords(payload));
+            callback(enrichedPayload);
+        });
+        return this;
+    }
+    /**
+     * Enables the subscription.
+     */
+    subscribe(callback = () => { }) {
+        this.subscription.onError((e) => callback('SUBSCRIPTION_ERROR', e));
+        this.subscription.onClose(() => callback('CLOSED'));
+        this.subscription
+            .subscribe()
+            .receive('ok', () => callback('SUBSCRIBED'))
+            .receive('error', (e) => callback('SUBSCRIPTION_ERROR', e))
+            .receive('timeout', () => callback('RETRYING_AFTER_TIMEOUT'));
+        return this.subscription;
+    }
+}
+//# sourceMappingURL=SupabaseRealtimeClient.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/supabase-js/dist/module/lib/constants.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/@supabase/supabase-js/dist/module/lib/constants.js ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DEFAULT_HEADERS": () => (/* binding */ DEFAULT_HEADERS)
+/* harmony export */ });
+/* harmony import */ var _version__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./version */ "./node_modules/@supabase/supabase-js/dist/module/lib/version.js");
+// constants.ts
+
+const DEFAULT_HEADERS = { 'X-Client-Info': `supabase-js/${_version__WEBPACK_IMPORTED_MODULE_0__.version}` };
+//# sourceMappingURL=constants.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@supabase/supabase-js/dist/module/lib/version.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@supabase/supabase-js/dist/module/lib/version.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "version": () => (/* binding */ version)
+/* harmony export */ });
+// generated by genversion
+const version = '1.22.5';
+//# sourceMappingURL=version.js.map
+
+/***/ }),
+
 /***/ "./assets/src/js/app.js":
 /*!******************************!*\
   !*** ./assets/src/js/app.js ***!
@@ -82,7 +6261,7 @@ var Header = /*#__PURE__*/function (_Component) {
 
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "cell grid-x grid-margin-x o-app-container__header",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+        children: [this.props.addResources && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
           type: "button",
           className: "cell shrink button",
           onClick: function onClick() {
@@ -96,13 +6275,6 @@ var Header = /*#__PURE__*/function (_Component) {
             return _this.props.activateProjectModal();
           },
           children: "Create new project"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-          type: "button",
-          className: "cell shrink button alert",
-          onClick: function onClick() {
-            return _this.props.clearAll();
-          },
-          children: "Clear All"
         })]
       });
     }
@@ -180,22 +6352,22 @@ var ProjectList = /*#__PURE__*/function (_Component) {
           children: this.props.projects.map(function (project, i) {
             return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("li", {
               style: {
-                backgroundColor: project.color
+                backgroundColor: project.colour
               },
               onClick: function onClick(e) {
-                return _this.props.viewResourcesForProject(project.title);
+                return _this.props.viewResourcesForProject(project.id);
               },
               className: "cell small-6 c-project o-project-list__project button",
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
                 className: "c-project__title",
                 children: project.title
-              }), _this.props.getResourceCount(project.title) > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+              }), _this.props.getResourceCount(project.id) > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
                 className: "c-project__count",
-                children: _this.props.getResourceCount(project.title)
+                children: _this.props.getResourceCount(project.id)
               })]
             }, i);
           })
-        }), this.props.projects.length == 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+        }), this.props.projects.length == 0 && !this.props.isLoading && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
           className: "o-project-list__no-projects cell text-center",
           children: "Looks like you haven't created a project yet!"
         })]
@@ -224,7 +6396,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _jaames_iro__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @jaames/iro */ "./node_modules/@jaames/iro/dist/iro.es.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -252,6 +6425,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
 var ProjectsModal = /*#__PURE__*/function (_Component) {
   _inherits(ProjectsModal, _Component);
 
@@ -264,36 +6438,44 @@ var ProjectsModal = /*#__PURE__*/function (_Component) {
   }
 
   _createClass(ProjectsModal, [{
-    key: "render",
-    value: function render() {
+    key: "componentDidMount",
+    value: function componentDidMount() {
       var _this = this;
 
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      var colorPicker = new _jaames_iro__WEBPACK_IMPORTED_MODULE_2__.default.ColorPicker('#color-picker', {
+        width: 200
+      });
+      colorPicker.on('color:change', function (color) {
+        _this.props.setProjectColor(color.hexString);
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
         className: "cell c-modal c-modal--project grid-x align-middle",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
           className: "cell grid-container",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
             className: "grid-x align-center",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("form", {
               className: "cell small-8 c-modal__form",
               onSubmit: function onSubmit(e) {
-                return _this.props.addProjectToList(e);
+                return _this2.props.addProjectToList(e);
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
                 onChange: function onChange(e) {
-                  return _this.props.setProjectName(e.target.value);
+                  return _this2.props.setProjectName(e.target.value);
                 },
                 type: "text",
                 name: "project-name",
                 placeholder: "Project name"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
-                onChange: function onChange(e) {
-                  return _this.props.setProjectColor(e.target.value);
-                },
-                type: "color",
-                name: "project-color",
-                value: "#e66465"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                className: "c-modal__colour-picker",
+                id: "color-picker"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
                 className: "button success",
                 type: "submit",
                 children: "Add Project"
@@ -406,7 +6588,7 @@ var ResourceList = /*#__PURE__*/function (_Component) {
                     },
                     target: "_blank",
                     href: resource.url,
-                    children: "View Resource"
+                    children: resource.url
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
                   children: resource.type
@@ -498,7 +6680,7 @@ var ResourceModal = /*#__PURE__*/function (_Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       this.props.setResourceType(this.state.options[0]);
-      this.props.setRelatedProject(this.props.projects[0].title);
+      this.props.setRelatedProject(this.props.projects[0].id);
     }
   }, {
     key: "render",
@@ -523,7 +6705,7 @@ var ResourceModal = /*#__PURE__*/function (_Component) {
                 name: "related-project",
                 children: this.props.projects.map(function (project, i) {
                   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
-                    value: project.title,
+                    value: project.id,
                     children: project.title
                   }, i);
                 })
@@ -581,16 +6763,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Popup)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_ResourceModal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/ResourceModal */ "./assets/src/js/components/ResourceModal.js");
-/* harmony import */ var _components_ProjectsModal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/ProjectsModal */ "./assets/src/js/components/ProjectsModal.js");
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Header */ "./assets/src/js/components/Header.js");
-/* harmony import */ var _components_ResourceList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/ResourceList */ "./assets/src/js/components/ResourceList.js");
-/* harmony import */ var _components_ProjectList__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/ProjectList */ "./assets/src/js/components/ProjectList.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _supabase_supabase_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @supabase/supabase-js */ "./node_modules/@supabase/supabase-js/dist/module/index.js");
+/* harmony import */ var _components_ResourceModal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/ResourceModal */ "./assets/src/js/components/ResourceModal.js");
+/* harmony import */ var _components_ProjectsModal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/ProjectsModal */ "./assets/src/js/components/ProjectsModal.js");
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Header */ "./assets/src/js/components/Header.js");
+/* harmony import */ var _components_ResourceList__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/ResourceList */ "./assets/src/js/components/ResourceList.js");
+/* harmony import */ var _components_ProjectList__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/ProjectList */ "./assets/src/js/components/ProjectList.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -614,6 +6805,8 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
+var supabase = (0,_supabase_supabase_js__WEBPACK_IMPORTED_MODULE_3__.createClient)(['https://ccbjkpotfypzpqnzktba.supabase.co'], ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzMTEzMzQ2MywiZXhwIjoxOTQ2NzA5NDYzfQ.MMTsdqk7TcUqoCvXnC-OAb-Zeeg-uogVtwQtEzcrvsw']);
 
 
 
@@ -645,6 +6838,7 @@ var Popup = /*#__PURE__*/function (_Component) {
       resourceRating: null,
       relatedProject: null,
       view: 'projects',
+      isLoading: true,
       currentProject: null
     };
     return _this;
@@ -655,22 +6849,78 @@ var Popup = /*#__PURE__*/function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      chrome.storage.sync.get(['resources', 'projects'], function (result) {
-        _this2.setState({
-          resources: result.resources ? JSON.parse(result.resources) : [],
-          projects: result.projects ? JSON.parse(result.projects) : []
-        });
-      });
-      jquery__WEBPACK_IMPORTED_MODULE_1___default()('html').click(function (e) {
+      // chrome.storage.sync.get(['resources', 'projects'], (result) => {
+      //     this.setState({
+      //         resources : result.resources ? JSON.parse(result.resources) : [],
+      //         projects : result.projects ? JSON.parse(result.projects) : [],
+      //     });
+      // });
+      jquery__WEBPACK_IMPORTED_MODULE_2___default()('html').click(function (e) {
         e.stopPropagation();
 
-        if (!jquery__WEBPACK_IMPORTED_MODULE_1___default()(e.target).closest('.c-modal__form').length && jquery__WEBPACK_IMPORTED_MODULE_1___default()(e.target).closest('.c-modal').length) {
+        if (!jquery__WEBPACK_IMPORTED_MODULE_2___default()(e.target).closest('.c-modal__form').length && jquery__WEBPACK_IMPORTED_MODULE_2___default()(e.target).closest('.c-modal').length) {
           _this2.setState({
             isProjectModalActive: false,
             isResourceModalActive: false
           });
         }
       });
+
+      _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+        var _yield$supabase$from$, Projects, error;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return supabase.from('Projects').select('*');
+
+              case 2:
+                _yield$supabase$from$ = _context.sent;
+                Projects = _yield$supabase$from$.data;
+                error = _yield$supabase$from$.error;
+                setTimeout(function () {
+                  _this2.setState({
+                    projects: Projects,
+                    isLoading: false
+                  });
+                }, 1000);
+
+              case 6:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }))();
+
+      _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2() {
+        var _yield$supabase$from$2, Resources, error;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.next = 2;
+                return supabase.from('Resources').select('*');
+
+              case 2:
+                _yield$supabase$from$2 = _context2.sent;
+                Resources = _yield$supabase$from$2.data;
+                error = _yield$supabase$from$2.error;
+
+                _this2.setState({
+                  resources: Resources
+                });
+
+              case 6:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2);
+      }))();
     }
   }, {
     key: "addResourceToProject",
@@ -679,31 +6929,55 @@ var Popup = /*#__PURE__*/function (_Component) {
 
       e.preventDefault();
       var arr = this.state.resources.slice();
-      console.log(this.state.relatedProject);
+      this.setState({
+        isLoading: true
+      });
       chrome.tabs.query({
         active: true,
         lastFocusedWindow: true
       }, function (tabs) {
         var url = tabs[0].url;
-        arr.push({
-          id: '',
-          url: url,
-          project: _this3.state.relatedProject,
-          type: _this3.state.resourceType,
-          description: _this3.state.resourceDescription,
-          rating: _this3.state.resourceRating,
-          added: Date.now(),
-          clicks: 0
-        });
-        console.log(arr);
-        chrome.storage.sync.set({
-          "resources": JSON.stringify(arr)
-        }, function () {
-          _this3.setState({
-            resources: arr,
-            isResourceModalActive: false
-          });
-        });
+
+        _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee3() {
+          var _yield$supabase$from$3, data, error;
+
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee3$(_context3) {
+            while (1) {
+              switch (_context3.prev = _context3.next) {
+                case 0:
+                  _context3.next = 2;
+                  return supabase.from('Resources').insert([{
+                    url: url,
+                    project_id: _this3.state.relatedProject,
+                    type: _this3.state.resourceType,
+                    description: _this3.state.resourceDescription,
+                    rating: _this3.state.resourceRating
+                  }]);
+
+                case 2:
+                  _yield$supabase$from$3 = _context3.sent;
+                  data = _yield$supabase$from$3.data;
+                  error = _yield$supabase$from$3.error;
+                  console.log(data);
+                  arr.push(data[0]);
+                  console.log(data);
+
+                  _this3.setState({
+                    resources: arr,
+                    isResourceModalActive: false,
+                    isLoading: false
+                  });
+
+                case 9:
+                case "end":
+                  return _context3.stop();
+              }
+            }
+          }, _callee3);
+        }))(); // console.log(arr);
+        // chrome.storage.sync.set({ "resources":  JSON.stringify(arr)}, () => {
+        // });
+
       });
     }
   }, {
@@ -712,21 +6986,56 @@ var Popup = /*#__PURE__*/function (_Component) {
       var _this4 = this;
 
       e.preventDefault();
+      this.setState({
+        isLoading: true
+      });
       var arr = this.state.projects.slice();
-      arr.push({
-        id: '',
-        title: this.state.projectName,
-        color: this.state.projectColor,
-        order: 1
-      });
-      chrome.storage.sync.set({
-        "projects": JSON.stringify(arr)
-      }, function () {
-        _this4.setState({
-          projects: arr,
-          isProjectModalActive: false
-        });
-      });
+
+      _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee4() {
+        var _yield$supabase$from$4, data, error;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee4$(_context4) {
+          while (1) {
+            switch (_context4.prev = _context4.next) {
+              case 0:
+                _context4.next = 2;
+                return supabase.from('Projects').insert([{
+                  title: _this4.state.projectName,
+                  colour: _this4.state.projectColor
+                }]);
+
+              case 2:
+                _yield$supabase$from$4 = _context4.sent;
+                data = _yield$supabase$from$4.data;
+                error = _yield$supabase$from$4.error;
+                arr.push(data[0]);
+
+                _this4.setState({
+                  projects: arr,
+                  isProjectModalActive: false,
+                  isLoading: false
+                });
+
+              case 7:
+              case "end":
+                return _context4.stop();
+            }
+          }
+        }, _callee4);
+      }))(); // const { data, error } = await supabase
+      // .from('Projects')
+      // .insert([
+      //     {
+      //         title : this.state.projectName
+      //     },
+      // ])
+      // chrome.storage.sync.set({ "projects":  JSON.stringify(arr)}, () => {
+      //     this.setState({
+      //         projects : arr,
+      //         isProjectModalActive : false
+      //     })
+      // });
+
     }
   }, {
     key: "viewResourcesForProject",
@@ -742,7 +7051,7 @@ var Popup = /*#__PURE__*/function (_Component) {
       var project = this.state.currentProject;
       var allResources = this.state.resources.slice();
       var filteredResources = allResources.filter(function (resource) {
-        return resource.project == project;
+        return resource.project_id == project;
       });
       return filteredResources;
     }
@@ -765,7 +7074,7 @@ var Popup = /*#__PURE__*/function (_Component) {
     key: "getResourceCount",
     value: function getResourceCount(project) {
       return this.state.resources.filter(function (resource) {
-        return resource.project == project;
+        return resource.project_id == project;
       }).length;
     }
   }, {
@@ -774,35 +7083,69 @@ var Popup = /*#__PURE__*/function (_Component) {
       var _this6 = this;
 
       var arr = this.state.resources.slice();
+      var newClicks = null;
+      this.setState({
+        isLoading: true
+      });
       var modifiedArr = arr.map(function (data) {
-        if (data.url == resource.url) {
+        if (data.id == resource.id) {
           var modifiedData = data;
           modifiedData['clicks'] = modifiedData['clicks'] + 1;
+          newClicks = modifiedData['clicks'];
           return modifiedData;
         }
 
         return data;
       });
-      chrome.storage.sync.set({
-        "resources": JSON.stringify(modifiedArr)
-      }, function () {
-        _this6.setState({
-          resources: modifiedArr
-        });
-      });
+
+      _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee5() {
+        var _yield$supabase$from$5, data, error;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee5$(_context5) {
+          while (1) {
+            switch (_context5.prev = _context5.next) {
+              case 0:
+                _context5.next = 2;
+                return supabase.from('Resources').update({
+                  clicks: newClicks
+                }).eq('id', resource.id);
+
+              case 2:
+                _yield$supabase$from$5 = _context5.sent;
+                data = _yield$supabase$from$5.data;
+                error = _yield$supabase$from$5.error;
+
+                _this6.setState({
+                  resources: modifiedArr,
+                  isLoading: false
+                });
+
+              case 6:
+              case "end":
+                return _context5.stop();
+            }
+          }
+        }, _callee5);
+      }))(); // chrome.storage.sync.set({ "resources":  JSON.stringify(modifiedArr)}, () => {
+      //     this.setState({
+      //         resources : modifiedArr
+      //     })
+      // });
+
     }
   }, {
     key: "render",
     value: function render() {
       var _this7 = this;
 
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
         className: "o-app-container",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
           className: "grid-container full",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
             className: "grid-x",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_Header__WEBPACK_IMPORTED_MODULE_4__.default, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_Header__WEBPACK_IMPORTED_MODULE_6__.default, {
+              addResources: this.state.projects.length > 0,
               activateResourceModal: function activateResourceModal() {
                 return _this7.setState({
                   isResourceModalActive: true
@@ -816,7 +7159,8 @@ var Popup = /*#__PURE__*/function (_Component) {
               clearAll: function clearAll() {
                 return _this7.clearAll();
               }
-            }), this.state.view == 'projects' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_ProjectList__WEBPACK_IMPORTED_MODULE_6__.default, {
+            }), this.state.view == 'projects' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_ProjectList__WEBPACK_IMPORTED_MODULE_8__.default, {
+              isLoading: this.state.isLoading,
               isActive: this.state.view == 'projects',
               projects: this.state.projects,
               viewResourcesForProject: function viewResourcesForProject(project) {
@@ -825,9 +7169,9 @@ var Popup = /*#__PURE__*/function (_Component) {
               getResourceCount: function getResourceCount(project) {
                 return _this7.getResourceCount(project);
               }
-            }), this.state.view == 'resources' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+            }), this.state.view == 'resources' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
               className: "cell grid-container",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_ResourceList__WEBPACK_IMPORTED_MODULE_5__.default, {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_ResourceList__WEBPACK_IMPORTED_MODULE_7__.default, {
                 resources: this.getResourcesByProject(),
                 addClickToResource: function addClickToResource(e, resource) {
                   return _this7.addClickToResource(e, resource);
@@ -839,7 +7183,7 @@ var Popup = /*#__PURE__*/function (_Component) {
                   });
                 }
               })
-            }), this.state.isProjectModalActive && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_ProjectsModal__WEBPACK_IMPORTED_MODULE_3__.default, {
+            }), this.state.isProjectModalActive && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_ProjectsModal__WEBPACK_IMPORTED_MODULE_5__.default, {
               setProjectName: function setProjectName(projectName) {
                 return _this7.setState({
                   projectName: projectName
@@ -853,7 +7197,7 @@ var Popup = /*#__PURE__*/function (_Component) {
               addProjectToList: function addProjectToList(e) {
                 return _this7.addProjectToList(e);
               }
-            }), this.state.isResourceModalActive && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_ResourceModal__WEBPACK_IMPORTED_MODULE_2__.default, {
+            }), this.state.isResourceModalActive && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_ResourceModal__WEBPACK_IMPORTED_MODULE_4__.default, {
               projects: this.state.projects,
               setResourceRating: function setResourceRating(resourceRating) {
                 return _this7.setState({
@@ -878,6 +7222,9 @@ var Popup = /*#__PURE__*/function (_Component) {
               addResourceToProject: function addResourceToProject(e) {
                 return _this7.addResourceToProject(e);
               }
+            }), this.state.isLoading && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+              className: "c-loader",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {})]
             })]
           })
         })
@@ -886,8 +7233,617 @@ var Popup = /*#__PURE__*/function (_Component) {
   }]);
 
   return Popup;
-}(react__WEBPACK_IMPORTED_MODULE_0__.Component);
+}(react__WEBPACK_IMPORTED_MODULE_1__.Component);
 
+
+
+/***/ }),
+
+/***/ "./node_modules/cross-fetch/dist/browser-ponyfill.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/cross-fetch/dist/browser-ponyfill.js ***!
+  \***********************************************************/
+/***/ (function(module, exports) {
+
+var global = typeof self !== 'undefined' ? self : this;
+var __self__ = (function () {
+function F() {
+this.fetch = false;
+this.DOMException = global.DOMException
+}
+F.prototype = global;
+return new F();
+})();
+(function(self) {
+
+var irrelevant = (function (exports) {
+
+  var support = {
+    searchParams: 'URLSearchParams' in self,
+    iterable: 'Symbol' in self && 'iterator' in Symbol,
+    blob:
+      'FileReader' in self &&
+      'Blob' in self &&
+      (function() {
+        try {
+          new Blob();
+          return true
+        } catch (e) {
+          return false
+        }
+      })(),
+    formData: 'FormData' in self,
+    arrayBuffer: 'ArrayBuffer' in self
+  };
+
+  function isDataView(obj) {
+    return obj && DataView.prototype.isPrototypeOf(obj)
+  }
+
+  if (support.arrayBuffer) {
+    var viewClasses = [
+      '[object Int8Array]',
+      '[object Uint8Array]',
+      '[object Uint8ClampedArray]',
+      '[object Int16Array]',
+      '[object Uint16Array]',
+      '[object Int32Array]',
+      '[object Uint32Array]',
+      '[object Float32Array]',
+      '[object Float64Array]'
+    ];
+
+    var isArrayBufferView =
+      ArrayBuffer.isView ||
+      function(obj) {
+        return obj && viewClasses.indexOf(Object.prototype.toString.call(obj)) > -1
+      };
+  }
+
+  function normalizeName(name) {
+    if (typeof name !== 'string') {
+      name = String(name);
+    }
+    if (/[^a-z0-9\-#$%&'*+.^_`|~]/i.test(name)) {
+      throw new TypeError('Invalid character in header field name')
+    }
+    return name.toLowerCase()
+  }
+
+  function normalizeValue(value) {
+    if (typeof value !== 'string') {
+      value = String(value);
+    }
+    return value
+  }
+
+  // Build a destructive iterator for the value list
+  function iteratorFor(items) {
+    var iterator = {
+      next: function() {
+        var value = items.shift();
+        return {done: value === undefined, value: value}
+      }
+    };
+
+    if (support.iterable) {
+      iterator[Symbol.iterator] = function() {
+        return iterator
+      };
+    }
+
+    return iterator
+  }
+
+  function Headers(headers) {
+    this.map = {};
+
+    if (headers instanceof Headers) {
+      headers.forEach(function(value, name) {
+        this.append(name, value);
+      }, this);
+    } else if (Array.isArray(headers)) {
+      headers.forEach(function(header) {
+        this.append(header[0], header[1]);
+      }, this);
+    } else if (headers) {
+      Object.getOwnPropertyNames(headers).forEach(function(name) {
+        this.append(name, headers[name]);
+      }, this);
+    }
+  }
+
+  Headers.prototype.append = function(name, value) {
+    name = normalizeName(name);
+    value = normalizeValue(value);
+    var oldValue = this.map[name];
+    this.map[name] = oldValue ? oldValue + ', ' + value : value;
+  };
+
+  Headers.prototype['delete'] = function(name) {
+    delete this.map[normalizeName(name)];
+  };
+
+  Headers.prototype.get = function(name) {
+    name = normalizeName(name);
+    return this.has(name) ? this.map[name] : null
+  };
+
+  Headers.prototype.has = function(name) {
+    return this.map.hasOwnProperty(normalizeName(name))
+  };
+
+  Headers.prototype.set = function(name, value) {
+    this.map[normalizeName(name)] = normalizeValue(value);
+  };
+
+  Headers.prototype.forEach = function(callback, thisArg) {
+    for (var name in this.map) {
+      if (this.map.hasOwnProperty(name)) {
+        callback.call(thisArg, this.map[name], name, this);
+      }
+    }
+  };
+
+  Headers.prototype.keys = function() {
+    var items = [];
+    this.forEach(function(value, name) {
+      items.push(name);
+    });
+    return iteratorFor(items)
+  };
+
+  Headers.prototype.values = function() {
+    var items = [];
+    this.forEach(function(value) {
+      items.push(value);
+    });
+    return iteratorFor(items)
+  };
+
+  Headers.prototype.entries = function() {
+    var items = [];
+    this.forEach(function(value, name) {
+      items.push([name, value]);
+    });
+    return iteratorFor(items)
+  };
+
+  if (support.iterable) {
+    Headers.prototype[Symbol.iterator] = Headers.prototype.entries;
+  }
+
+  function consumed(body) {
+    if (body.bodyUsed) {
+      return Promise.reject(new TypeError('Already read'))
+    }
+    body.bodyUsed = true;
+  }
+
+  function fileReaderReady(reader) {
+    return new Promise(function(resolve, reject) {
+      reader.onload = function() {
+        resolve(reader.result);
+      };
+      reader.onerror = function() {
+        reject(reader.error);
+      };
+    })
+  }
+
+  function readBlobAsArrayBuffer(blob) {
+    var reader = new FileReader();
+    var promise = fileReaderReady(reader);
+    reader.readAsArrayBuffer(blob);
+    return promise
+  }
+
+  function readBlobAsText(blob) {
+    var reader = new FileReader();
+    var promise = fileReaderReady(reader);
+    reader.readAsText(blob);
+    return promise
+  }
+
+  function readArrayBufferAsText(buf) {
+    var view = new Uint8Array(buf);
+    var chars = new Array(view.length);
+
+    for (var i = 0; i < view.length; i++) {
+      chars[i] = String.fromCharCode(view[i]);
+    }
+    return chars.join('')
+  }
+
+  function bufferClone(buf) {
+    if (buf.slice) {
+      return buf.slice(0)
+    } else {
+      var view = new Uint8Array(buf.byteLength);
+      view.set(new Uint8Array(buf));
+      return view.buffer
+    }
+  }
+
+  function Body() {
+    this.bodyUsed = false;
+
+    this._initBody = function(body) {
+      this._bodyInit = body;
+      if (!body) {
+        this._bodyText = '';
+      } else if (typeof body === 'string') {
+        this._bodyText = body;
+      } else if (support.blob && Blob.prototype.isPrototypeOf(body)) {
+        this._bodyBlob = body;
+      } else if (support.formData && FormData.prototype.isPrototypeOf(body)) {
+        this._bodyFormData = body;
+      } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {
+        this._bodyText = body.toString();
+      } else if (support.arrayBuffer && support.blob && isDataView(body)) {
+        this._bodyArrayBuffer = bufferClone(body.buffer);
+        // IE 10-11 can't handle a DataView body.
+        this._bodyInit = new Blob([this._bodyArrayBuffer]);
+      } else if (support.arrayBuffer && (ArrayBuffer.prototype.isPrototypeOf(body) || isArrayBufferView(body))) {
+        this._bodyArrayBuffer = bufferClone(body);
+      } else {
+        this._bodyText = body = Object.prototype.toString.call(body);
+      }
+
+      if (!this.headers.get('content-type')) {
+        if (typeof body === 'string') {
+          this.headers.set('content-type', 'text/plain;charset=UTF-8');
+        } else if (this._bodyBlob && this._bodyBlob.type) {
+          this.headers.set('content-type', this._bodyBlob.type);
+        } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {
+          this.headers.set('content-type', 'application/x-www-form-urlencoded;charset=UTF-8');
+        }
+      }
+    };
+
+    if (support.blob) {
+      this.blob = function() {
+        var rejected = consumed(this);
+        if (rejected) {
+          return rejected
+        }
+
+        if (this._bodyBlob) {
+          return Promise.resolve(this._bodyBlob)
+        } else if (this._bodyArrayBuffer) {
+          return Promise.resolve(new Blob([this._bodyArrayBuffer]))
+        } else if (this._bodyFormData) {
+          throw new Error('could not read FormData body as blob')
+        } else {
+          return Promise.resolve(new Blob([this._bodyText]))
+        }
+      };
+
+      this.arrayBuffer = function() {
+        if (this._bodyArrayBuffer) {
+          return consumed(this) || Promise.resolve(this._bodyArrayBuffer)
+        } else {
+          return this.blob().then(readBlobAsArrayBuffer)
+        }
+      };
+    }
+
+    this.text = function() {
+      var rejected = consumed(this);
+      if (rejected) {
+        return rejected
+      }
+
+      if (this._bodyBlob) {
+        return readBlobAsText(this._bodyBlob)
+      } else if (this._bodyArrayBuffer) {
+        return Promise.resolve(readArrayBufferAsText(this._bodyArrayBuffer))
+      } else if (this._bodyFormData) {
+        throw new Error('could not read FormData body as text')
+      } else {
+        return Promise.resolve(this._bodyText)
+      }
+    };
+
+    if (support.formData) {
+      this.formData = function() {
+        return this.text().then(decode)
+      };
+    }
+
+    this.json = function() {
+      return this.text().then(JSON.parse)
+    };
+
+    return this
+  }
+
+  // HTTP methods whose capitalization should be normalized
+  var methods = ['DELETE', 'GET', 'HEAD', 'OPTIONS', 'POST', 'PUT'];
+
+  function normalizeMethod(method) {
+    var upcased = method.toUpperCase();
+    return methods.indexOf(upcased) > -1 ? upcased : method
+  }
+
+  function Request(input, options) {
+    options = options || {};
+    var body = options.body;
+
+    if (input instanceof Request) {
+      if (input.bodyUsed) {
+        throw new TypeError('Already read')
+      }
+      this.url = input.url;
+      this.credentials = input.credentials;
+      if (!options.headers) {
+        this.headers = new Headers(input.headers);
+      }
+      this.method = input.method;
+      this.mode = input.mode;
+      this.signal = input.signal;
+      if (!body && input._bodyInit != null) {
+        body = input._bodyInit;
+        input.bodyUsed = true;
+      }
+    } else {
+      this.url = String(input);
+    }
+
+    this.credentials = options.credentials || this.credentials || 'same-origin';
+    if (options.headers || !this.headers) {
+      this.headers = new Headers(options.headers);
+    }
+    this.method = normalizeMethod(options.method || this.method || 'GET');
+    this.mode = options.mode || this.mode || null;
+    this.signal = options.signal || this.signal;
+    this.referrer = null;
+
+    if ((this.method === 'GET' || this.method === 'HEAD') && body) {
+      throw new TypeError('Body not allowed for GET or HEAD requests')
+    }
+    this._initBody(body);
+  }
+
+  Request.prototype.clone = function() {
+    return new Request(this, {body: this._bodyInit})
+  };
+
+  function decode(body) {
+    var form = new FormData();
+    body
+      .trim()
+      .split('&')
+      .forEach(function(bytes) {
+        if (bytes) {
+          var split = bytes.split('=');
+          var name = split.shift().replace(/\+/g, ' ');
+          var value = split.join('=').replace(/\+/g, ' ');
+          form.append(decodeURIComponent(name), decodeURIComponent(value));
+        }
+      });
+    return form
+  }
+
+  function parseHeaders(rawHeaders) {
+    var headers = new Headers();
+    // Replace instances of \r\n and \n followed by at least one space or horizontal tab with a space
+    // https://tools.ietf.org/html/rfc7230#section-3.2
+    var preProcessedHeaders = rawHeaders.replace(/\r?\n[\t ]+/g, ' ');
+    preProcessedHeaders.split(/\r?\n/).forEach(function(line) {
+      var parts = line.split(':');
+      var key = parts.shift().trim();
+      if (key) {
+        var value = parts.join(':').trim();
+        headers.append(key, value);
+      }
+    });
+    return headers
+  }
+
+  Body.call(Request.prototype);
+
+  function Response(bodyInit, options) {
+    if (!options) {
+      options = {};
+    }
+
+    this.type = 'default';
+    this.status = options.status === undefined ? 200 : options.status;
+    this.ok = this.status >= 200 && this.status < 300;
+    this.statusText = 'statusText' in options ? options.statusText : 'OK';
+    this.headers = new Headers(options.headers);
+    this.url = options.url || '';
+    this._initBody(bodyInit);
+  }
+
+  Body.call(Response.prototype);
+
+  Response.prototype.clone = function() {
+    return new Response(this._bodyInit, {
+      status: this.status,
+      statusText: this.statusText,
+      headers: new Headers(this.headers),
+      url: this.url
+    })
+  };
+
+  Response.error = function() {
+    var response = new Response(null, {status: 0, statusText: ''});
+    response.type = 'error';
+    return response
+  };
+
+  var redirectStatuses = [301, 302, 303, 307, 308];
+
+  Response.redirect = function(url, status) {
+    if (redirectStatuses.indexOf(status) === -1) {
+      throw new RangeError('Invalid status code')
+    }
+
+    return new Response(null, {status: status, headers: {location: url}})
+  };
+
+  exports.DOMException = self.DOMException;
+  try {
+    new exports.DOMException();
+  } catch (err) {
+    exports.DOMException = function(message, name) {
+      this.message = message;
+      this.name = name;
+      var error = Error(message);
+      this.stack = error.stack;
+    };
+    exports.DOMException.prototype = Object.create(Error.prototype);
+    exports.DOMException.prototype.constructor = exports.DOMException;
+  }
+
+  function fetch(input, init) {
+    return new Promise(function(resolve, reject) {
+      var request = new Request(input, init);
+
+      if (request.signal && request.signal.aborted) {
+        return reject(new exports.DOMException('Aborted', 'AbortError'))
+      }
+
+      var xhr = new XMLHttpRequest();
+
+      function abortXhr() {
+        xhr.abort();
+      }
+
+      xhr.onload = function() {
+        var options = {
+          status: xhr.status,
+          statusText: xhr.statusText,
+          headers: parseHeaders(xhr.getAllResponseHeaders() || '')
+        };
+        options.url = 'responseURL' in xhr ? xhr.responseURL : options.headers.get('X-Request-URL');
+        var body = 'response' in xhr ? xhr.response : xhr.responseText;
+        resolve(new Response(body, options));
+      };
+
+      xhr.onerror = function() {
+        reject(new TypeError('Network request failed'));
+      };
+
+      xhr.ontimeout = function() {
+        reject(new TypeError('Network request failed'));
+      };
+
+      xhr.onabort = function() {
+        reject(new exports.DOMException('Aborted', 'AbortError'));
+      };
+
+      xhr.open(request.method, request.url, true);
+
+      if (request.credentials === 'include') {
+        xhr.withCredentials = true;
+      } else if (request.credentials === 'omit') {
+        xhr.withCredentials = false;
+      }
+
+      if ('responseType' in xhr && support.blob) {
+        xhr.responseType = 'blob';
+      }
+
+      request.headers.forEach(function(value, name) {
+        xhr.setRequestHeader(name, value);
+      });
+
+      if (request.signal) {
+        request.signal.addEventListener('abort', abortXhr);
+
+        xhr.onreadystatechange = function() {
+          // DONE (success or failure)
+          if (xhr.readyState === 4) {
+            request.signal.removeEventListener('abort', abortXhr);
+          }
+        };
+      }
+
+      xhr.send(typeof request._bodyInit === 'undefined' ? null : request._bodyInit);
+    })
+  }
+
+  fetch.polyfill = true;
+
+  if (!self.fetch) {
+    self.fetch = fetch;
+    self.Headers = Headers;
+    self.Request = Request;
+    self.Response = Response;
+  }
+
+  exports.Headers = Headers;
+  exports.Request = Request;
+  exports.Response = Response;
+  exports.fetch = fetch;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+  return exports;
+
+}({}));
+})(__self__);
+__self__.fetch.ponyfill = true;
+// Remove "polyfill" property added by whatwg-fetch
+delete __self__.fetch.polyfill;
+// Choose between native implementation (global) or custom implementation (__self__)
+// var ctx = global.fetch ? global : __self__;
+var ctx = __self__; // this line disable service worker support temporarily
+exports = ctx.fetch // To enable: import fetch from 'cross-fetch'
+exports.default = ctx.fetch // For TypeScript consumers without esModuleInterop.
+exports.fetch = ctx.fetch // To enable: import {fetch} from 'cross-fetch'
+exports.Headers = ctx.Headers
+exports.Request = ctx.Request
+exports.Response = ctx.Response
+module.exports = exports
+
+
+/***/ }),
+
+/***/ "./node_modules/es5-ext/global.js":
+/*!****************************************!*\
+  !*** ./node_modules/es5-ext/global.js ***!
+  \****************************************/
+/***/ ((module) => {
+
+var naiveFallback = function () {
+	if (typeof self === "object" && self) return self;
+	if (typeof window === "object" && window) return window;
+	throw new Error("Unable to resolve global `this`");
+};
+
+module.exports = (function () {
+	if (this) return this;
+
+	// Unexpected strict mode (may happen if e.g. bundled into ESM module)
+
+	// Fallback to standard globalThis if available
+	if (typeof globalThis === "object" && globalThis) return globalThis;
+
+	// Thanks @mathiasbynens -> https://mathiasbynens.be/notes/globalthis
+	// In all ES5+ engines global object inherits from Object.prototype
+	// (if you approached one that doesn't please report)
+	try {
+		Object.defineProperty(Object.prototype, "__global__", {
+			get: function () { return this; },
+			configurable: true
+		});
+	} catch (error) {
+		// Unfortunate case of updates to Object.prototype being restricted
+		// via preventExtensions, seal or freeze
+		return naiveFallback();
+	}
+	try {
+		// Safari case (window.__global__ works, but __global__ does not)
+		if (!__global__) return naiveFallback();
+		return __global__;
+	} finally {
+		delete Object.prototype.__global__;
+	}
+})();
 
 
 /***/ }),
@@ -41818,6 +48774,770 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/regenerator-runtime/runtime.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/regenerator-runtime/runtime.js ***!
+  \*****************************************************/
+/***/ ((module) => {
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+var runtime = (function (exports) {
+  "use strict";
+
+  var Op = Object.prototype;
+  var hasOwn = Op.hasOwnProperty;
+  var undefined; // More compressible than void 0.
+  var $Symbol = typeof Symbol === "function" ? Symbol : {};
+  var iteratorSymbol = $Symbol.iterator || "@@iterator";
+  var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
+  var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+
+  function define(obj, key, value) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+    return obj[key];
+  }
+  try {
+    // IE 8 has a broken Object.defineProperty that only works on DOM objects.
+    define({}, "");
+  } catch (err) {
+    define = function(obj, key, value) {
+      return obj[key] = value;
+    };
+  }
+
+  function wrap(innerFn, outerFn, self, tryLocsList) {
+    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
+    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
+    var generator = Object.create(protoGenerator.prototype);
+    var context = new Context(tryLocsList || []);
+
+    // The ._invoke method unifies the implementations of the .next,
+    // .throw, and .return methods.
+    generator._invoke = makeInvokeMethod(innerFn, self, context);
+
+    return generator;
+  }
+  exports.wrap = wrap;
+
+  // Try/catch helper to minimize deoptimizations. Returns a completion
+  // record like context.tryEntries[i].completion. This interface could
+  // have been (and was previously) designed to take a closure to be
+  // invoked without arguments, but in all the cases we care about we
+  // already have an existing method we want to call, so there's no need
+  // to create a new function object. We can even get away with assuming
+  // the method takes exactly one argument, since that happens to be true
+  // in every case, so we don't have to touch the arguments object. The
+  // only additional allocation required is the completion record, which
+  // has a stable shape and so hopefully should be cheap to allocate.
+  function tryCatch(fn, obj, arg) {
+    try {
+      return { type: "normal", arg: fn.call(obj, arg) };
+    } catch (err) {
+      return { type: "throw", arg: err };
+    }
+  }
+
+  var GenStateSuspendedStart = "suspendedStart";
+  var GenStateSuspendedYield = "suspendedYield";
+  var GenStateExecuting = "executing";
+  var GenStateCompleted = "completed";
+
+  // Returning this object from the innerFn has the same effect as
+  // breaking out of the dispatch switch statement.
+  var ContinueSentinel = {};
+
+  // Dummy constructor functions that we use as the .constructor and
+  // .constructor.prototype properties for functions that return Generator
+  // objects. For full spec compliance, you may wish to configure your
+  // minifier not to mangle the names of these two functions.
+  function Generator() {}
+  function GeneratorFunction() {}
+  function GeneratorFunctionPrototype() {}
+
+  // This is a polyfill for %IteratorPrototype% for environments that
+  // don't natively support it.
+  var IteratorPrototype = {};
+  define(IteratorPrototype, iteratorSymbol, function () {
+    return this;
+  });
+
+  var getProto = Object.getPrototypeOf;
+  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+  if (NativeIteratorPrototype &&
+      NativeIteratorPrototype !== Op &&
+      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
+    // This environment has a native %IteratorPrototype%; use it instead
+    // of the polyfill.
+    IteratorPrototype = NativeIteratorPrototype;
+  }
+
+  var Gp = GeneratorFunctionPrototype.prototype =
+    Generator.prototype = Object.create(IteratorPrototype);
+  GeneratorFunction.prototype = GeneratorFunctionPrototype;
+  define(Gp, "constructor", GeneratorFunctionPrototype);
+  define(GeneratorFunctionPrototype, "constructor", GeneratorFunction);
+  GeneratorFunction.displayName = define(
+    GeneratorFunctionPrototype,
+    toStringTagSymbol,
+    "GeneratorFunction"
+  );
+
+  // Helper for defining the .next, .throw, and .return methods of the
+  // Iterator interface in terms of a single ._invoke method.
+  function defineIteratorMethods(prototype) {
+    ["next", "throw", "return"].forEach(function(method) {
+      define(prototype, method, function(arg) {
+        return this._invoke(method, arg);
+      });
+    });
+  }
+
+  exports.isGeneratorFunction = function(genFun) {
+    var ctor = typeof genFun === "function" && genFun.constructor;
+    return ctor
+      ? ctor === GeneratorFunction ||
+        // For the native GeneratorFunction constructor, the best we can
+        // do is to check its .name property.
+        (ctor.displayName || ctor.name) === "GeneratorFunction"
+      : false;
+  };
+
+  exports.mark = function(genFun) {
+    if (Object.setPrototypeOf) {
+      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
+    } else {
+      genFun.__proto__ = GeneratorFunctionPrototype;
+      define(genFun, toStringTagSymbol, "GeneratorFunction");
+    }
+    genFun.prototype = Object.create(Gp);
+    return genFun;
+  };
+
+  // Within the body of any async function, `await x` is transformed to
+  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
+  // `hasOwn.call(value, "__await")` to determine if the yielded value is
+  // meant to be awaited.
+  exports.awrap = function(arg) {
+    return { __await: arg };
+  };
+
+  function AsyncIterator(generator, PromiseImpl) {
+    function invoke(method, arg, resolve, reject) {
+      var record = tryCatch(generator[method], generator, arg);
+      if (record.type === "throw") {
+        reject(record.arg);
+      } else {
+        var result = record.arg;
+        var value = result.value;
+        if (value &&
+            typeof value === "object" &&
+            hasOwn.call(value, "__await")) {
+          return PromiseImpl.resolve(value.__await).then(function(value) {
+            invoke("next", value, resolve, reject);
+          }, function(err) {
+            invoke("throw", err, resolve, reject);
+          });
+        }
+
+        return PromiseImpl.resolve(value).then(function(unwrapped) {
+          // When a yielded Promise is resolved, its final value becomes
+          // the .value of the Promise<{value,done}> result for the
+          // current iteration.
+          result.value = unwrapped;
+          resolve(result);
+        }, function(error) {
+          // If a rejected Promise was yielded, throw the rejection back
+          // into the async generator function so it can be handled there.
+          return invoke("throw", error, resolve, reject);
+        });
+      }
+    }
+
+    var previousPromise;
+
+    function enqueue(method, arg) {
+      function callInvokeWithMethodAndArg() {
+        return new PromiseImpl(function(resolve, reject) {
+          invoke(method, arg, resolve, reject);
+        });
+      }
+
+      return previousPromise =
+        // If enqueue has been called before, then we want to wait until
+        // all previous Promises have been resolved before calling invoke,
+        // so that results are always delivered in the correct order. If
+        // enqueue has not been called before, then it is important to
+        // call invoke immediately, without waiting on a callback to fire,
+        // so that the async generator function has the opportunity to do
+        // any necessary setup in a predictable way. This predictability
+        // is why the Promise constructor synchronously invokes its
+        // executor callback, and why async functions synchronously
+        // execute code before the first await. Since we implement simple
+        // async functions in terms of async generators, it is especially
+        // important to get this right, even though it requires care.
+        previousPromise ? previousPromise.then(
+          callInvokeWithMethodAndArg,
+          // Avoid propagating failures to Promises returned by later
+          // invocations of the iterator.
+          callInvokeWithMethodAndArg
+        ) : callInvokeWithMethodAndArg();
+    }
+
+    // Define the unified helper method that is used to implement .next,
+    // .throw, and .return (see defineIteratorMethods).
+    this._invoke = enqueue;
+  }
+
+  defineIteratorMethods(AsyncIterator.prototype);
+  define(AsyncIterator.prototype, asyncIteratorSymbol, function () {
+    return this;
+  });
+  exports.AsyncIterator = AsyncIterator;
+
+  // Note that simple async functions are implemented on top of
+  // AsyncIterator objects; they just return a Promise for the value of
+  // the final result produced by the iterator.
+  exports.async = function(innerFn, outerFn, self, tryLocsList, PromiseImpl) {
+    if (PromiseImpl === void 0) PromiseImpl = Promise;
+
+    var iter = new AsyncIterator(
+      wrap(innerFn, outerFn, self, tryLocsList),
+      PromiseImpl
+    );
+
+    return exports.isGeneratorFunction(outerFn)
+      ? iter // If outerFn is a generator, return the full iterator.
+      : iter.next().then(function(result) {
+          return result.done ? result.value : iter.next();
+        });
+  };
+
+  function makeInvokeMethod(innerFn, self, context) {
+    var state = GenStateSuspendedStart;
+
+    return function invoke(method, arg) {
+      if (state === GenStateExecuting) {
+        throw new Error("Generator is already running");
+      }
+
+      if (state === GenStateCompleted) {
+        if (method === "throw") {
+          throw arg;
+        }
+
+        // Be forgiving, per 25.3.3.3.3 of the spec:
+        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
+        return doneResult();
+      }
+
+      context.method = method;
+      context.arg = arg;
+
+      while (true) {
+        var delegate = context.delegate;
+        if (delegate) {
+          var delegateResult = maybeInvokeDelegate(delegate, context);
+          if (delegateResult) {
+            if (delegateResult === ContinueSentinel) continue;
+            return delegateResult;
+          }
+        }
+
+        if (context.method === "next") {
+          // Setting context._sent for legacy support of Babel's
+          // function.sent implementation.
+          context.sent = context._sent = context.arg;
+
+        } else if (context.method === "throw") {
+          if (state === GenStateSuspendedStart) {
+            state = GenStateCompleted;
+            throw context.arg;
+          }
+
+          context.dispatchException(context.arg);
+
+        } else if (context.method === "return") {
+          context.abrupt("return", context.arg);
+        }
+
+        state = GenStateExecuting;
+
+        var record = tryCatch(innerFn, self, context);
+        if (record.type === "normal") {
+          // If an exception is thrown from innerFn, we leave state ===
+          // GenStateExecuting and loop back for another invocation.
+          state = context.done
+            ? GenStateCompleted
+            : GenStateSuspendedYield;
+
+          if (record.arg === ContinueSentinel) {
+            continue;
+          }
+
+          return {
+            value: record.arg,
+            done: context.done
+          };
+
+        } else if (record.type === "throw") {
+          state = GenStateCompleted;
+          // Dispatch the exception by looping back around to the
+          // context.dispatchException(context.arg) call above.
+          context.method = "throw";
+          context.arg = record.arg;
+        }
+      }
+    };
+  }
+
+  // Call delegate.iterator[context.method](context.arg) and handle the
+  // result, either by returning a { value, done } result from the
+  // delegate iterator, or by modifying context.method and context.arg,
+  // setting context.delegate to null, and returning the ContinueSentinel.
+  function maybeInvokeDelegate(delegate, context) {
+    var method = delegate.iterator[context.method];
+    if (method === undefined) {
+      // A .throw or .return when the delegate iterator has no .throw
+      // method always terminates the yield* loop.
+      context.delegate = null;
+
+      if (context.method === "throw") {
+        // Note: ["return"] must be used for ES3 parsing compatibility.
+        if (delegate.iterator["return"]) {
+          // If the delegate iterator has a return method, give it a
+          // chance to clean up.
+          context.method = "return";
+          context.arg = undefined;
+          maybeInvokeDelegate(delegate, context);
+
+          if (context.method === "throw") {
+            // If maybeInvokeDelegate(context) changed context.method from
+            // "return" to "throw", let that override the TypeError below.
+            return ContinueSentinel;
+          }
+        }
+
+        context.method = "throw";
+        context.arg = new TypeError(
+          "The iterator does not provide a 'throw' method");
+      }
+
+      return ContinueSentinel;
+    }
+
+    var record = tryCatch(method, delegate.iterator, context.arg);
+
+    if (record.type === "throw") {
+      context.method = "throw";
+      context.arg = record.arg;
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    var info = record.arg;
+
+    if (! info) {
+      context.method = "throw";
+      context.arg = new TypeError("iterator result is not an object");
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    if (info.done) {
+      // Assign the result of the finished delegate to the temporary
+      // variable specified by delegate.resultName (see delegateYield).
+      context[delegate.resultName] = info.value;
+
+      // Resume execution at the desired location (see delegateYield).
+      context.next = delegate.nextLoc;
+
+      // If context.method was "throw" but the delegate handled the
+      // exception, let the outer generator proceed normally. If
+      // context.method was "next", forget context.arg since it has been
+      // "consumed" by the delegate iterator. If context.method was
+      // "return", allow the original .return call to continue in the
+      // outer generator.
+      if (context.method !== "return") {
+        context.method = "next";
+        context.arg = undefined;
+      }
+
+    } else {
+      // Re-yield the result returned by the delegate method.
+      return info;
+    }
+
+    // The delegate iterator is finished, so forget it and continue with
+    // the outer generator.
+    context.delegate = null;
+    return ContinueSentinel;
+  }
+
+  // Define Generator.prototype.{next,throw,return} in terms of the
+  // unified ._invoke helper method.
+  defineIteratorMethods(Gp);
+
+  define(Gp, toStringTagSymbol, "Generator");
+
+  // A Generator should always return itself as the iterator object when the
+  // @@iterator function is called on it. Some browsers' implementations of the
+  // iterator prototype chain incorrectly implement this, causing the Generator
+  // object to not be returned from this call. This ensures that doesn't happen.
+  // See https://github.com/facebook/regenerator/issues/274 for more details.
+  define(Gp, iteratorSymbol, function() {
+    return this;
+  });
+
+  define(Gp, "toString", function() {
+    return "[object Generator]";
+  });
+
+  function pushTryEntry(locs) {
+    var entry = { tryLoc: locs[0] };
+
+    if (1 in locs) {
+      entry.catchLoc = locs[1];
+    }
+
+    if (2 in locs) {
+      entry.finallyLoc = locs[2];
+      entry.afterLoc = locs[3];
+    }
+
+    this.tryEntries.push(entry);
+  }
+
+  function resetTryEntry(entry) {
+    var record = entry.completion || {};
+    record.type = "normal";
+    delete record.arg;
+    entry.completion = record;
+  }
+
+  function Context(tryLocsList) {
+    // The root entry object (effectively a try statement without a catch
+    // or a finally block) gives us a place to store values thrown from
+    // locations where there is no enclosing try statement.
+    this.tryEntries = [{ tryLoc: "root" }];
+    tryLocsList.forEach(pushTryEntry, this);
+    this.reset(true);
+  }
+
+  exports.keys = function(object) {
+    var keys = [];
+    for (var key in object) {
+      keys.push(key);
+    }
+    keys.reverse();
+
+    // Rather than returning an object with a next method, we keep
+    // things simple and return the next function itself.
+    return function next() {
+      while (keys.length) {
+        var key = keys.pop();
+        if (key in object) {
+          next.value = key;
+          next.done = false;
+          return next;
+        }
+      }
+
+      // To avoid creating an additional object, we just hang the .value
+      // and .done properties off the next function object itself. This
+      // also ensures that the minifier will not anonymize the function.
+      next.done = true;
+      return next;
+    };
+  };
+
+  function values(iterable) {
+    if (iterable) {
+      var iteratorMethod = iterable[iteratorSymbol];
+      if (iteratorMethod) {
+        return iteratorMethod.call(iterable);
+      }
+
+      if (typeof iterable.next === "function") {
+        return iterable;
+      }
+
+      if (!isNaN(iterable.length)) {
+        var i = -1, next = function next() {
+          while (++i < iterable.length) {
+            if (hasOwn.call(iterable, i)) {
+              next.value = iterable[i];
+              next.done = false;
+              return next;
+            }
+          }
+
+          next.value = undefined;
+          next.done = true;
+
+          return next;
+        };
+
+        return next.next = next;
+      }
+    }
+
+    // Return an iterator with no values.
+    return { next: doneResult };
+  }
+  exports.values = values;
+
+  function doneResult() {
+    return { value: undefined, done: true };
+  }
+
+  Context.prototype = {
+    constructor: Context,
+
+    reset: function(skipTempReset) {
+      this.prev = 0;
+      this.next = 0;
+      // Resetting context._sent for legacy support of Babel's
+      // function.sent implementation.
+      this.sent = this._sent = undefined;
+      this.done = false;
+      this.delegate = null;
+
+      this.method = "next";
+      this.arg = undefined;
+
+      this.tryEntries.forEach(resetTryEntry);
+
+      if (!skipTempReset) {
+        for (var name in this) {
+          // Not sure about the optimal order of these conditions:
+          if (name.charAt(0) === "t" &&
+              hasOwn.call(this, name) &&
+              !isNaN(+name.slice(1))) {
+            this[name] = undefined;
+          }
+        }
+      }
+    },
+
+    stop: function() {
+      this.done = true;
+
+      var rootEntry = this.tryEntries[0];
+      var rootRecord = rootEntry.completion;
+      if (rootRecord.type === "throw") {
+        throw rootRecord.arg;
+      }
+
+      return this.rval;
+    },
+
+    dispatchException: function(exception) {
+      if (this.done) {
+        throw exception;
+      }
+
+      var context = this;
+      function handle(loc, caught) {
+        record.type = "throw";
+        record.arg = exception;
+        context.next = loc;
+
+        if (caught) {
+          // If the dispatched exception was caught by a catch block,
+          // then let that catch block handle the exception normally.
+          context.method = "next";
+          context.arg = undefined;
+        }
+
+        return !! caught;
+      }
+
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        var record = entry.completion;
+
+        if (entry.tryLoc === "root") {
+          // Exception thrown outside of any try block that could handle
+          // it, so set the completion value of the entire function to
+          // throw the exception.
+          return handle("end");
+        }
+
+        if (entry.tryLoc <= this.prev) {
+          var hasCatch = hasOwn.call(entry, "catchLoc");
+          var hasFinally = hasOwn.call(entry, "finallyLoc");
+
+          if (hasCatch && hasFinally) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            } else if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else if (hasCatch) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            }
+
+          } else if (hasFinally) {
+            if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else {
+            throw new Error("try statement without catch or finally");
+          }
+        }
+      }
+    },
+
+    abrupt: function(type, arg) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc <= this.prev &&
+            hasOwn.call(entry, "finallyLoc") &&
+            this.prev < entry.finallyLoc) {
+          var finallyEntry = entry;
+          break;
+        }
+      }
+
+      if (finallyEntry &&
+          (type === "break" ||
+           type === "continue") &&
+          finallyEntry.tryLoc <= arg &&
+          arg <= finallyEntry.finallyLoc) {
+        // Ignore the finally entry if control is not jumping to a
+        // location outside the try/catch block.
+        finallyEntry = null;
+      }
+
+      var record = finallyEntry ? finallyEntry.completion : {};
+      record.type = type;
+      record.arg = arg;
+
+      if (finallyEntry) {
+        this.method = "next";
+        this.next = finallyEntry.finallyLoc;
+        return ContinueSentinel;
+      }
+
+      return this.complete(record);
+    },
+
+    complete: function(record, afterLoc) {
+      if (record.type === "throw") {
+        throw record.arg;
+      }
+
+      if (record.type === "break" ||
+          record.type === "continue") {
+        this.next = record.arg;
+      } else if (record.type === "return") {
+        this.rval = this.arg = record.arg;
+        this.method = "return";
+        this.next = "end";
+      } else if (record.type === "normal" && afterLoc) {
+        this.next = afterLoc;
+      }
+
+      return ContinueSentinel;
+    },
+
+    finish: function(finallyLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.finallyLoc === finallyLoc) {
+          this.complete(entry.completion, entry.afterLoc);
+          resetTryEntry(entry);
+          return ContinueSentinel;
+        }
+      }
+    },
+
+    "catch": function(tryLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc === tryLoc) {
+          var record = entry.completion;
+          if (record.type === "throw") {
+            var thrown = record.arg;
+            resetTryEntry(entry);
+          }
+          return thrown;
+        }
+      }
+
+      // The context.catch method must only be called with a location
+      // argument that corresponds to a known catch block.
+      throw new Error("illegal catch attempt");
+    },
+
+    delegateYield: function(iterable, resultName, nextLoc) {
+      this.delegate = {
+        iterator: values(iterable),
+        resultName: resultName,
+        nextLoc: nextLoc
+      };
+
+      if (this.method === "next") {
+        // Deliberately forget the last sent value so that we don't
+        // accidentally pass it on to the delegate.
+        this.arg = undefined;
+      }
+
+      return ContinueSentinel;
+    }
+  };
+
+  // Regardless of whether this script is executing as a CommonJS module
+  // or not, return the runtime object so that we can declare the variable
+  // regeneratorRuntime in the outer scope, which allows this module to be
+  // injected easily by `bin/regenerator --include-runtime script.js`.
+  return exports;
+
+}(
+  // If this script is executing as a CommonJS module, use module.exports
+  // as the regeneratorRuntime namespace. Otherwise create a new empty
+  // object. Either way, the resulting object will be used to initialize
+  // the regeneratorRuntime variable at the top of this file.
+   true ? module.exports : 0
+));
+
+try {
+  regeneratorRuntime = runtime;
+} catch (accidentalStrictMode) {
+  // This module should not be running in strict mode, so the above
+  // assignment should always work unless something is misconfigured. Just
+  // in case runtime.js accidentally runs in strict mode, in modern engines
+  // we can explicitly access globalThis. In older engines we can escape
+  // strict mode using a global Function call. This could conceivably fail
+  // if a Content Security Policy forbids using Function, but in that case
+  // the proper solution is to fix the accidental strict mode problem. If
+  // you've misconfigured your bundler to force strict mode and applied a
+  // CSP to forbid Function, and you're not willing to fix either of those
+  // problems, please detail your unique predicament in a GitHub issue.
+  if (typeof globalThis === "object") {
+    globalThis.regeneratorRuntime = runtime;
+  } else {
+    Function("r", "regeneratorRuntime = r")(runtime);
+  }
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/scheduler/cjs/scheduler-tracing.development.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/scheduler/cjs/scheduler-tracing.development.js ***!
@@ -42862,6 +50582,92 @@ if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/scheduler-tracing.development.js */ "./node_modules/scheduler/cjs/scheduler-tracing.development.js");
 }
 
+
+/***/ }),
+
+/***/ "./node_modules/websocket/lib/browser.js":
+/*!***********************************************!*\
+  !*** ./node_modules/websocket/lib/browser.js ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var _globalThis;
+if (typeof globalThis === 'object') {
+	_globalThis = globalThis;
+} else {
+	try {
+		_globalThis = __webpack_require__(/*! es5-ext/global */ "./node_modules/es5-ext/global.js");
+	} catch (error) {
+	} finally {
+		if (!_globalThis && typeof window !== 'undefined') { _globalThis = window; }
+		if (!_globalThis) { throw new Error('Could not determine global this'); }
+	}
+}
+
+var NativeWebSocket = _globalThis.WebSocket || _globalThis.MozWebSocket;
+var websocket_version = __webpack_require__(/*! ./version */ "./node_modules/websocket/lib/version.js");
+
+
+/**
+ * Expose a W3C WebSocket class with just one or two arguments.
+ */
+function W3CWebSocket(uri, protocols) {
+	var native_instance;
+
+	if (protocols) {
+		native_instance = new NativeWebSocket(uri, protocols);
+	}
+	else {
+		native_instance = new NativeWebSocket(uri);
+	}
+
+	/**
+	 * 'native_instance' is an instance of nativeWebSocket (the browser's WebSocket
+	 * class). Since it is an Object it will be returned as it is when creating an
+	 * instance of W3CWebSocket via 'new W3CWebSocket()'.
+	 *
+	 * ECMAScript 5: http://bclary.com/2004/11/07/#a-13.2.2
+	 */
+	return native_instance;
+}
+if (NativeWebSocket) {
+	['CONNECTING', 'OPEN', 'CLOSING', 'CLOSED'].forEach(function(prop) {
+		Object.defineProperty(W3CWebSocket, prop, {
+			get: function() { return NativeWebSocket[prop]; }
+		});
+	});
+}
+
+/**
+ * Module exports.
+ */
+module.exports = {
+    'w3cwebsocket' : NativeWebSocket ? W3CWebSocket : null,
+    'version'      : websocket_version
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/websocket/lib/version.js":
+/*!***********************************************!*\
+  !*** ./node_modules/websocket/lib/version.js ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__(/*! ../package.json */ "./node_modules/websocket/package.json").version;
+
+
+/***/ }),
+
+/***/ "./node_modules/websocket/package.json":
+/*!*********************************************!*\
+  !*** ./node_modules/websocket/package.json ***!
+  \*********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"_from":"websocket@^1.0.34","_id":"websocket@1.0.34","_inBundle":false,"_integrity":"sha512-PRDso2sGwF6kM75QykIesBijKSVceR6jL2G8NGYyq2XrItNC2P5/qL5XeR056GhA+Ly7JMFvJb9I312mJfmqnQ==","_location":"/websocket","_phantomChildren":{},"_requested":{"type":"range","registry":true,"raw":"websocket@^1.0.34","name":"websocket","escapedName":"websocket","rawSpec":"^1.0.34","saveSpec":null,"fetchSpec":"^1.0.34"},"_requiredBy":["/@supabase/realtime-js"],"_resolved":"https://registry.npmjs.org/websocket/-/websocket-1.0.34.tgz","_shasum":"2bdc2602c08bf2c82253b730655c0ef7dcab3111","_spec":"websocket@^1.0.34","_where":"/Users/matthewday/Projects/dev-diary/node_modules/@supabase/realtime-js","author":{"name":"Brian McKelvey","email":"theturtle32@gmail.com","url":"https://github.com/theturtle32"},"browser":"lib/browser.js","bugs":{"url":"https://github.com/theturtle32/WebSocket-Node/issues"},"bundleDependencies":false,"config":{"verbose":false},"contributors":[{"name":"Iñaki Baz Castillo","email":"ibc@aliax.net","url":"http://dev.sipdoc.net"}],"dependencies":{"bufferutil":"^4.0.1","debug":"^2.2.0","es5-ext":"^0.10.50","typedarray-to-buffer":"^3.1.5","utf-8-validate":"^5.0.2","yaeti":"^0.0.6"},"deprecated":false,"description":"Websocket Client & Server Library implementing the WebSocket protocol as specified in RFC 6455.","devDependencies":{"buffer-equal":"^1.0.0","gulp":"^4.0.2","gulp-jshint":"^2.0.4","jshint":"^2.0.0","jshint-stylish":"^2.2.1","tape":"^4.9.1"},"directories":{"lib":"./lib"},"engines":{"node":">=4.0.0"},"homepage":"https://github.com/theturtle32/WebSocket-Node","keywords":["websocket","websockets","socket","networking","comet","push","RFC-6455","realtime","server","client"],"license":"Apache-2.0","main":"index","name":"websocket","repository":{"type":"git","url":"git+https://github.com/theturtle32/WebSocket-Node.git"},"scripts":{"gulp":"gulp","test":"tape test/unit/*.js"},"version":"1.0.34"}');
 
 /***/ })
 

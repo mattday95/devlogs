@@ -29,7 +29,7 @@ export default class ResourceList extends Component {
                             {
                                 this.props.resources.map( (resource, i) => (
                                     <tr className="o-project-list__resource" key={i}>
-                                        <td><a onClick={(e) => this.props.addClickToResource(e, resource)} target="_blank" href={resource.url}>View Resource</a></td>
+                                        <td><a onClick={(e) => this.props.addClickToResource(e, resource)} target="_blank" href={resource.url}>{resource.url}</a></td>
                                         <td>{resource.type}</td>
                                         <td>{resource.description}</td>
                                         <td>{resource.rating}</td>

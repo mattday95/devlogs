@@ -6463,6 +6463,10 @@ html.is-reveal-open body {
   min-height: 100px;
   text-align: center;
 }
+.o-project-list__resource td:first-of-type {
+  max-width: 150px;
+  word-break: break-word;
+}
 .o-project-list__no-projects {
   color: white;
 }
@@ -6491,6 +6495,19 @@ html.is-reveal-open body {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: -1;
 }
+.c-modal--project {
+  text-align: center;
+}
+.c-modal--project .c-modal__colour-picker {
+  display: block;
+  margin: 40px auto;
+}
+.c-modal--project .c-modal__colour-picker .IroColorPicker {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .c-project {
   position: relative;
@@ -6514,4 +6531,72 @@ html.is-reveal-open body {
 }
 .c-project:hover {
   opacity: 0.7;
+}
+
+.c-loader {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  transform: scale(1.3) translate(-50%, -50%);
+  z-index: 2;
+}
+.c-loader:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.c-loader div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  -webkit-animation: ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+          animation: ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.c-loader div:nth-child(2) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+@-webkit-keyframes ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
 }
